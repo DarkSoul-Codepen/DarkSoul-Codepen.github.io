@@ -1,0 +1,1473 @@
+/* Google Fonts */
+
+  @import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Open+Sans:wght@400&display=swap');
+
+/* Navbar */
+html
+{
+    height: 100vh;
+}
+body
+{
+   display: flex;
+   flex-direction: column;
+   margin: 0;
+   height: 100vh;
+   font-family: 'Kaushan Script', cursive;
+   font-family: 'Open Sans', sans-serif;
+   overflow: auto;
+}
+::placeholder
+{
+    font-family: 'Kaushan Script', cursive;
+    font-family: 'Open Sans', sans-serif;
+}
+.darksoul-navbar
+{
+    width: 100%;
+    height: 60px;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 1px 1px 10px rgb(189, 189, 189);
+    text-decoration: none;
+    display: block;
+    margin: auto;
+}
+.darksoul-navbar-dark
+{
+    color: white;
+    width: 100%;
+    height: 60px;
+    background-color: rgb(0, 0, 0);
+    box-shadow: 1px 1px 20px rgb(78, 77, 77);
+    text-decoration: none;
+}
+.darksoul-navbar-brand
+{
+    font-size: 20px;
+    text-decoration: none;
+    color: black;
+    margin-right: 10px;
+}
+.darksoul-navbar-brand-dark
+{
+    float: left;
+    font-size: larger;
+    margin-right: 10px;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+}
+.darksoul-navbar-ul
+{
+    list-style:none;
+}
+.darksoul-navbar-li
+{
+    float: left;
+    margin-left: 20px;
+}
+
+
+
+/* Font Styles */
+
+.bold
+{
+    font-weight: bold;
+}
+.bolder
+{
+    font-weight: bolder;
+}
+.italic
+{
+    font-style: italic;
+}
+.none 
+{
+    text-decoration: none;
+}
+.black
+{
+    color: black;
+}
+.white
+{
+    color: white;
+}
+.text-center
+{
+    text-align: center;
+}
+
+
+/* Effects */
+.darksoul-navbar-li:hover
+{
+    background-color: rgb(169, 170, 170);
+}
+
+/* Sidebar */
+.darksoul-sidebar
+{
+    left: 0;
+    width: 250px;
+    height: 100vh;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 1px 1px 10px rgb(189, 189, 189);
+    text-decoration: none;
+    display: flex;
+    flex-direction: column;
+}
+.darksoul-sidebar-header
+{
+   background-color: rgb(255, 255, 250);
+   display: flex;
+   height: fit-content;
+}
+.darksoul-sidebar-brand
+{
+    margin-top: 12px;
+    font-size: 20px;
+}
+.darksoul-sidebar-menu
+{
+    font-size: 20px;
+}
+.darksoul-sidebar-ul
+{
+    list-style:none;
+    margin-left: 0;
+    padding: 0px;
+}
+.darksoul-sidebar-li
+{
+    box-shadow: 0px 1px 2px rgb(168, 167, 167);
+    padding: 15px;
+    display: flex;
+}
+.darksoul-sidebar-footer
+{
+   background-color: rgb(255, 255, 250);
+   display: flex;
+   height: fit-content;
+   position: absolute;
+   bottom: 0;
+}
+.darksoul-sidebar-footer-content
+{
+    font-size: 10px;
+    margin: 10px;
+}
+
+
+/* Body */
+.darksoul-container-small
+{
+    height: 250px;
+    width: 150px;
+    border-radius: 10px;
+    background-color: rgb(255, 255, 255);
+    padding: 10px;
+    box-shadow: 1px 1px 20px rgb(138, 138, 138);
+    margin: auto;
+}
+.darksoul-container-medium
+{
+    height: 500px;
+    width: 250px;
+    border-radius: 10px;
+    background-color: rgb(255, 255, 255);
+    padding: 10px;
+    box-shadow: 1px 1px 20px rgb(138, 138, 138);
+    margin: auto;
+}
+.darksoul-container-large
+{
+    height: 650px;
+    width: 350px;
+    border-radius: 10px;
+    background-color: rgb(255, 255, 255);
+    padding: 10px;
+    box-shadow: 1px 1px 20px rgb(138, 138, 138);
+    margin: auto;
+}
+.darksoul-conatiner-img
+{
+    width: 350px;
+    margin: auto;
+    background-position: center;
+}
+.img
+{
+    width: fit-content;
+}
+.darksoul-container-medium-header
+{
+    height: 25%;
+    display: flex;
+    flex-direction: column;
+}
+.darksoul-container-medium-content
+{
+    height: 75%;
+    margin-top: 10px;
+    margin-bottom: 50px;
+}
+.darksoul-card-heading
+{
+    margin-top: 10px;
+    margin-bottom: 15px;
+}
+
+
+/* Input Form */
+.darksoul-flex-form-control
+{
+    margin: auto;
+    width: fit-content;
+    display: flex;
+    flex-direction: column;
+}
+.darksoul-flex-c-input-control
+{
+    display: flex;
+    flex-direction: column;
+    width: 200px;
+    margin: auto;
+}
+.darksoul-input
+{
+    height: 30px;
+    margin-top: 5px;
+    margin-bottom: 20px;
+    border: 1px solid rgb(173, 172, 172);
+    border-radius: 3px;
+    font-family: 'Kaushan Script', cursive;
+    font-family: 'Open Sans', sans-serif;
+}
+.darksoul-input[type="text"]:focus
+{
+    outline: none;
+    box-shadow: 0.5px 0px 2px 3px rgb(148, 187, 224);
+}
+.darksoul-input[type="password"]:focus
+{
+    outline: none;
+    box-shadow: 0.5px 0px 2px 3px rgb(148, 187, 224);
+}
+.darksoul-label
+{
+    margin-right: 20px;
+}
+.darksoul-btn-small
+{
+    width: 70px;
+    margin: auto;
+    height: 25px;
+    border-radius: 4px;
+    border: none;
+    background-color: rgb(28, 110, 242);
+    cursor: pointer;
+    font-family: 'Kaushan Script', cursive;
+    font-family: 'Open Sans', sans-serif;
+}
+.darksoul-btn-medium
+{
+    width: 100px;
+    height: 35px;
+    border-radius: 5px;
+    border: none;
+    background-color: rgb(28, 110, 242);
+    cursor: pointer;
+    font-family: 'Kaushan Script', cursive;
+    font-family: 'Open Sans', sans-serif;
+}
+.darksoul-btn-large
+{
+    width: 200px;
+    margin: auto;
+    height: 55px;
+    border-radius: 5px;
+    border: none;
+    background-color: rgb(28, 110, 242);
+    cursor: pointer;
+    font-family: 'Kaushan Script', cursive;
+    font-family: 'Open Sans', sans-serif;
+}
+
+
+
+
+/* Logo */
+.darksoul-logo
+{
+    margin: 10px;
+    width: 35px;
+    height: 35px;
+}
+.darksoul-menu-logo
+{
+    width: 25px;
+    height: 25px;
+    margin-right: 10px;
+}
+
+
+/* Float */
+.darksoul-fl
+{
+    float: left;
+}
+.darksoul-fr
+{
+    float: right;
+}
+
+
+
+
+/* Margins - Start */
+
+/* Margin-Left */
+.ml-5
+{
+    margin-left: 5px;
+}
+.ml-10
+{
+    margin-left: 10px;
+}
+.ml-15
+{
+    margin-left: 15px;
+}
+.ml-20
+{
+    margin-left: 20px;
+}
+.ml-25
+{
+    margin-left: 25px;
+}
+.ml-30
+{
+    margin-left: 30px;
+}
+.ml-35
+{
+    margin-left: 35px;
+}
+.ml-40
+{
+    margin-left: 40px;
+}
+.ml-45
+{
+    margin-left: 45px;
+}
+.ml-50
+{
+    margin-left: 50px;
+}
+
+/* Margin-Right */
+.mr-5
+{
+    margin-right: 5px;
+}
+.mr-10
+{
+    margin-right: 10px;
+}
+.mr-15
+{
+    margin-right: 15px;
+}
+.mr-20
+{
+    margin-right: 20px;
+}
+.mr-25
+{
+    margin-right: 25px;
+}
+.mr-30
+{
+    margin-right: 30px;
+}
+.mr-35
+{
+    margin-right: 35px;
+}
+.mr-40
+{
+    margin-right: 40px;
+}
+.mr-45
+{
+    margin-right: 45px;
+}
+.mr-50
+{
+    margin-right: 50px;
+}
+
+/* Margin-Top */
+.mt-5
+{
+    margin-top: 5px;
+}
+.mt-10
+{
+    margin-top: 10px;
+}
+.mt-15
+{
+    margin-top: 15px;
+}
+.mt-20
+{
+    margin-top: 20px;
+}
+.mt-25
+{
+    margin-top: 25px;
+}
+.mt-30
+{
+    margin-top: 30px;
+}
+.mt-35
+{
+    margin-top: 35px;
+}
+.mt-40
+{
+    margin-top: 40px;
+}
+.mt-45
+{
+    margin-top: 45px;
+}
+.mt-50
+{
+    margin-top: 50px;
+}
+
+/* Margin-Bottom */
+.mb-5
+{
+    margin-bottom: 5px;
+}
+.mb-10
+{
+    margin-bottom: 10px;
+}
+.mb-15
+{
+    margin-bottom: 15px;
+}
+.mb-20
+{
+    margin-bottom: 20px;
+}
+.mb-25
+{
+    margin-bottom: 25px;
+}
+.mb-30
+{
+    margin-bottom: 30px;
+}
+.mb-35
+{
+    margin-bottom: 35px;
+}
+.mb-40
+{
+    margin-bottom: 40px;
+}
+.mb-45
+{
+    margin-bottom: 45px;
+}
+.mb-50
+{
+    margin-bottom: 50px;
+}
+.m-auto
+{
+    margin: auto;
+}
+/* Margins - End */
+
+/* Displays - Start */
+
+.d-none
+{
+    display: none;
+}
+/* Displays - Start */
+
+/* Background Colors - Start */
+
+.bg-blue
+{
+    background-color: rgb(28, 110, 242);
+}
+.bg-red
+{
+    background-color: rgb(252, 37, 37);
+}
+.bg-green
+{
+    background-color: rgb(1, 153, 1);
+}
+.bg-white
+{
+    background-color: rgba(255, 255, 255, 0.971);
+    color: black;
+}
+.bg-black
+{
+    background-color: rgba(0, 0, 0, 0.971);
+    color: rgb(255, 255, 255);
+}
+
+/* Bg-Hovers */
+
+.bg-h-blue
+{
+    background-color: rgb(28, 110, 242);
+}
+.bg-h-blue:hover
+{
+    background-color: rgb(5, 98, 248);
+}
+.bg-h-red
+{
+    background-color: rgb(252, 37, 37);
+}
+.bg-h-red:hover
+{
+    background-color: rgb(236, 5, 5);
+}
+.bg-h-green
+{
+    background-color: rgb(1, 153, 1);
+}
+.bg-h-green:hover
+{
+    background-color: rgb(4, 127, 4);
+}
+.bg-h-white
+{
+    background-color: rgba(255, 255, 255, 0.971);
+    color: black;
+}
+.bg-h-white:hover
+{
+    background-color: rgb(0, 0, 0);
+    color: white;
+}
+.bg-h-black
+{
+    background-color: rgba(0, 0, 0, 0.971);
+    color: rgb(255, 255, 255);
+}
+.bg-h-black:hover
+{
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+}
+
+/* Bg-Light colors */
+
+.bg-lightblue
+{
+    background-color: rgba(54, 132, 215, 0.288);
+}
+.bg-lightred
+{
+    background-color: rgba(215, 54, 54, 0.288);
+}
+.bg-lightgreen
+{
+    background-color: rgba(147, 220, 147, 0.288);
+}
+.bg-white
+{
+    background-color: rgba(255, 255, 255, 0.971);
+    color: black;
+}
+.bg-black
+{
+    background-color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+}
+.bg-lightgray
+{
+    background-color: rgba(86, 86, 86, 0.384);
+}
+
+/* Background Colors - End */
+
+/* Text - colors */
+
+.t-blue
+{
+    color:  rgb(4, 77, 195);
+}
+.t-green
+{
+    color:  rgb(1, 120, 1);;
+}
+.t-red
+{
+    color:  rgb(169, 0, 0);
+}
+.t-black
+{
+    color:  rgb(0, 0, 0);;
+}
+.t-white
+{
+    color:  rgb(255, 255, 255);
+}
+
+
+
+/* Dropdowns - Start */
+
+/* Dropdowns - Css(Hover) - Start */
+
+.darksoul-dropdown
+{
+    font-family: 'Kaushan Script', cursive;
+    font-family: 'Open Sans', sans-serif;
+    width: fit-content;
+}
+.darksoul-dropdown-content
+{
+    display: none;
+    list-style: none;
+}
+.darksoul-dropdown:hover .darksoul-dropdown-content
+{
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+    background-color: rgb(255, 255, 255);
+    height: fit-content;
+    width: fit-content;
+    list-style: none;
+    box-shadow: 0px 0px 10px rgb(168, 167, 167);
+    border-radius: 5px;
+    margin-top: 0px;
+}
+.darksoul-dropdown-item
+{
+    height: 30px;
+}
+.darksoul-dropdown-item:hover
+{
+    background-color: rgb(255, 255, 255);
+    font-weight: bold;
+}
+ 
+/* Dropdowns - Css(Hover) - End */
+
+/* Dropdowns - Js - Start */
+
+.darksoul-dropdown-js
+{
+    font-family: 'Kaushan Script', cursive;
+    font-family: 'Open Sans', sans-serif;
+    width: fit-content;
+}
+.darksoul-dropdown-content-js
+{
+    display: none;
+    list-style: none;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+
+.darksoul-dropdown-item-js
+{
+    display: block;
+    height: 30px;
+}
+.darksoul-dropdown-item-js:hover
+{
+    background-color: rgb(255, 255, 255);
+    font-weight: bold;
+}
+.show-dropdown 
+{
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+    background-color: rgb(255, 255, 255);
+    height: fit-content;
+    width: fit-content;
+    list-style: none;
+    box-shadow: 0px 0px 10px rgb(168, 167, 167);
+    border-radius: 5px;
+    margin-top: 0px;
+}
+
+/* Dropdowns - Js - End */
+
+/* Dropdowns - End */
+
+
+
+/* Accordions - Start  */
+
+/* Hover - Accordion - Start  */
+
+
+.darksoul-accordion-1
+{
+    font-family: 'Kaushan Script', cursive;
+    font-family: 'Open Sans', sans-serif;
+    width: 600px;
+    height: fit-content;
+  
+}
+.darksoul-accordion-2
+{
+    font-family: 'Kaushan Script', cursive;
+    font-family: 'Open Sans', sans-serif;
+    width: 600px;
+    height: fit-content;
+}
+.darksoul-accordion-3
+{
+    font-family: 'Kaushan Script', cursive;
+    font-family: 'Open Sans', sans-serif;
+    width: 600px;
+    height: fit-content;
+}
+.darksoul-accordion-btn-1
+{
+    width: 100%;
+    height: 45px;
+    text-align: left;
+    padding-left: 20px;
+    border: none;
+    background-color: rgb(28, 110, 242);
+    cursor: pointer;
+    font-family: 'Kaushan Script', cursive;
+    font-family: 'Open Sans', sans-serif;
+}
+.darksoul-accordion-btn-2
+{
+    width: 100%;
+    height: 45px;
+    text-align: left;
+    padding-left: 20px;
+    border: none;
+    background-color: rgb(28, 110, 242);
+    cursor: pointer;
+    font-family: 'Kaushan Script', cursive;
+    font-family: 'Open Sans', sans-serif;
+}
+.darksoul-accordion-btn-3
+{
+    width: 100%;
+    height: 45px;
+    text-align: left;
+    padding-left: 20px;
+    border: none;
+    background-color: rgb(28, 110, 242);
+    cursor: pointer;
+    font-family: 'Kaushan Script', cursive;
+    font-family: 'Open Sans', sans-serif;
+}
+.darksoul-accordion-content-1
+{
+    display: none;
+}
+.darksoul-accordion-content-2
+{
+    display: none;
+}
+.darksoul-accordion-content-3
+{
+    display: none;
+}
+.darksoul-accordion-1:hover .darksoul-accordion-content-1
+{
+    display: block;
+    text-align: justify;
+    padding: 15px;
+    background-color: rgb(255, 255, 255);
+    height: fit-content;
+    width: fit-content;
+    box-shadow: 0px 0px 10px rgb(168, 167, 167);
+    border-radius: 5px;
+    margin-top: 0px;
+}
+.darksoul-accordion-2:hover .darksoul-accordion-content-2
+{
+    display: block;
+    text-align: justify;
+    padding: 15px;
+    background-color: rgb(255, 255, 255);
+    height: fit-content;
+    width: fit-content;
+    box-shadow: 0px 0px 10px rgb(168, 167, 167);
+    border-radius: 5px;
+    margin-top: 0px;
+}
+.darksoul-accordion-3:hover .darksoul-accordion-content-3
+{
+    display: block;
+    text-align: justify;
+    padding: 15px;
+    background-color: rgb(255, 255, 255);
+    height: fit-content;
+    width: fit-content;
+    box-shadow: 0px 0px 10px rgb(168, 167, 167);
+    border-radius: 5px;
+    margin-top: 0px;
+}
+
+/* Hover - Accordion - End */
+
+
+/* Js - Accordion - Start */
+
+.darksoul-accordion-content-1-js
+{
+    display: none;
+}
+.darksoul-accordion-content-2-js
+{
+    display: none;
+}
+.darksoul-accordion-content-3-js
+{
+    display: none;
+}
+.show-accordion 
+{
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+    background-color: rgb(255, 255, 255);
+    height: fit-content;
+    width: fit-content;
+    list-style: none;
+    box-shadow: 0px 0px 10px rgb(168, 167, 167);
+    border-radius: 5px;
+    margin-top: 0px;
+}
+/* Js - Accordion - End */
+
+/* Accordions - End  */
+
+
+
+/* Alerts - Start */
+
+.darksoul-alert
+{
+    width: 600px;
+    height: 60px;
+    border-radius: 5px;
+    box-shadow: 1px 1px 10px rgb(189, 189, 189);
+    text-decoration: none;
+    display: flex;
+    margin: auto;
+}
+.darksoul-alert-content 
+{
+    margin: auto;
+    margin-left: 20px;
+    display: flex;
+}
+
+/* Js - Alert Box - Start */
+
+.darksoul-alert-js
+{
+    width: 600px;
+    height: 60px;
+    border-radius: 5px;
+    box-shadow: 1px 1px 10px rgb(189, 189, 189);
+    text-decoration: none;
+    display: none;
+    margin: auto;
+}
+.show-alert 
+{
+    width: 600px;
+    height: 60px;
+    border-radius: 5px;
+    box-shadow: 1px 1px 10px rgb(189, 189, 189);
+    text-decoration: none;
+    display: flex;
+    margin: auto;
+}
+.alert-close-btn
+{
+    margin-left: auto;
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-right: 10px;
+    background-size: contain;
+    background-image: url("close_FILL0_wght400_GRAD0_opsz48.png");
+    width: 25px;
+    height: 25px;
+    cursor: pointer;
+    background-color: transparent;
+    border: none;
+}
+
+/* Js - Alert Box - End */
+
+/* Alerts - End */
+
+
+/* Carousels - Start */
+
+
+.darksoul-carousel
+{
+    width: 900px;
+    height: 500px;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 1px 1px 10px rgb(189, 189, 189);
+    margin: auto;
+    display: flex;
+    
+}
+.darksoul-carousel-items
+{
+    width: 100%;
+    height: 100%;
+    display: flex;
+}
+#jscarousel-darksoul-carousel-item-1
+{
+    width: 100%;
+    height: 100%;
+    flex-direction: column;
+    display: flex;
+    background-color: rgb(218, 218, 218);
+    background-image: url("1_UHRii-APHkAsLJJfX9XJgg.gif");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+#jscarousel-darksoul-carousel-item-2
+{
+    width: 100%;
+    height: 100%;
+    flex-direction: column;
+    display: none;
+    background-color: rgb(218, 218, 218);
+    background-image: url("5841ea_5d7b2d0a77ba4345b503973dd2506ecf_mv2.gif");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+#jscarousel-darksoul-carousel-item-3
+{
+    width: 100%;
+    height: 100%;
+    flex-direction: column;
+    display: none;
+    background-color: rgb(218, 218, 218);
+    background-image: url("1_sruVSXB_1cxPHQ9WsNdq0Q.gif");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.darksoul-carousel-content
+{
+    width: fit-content;
+    height: fit-content;
+    font-size: 30px;
+}
+.darksoul-btn-prev
+{
+    margin: auto;
+    background-size: contain;
+    background-image: url("chevron_left_FILL0_wght400_GRAD0_opsz48.png");
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    background-color: transparent;
+    border: none;
+}
+.darksoul-btn-prev:hover
+{
+    transform: scale(1.2);
+    transition-duration: 0.7s;
+}
+.darksoul-btn-next
+{
+    margin: auto;
+    background-size: contain;
+    background-image: url("chevron_right_FILL0_wght400_GRAD0_opsz48.png");
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    background-color: transparent;
+    border: none;
+}
+.darksoul-btn-next:hover 
+{
+    transform: scale(1.2);
+    transition-duration: 0.7s;
+}
+
+
+/* Carousels - End */
+
+/* List - Start */
+.darksoul-list
+{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+}
+.darksoul-list-item
+{
+    margin-top: 10px;
+    align-items: center;
+    justify-content: center;
+}
+
+
+/* Cards Carousel - Start */
+.darksoul-cards-carousel
+{
+    width: 1000px;
+    height: 350px;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 1px 1px 10px rgb(189, 189, 189);
+    margin: auto;
+    display: flex;
+}
+.darksoul-cards-carousel-bg
+{
+    width: 1000px;
+    height: 250px;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 1px 1px 10px rgb(189, 189, 189);
+    margin: auto;
+    display: flex;
+    overflow: hidden;
+}
+.darksoul-cards-carousel-content
+{
+    width: 600px;
+    height: 250px;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 1px 1px 10px rgb(189, 189, 189);
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+}
+#jscarousel-darksoul-cards-carousel-item-1
+{
+    margin: auto;
+    margin-left: 20px;
+    min-width: 150px;
+    height: 150px;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 1px 1px 10px rgb(189, 189, 189);
+    border-radius: 20px;
+    margin-right: 10px;
+    background-color: rgb(137, 185, 232);
+    position: relative;
+}
+#jscarousel-darksoul-cards-carousel-item-2
+{
+    margin: auto;
+    min-width: 150px;
+    height: 150px;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 1px 1px 10px rgb(189, 189, 189);
+    border-radius: 20px;
+    margin-right: 10px;
+    background-color: cornflowerblue;
+    position: relative;
+    
+}
+
+#jscarousel-darksoul-cards-carousel-item-3
+{
+    margin: auto;
+    min-width: 150px;
+    height: 150px;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 1px 1px 10px rgb(189, 189, 189);
+    border-radius: 20px;
+    margin-right: 10px;
+    background-color: burlywood;
+    position: relative;
+    
+}
+#jscarousel-darksoul-cards-carousel-item-4
+{
+    margin: auto;
+    min-width: 150px;
+    height: 150px;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 1px 1px 10px rgb(189, 189, 189);
+    border-radius: 20px;
+    margin-right: 10px;
+    background-color: blueviolet;
+    position: relative;
+    
+}
+#jscarousel-darksoul-cards-carousel-item-5
+{
+    margin: auto;
+    min-width: 150px;
+    height: 150px;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 1px 1px 10px rgb(189, 189, 189);
+    border-radius: 20px;
+    margin-right: 10px;
+    background-color: darkslateblue;
+    position: relative;
+    
+}
+
+.darksoul-cards-carousel-buttons
+{
+    margin: auto;
+}
+
+
+/* LEFT HALF */
+@keyframes prev 
+{
+    0%
+    {
+        right: 0px; 
+    }
+    100%
+    {
+        right:  200px;
+    }
+    
+}
+@keyframes prev1 
+{
+    0%
+    {
+        right: 200px; 
+    }
+    100%
+    {
+        right:  400px;
+    }
+    
+}
+@keyframes prev2 
+{
+    0%
+    {
+        right: 400px; 
+    }
+    100%
+    {
+        right:  600px;
+    }
+    
+}
+
+@keyframes next-1 
+{
+    0%
+    {
+        left: -200px;
+    }
+    100%
+    {
+        left: 0px;
+    }
+    
+}
+@keyframes next-2 
+{
+    0%
+    {
+        left: -400px;
+    }
+    100%
+    {
+        left: -200px;
+    }
+    
+}
+@keyframes next-3 
+{
+    0%
+    {
+        left: -600px;
+    }
+    100%
+    {
+        left: -400px;
+    }
+    
+}
+
+/* RIGHT SIDE */
+@keyframes next 
+{
+    0%
+    {
+        left: 0px;
+    }
+    100%
+    {
+        left: 200px;
+    }
+    
+}
+@keyframes next1 
+{
+    0%
+    {
+        left: 200px;
+    }
+    100%
+    {
+        left: 400px;
+    }
+    
+}
+@keyframes next2 
+{
+    0%
+    {
+        left: 400px;
+    }
+    100%
+    {
+        left: 600px;
+    }
+    
+}
+@keyframes prev-1 
+{
+    0%
+    {
+        right: -200px; 
+    }
+    100%
+    {
+        right:  0px;
+    }
+    
+}
+@keyframes prev-2 
+{
+    0%
+    {
+        right: -400px; 
+    }
+    100%
+    {
+        right: -200px;
+    }
+    
+}
+@keyframes prev-3 
+{
+    0%
+    {
+        right: -600px; 
+    }
+    100%
+    {
+        right: -400px;
+    }
+    
+}
+
+
+
+
+
+/* Cards Carousel - End */
+
+
+/* Checkbox - Start */
+
+.darksoul-check-form-control
+{
+    display: flex;
+    flex-direction: row;
+    margin: auto;
+}
+.darksoul-checkbox
+{
+    width: 15px;
+    height: 15px;
+}
+.darksoul-checkbox:checked
+{
+    outline: none;
+    box-shadow: 0.5px 0px 10px 1px rgb(48, 120, 188);
+}
+.darksoul-checkbox-label
+{
+   margin-left: 10px;
+}
+
+/* Checkbox - End */
+
+
+
+/* Modals - Start */
+
+#darksoul-modal
+{
+    display: none;
+    margin: auto;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(138, 138, 138, 0.4);
+    position: fixed;
+}
+.darksoul-modal-content
+{
+    background-color: white;
+    margin: auto;
+    padding: 20px;
+    border-radius: 10px;
+    min-width: 350px;
+    min-height: 300px;
+    max-width: 700px;
+}
+.modal-close-btn
+{
+    margin-left: auto;
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-right: 0px;
+    background-size: contain;
+    background-image: url("close_FILL0_wght400_GRAD0_opsz48.png");
+    width: 25px;
+    height: 25px;
+    cursor: pointer;
+    background-color: transparent;
+    border: none;
+}
+.darksoul-modal-content-header
+{
+    display: flex;
+    font-size: 20px;
+    width: 100%;
+}
+.darksoul-modal-content-main
+{
+    padding-top: 15px;
+    padding-bottom: 15px;
+    width: 100%;
+    min-height: 200px;
+}
+.darksoul-modal-content-footer
+{
+    width: 100%;
+    height: fit-content;
+    display: flex;
+}
+
+/* Modals - End */
+
+
+
+
+
+/* Animations - Start */
+
+
+#prev-next
+{
+    min-width: 150px;
+    height: 150px;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 1px 1px 10px rgb(189, 189, 189);
+    border-radius: 20px;
+    margin-right: 10px;
+    background-color: darkslateblue;
+    position: relative;
+    margin: auto;
+    
+}
+#prev-next1
+{
+    min-width: 150px;
+    height: 150px;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 1px 1px 10px rgb(189, 189, 189);
+    border-radius: 20px;
+    margin-right: 10px;
+    background-color: rgb(102, 174, 230);
+    position: relative;
+    margin: auto;
+    
+}
+
+@keyframes slide-down 
+{
+    0%
+    {
+        top: 0px;bottom: 0px;
+    }
+    100%
+    {
+        top: 100px;
+    }
+}
+
+
+.square-box
+{
+    width: 100px;
+    height: 100px;
+    box-shadow: 1px 1px 10px rgb(189, 189, 189);
+    background-color: white;
+    position: relative;
+    animation-name: slide-right;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+
+
+/* Animations - End */
+
+
+
+/* Footer */
+.darksoul-footer
+{
+    bottom: 0;
+    width: 100%;
+    height: 300px;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 1px 1px 20px rgb(108, 106, 106);
+    text-decoration: none;
+}
+.darksoul-footer-dark
+{
+    bottom: 0;
+    width: 100%;
+    height: 300px;
+    background-color: rgb(0, 0, 0);
+    box-shadow: 1px 1px 20px rgb(108, 106, 106);
+    text-decoration: none;
+}

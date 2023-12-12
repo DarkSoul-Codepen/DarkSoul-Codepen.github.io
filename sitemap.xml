@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset
+      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+      xmlns:image="http://www.google.com/schemas/sitemap-image/1.1"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+
+
+<url>
+  <loc>https://darksoul-codepen.github.io/</loc>
+  <lastmod>2023-12-12T15:56:18+00:00</lastmod>
+    <image:image>
+      <image:loc>https://darksoul-codepen.github.io/assets/images/banner-bg.png</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>https://darksoul-codepen.github.io/assets/images/CSS%20Shapes%20Lab%20cover%20image.png</image:loc>
+    </image:image>
+  <priority>1.00</priority>
+</url>
+<url>
+  <loc>https://darksoul-codepen.github.io/posts.html</loc>
+  <lastmod>2023-12-12T15:56:18+00:00</lastmod>
+    <image:image>
+      <image:loc>https://darksoul-codepen.github.io/assets/images/CSS%20Shapes%20Lab%20cover%20image.png</image:loc>
+    </image:image>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://darksoul-codepen.github.io/codepen.html</loc>
+  <lastmod>2023-12-12T15:56:18+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://darksoul-codepen.github.io/contact.html</loc>
+  <lastmod>2023-12-12T15:56:18+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://darksoul-codepen.github.io/about.html</loc>
+  <lastmod>2023-12-12T15:56:18+00:00</lastmod>
+    <image:image>
+      <image:loc>https://darksoul-codepen.github.io/assets/images/darksoul.jpg</image:loc>
+    </image:image>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://darksoul-codepen.github.io/CSS-Shapes-Lab.html</loc>
+  <lastmod>2023-12-12T15:56:18+00:00</lastmod>
+   <image:image>
+      <image:loc>https://darksoul-codepen.github.io/CSS-Shapes-Lab/Output%20Screenshot%20CSS%20Shapes%20Lab.png</image:loc>
+    </image:image>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://darksoul-codepen.github.io/CSS-Shapes-Lab/Preview-CSS-Shapes-Lab.html</loc>
+  <lastmod>2023-12-12T15:56:18+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+
+
+</urlset>

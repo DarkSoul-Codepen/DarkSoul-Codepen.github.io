@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name='robots' content='index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1' />
+	  <meta http-equiv="Permissions-Policy" content="interest-cohort=()">
+	  <meta name="referrer" content="strict-origin-when-cross-origin">
+	  <meta name="author" content="DarkSoul">
+ 
+    <!-- Favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+
+    <meta name="keywords" content="About DarkSoul CodePen, DarkSoul CodePen, Dark Soul Codepens, DarkSoul CodePen How To's Blogs, DarkSoul UI/UX Designs, DarkSoul Codedamn" />
+    <meta name="description" content="Hey there! I'm DarkSoul, the creative force behind the DarkSoul CodePen platform's How-To blogs and UI/UX designs. I thrive on simplifying the complex with step-by-step DIY guides and enhancing digital experiences through a blend of aesthetics and functionality. Join me on a journey where we explore, create, and turn ideas into captivating realities. Ready to dive into the world of tech and design? Let's make it happen together!" />
+  
+  
+    <title>About Me - DarkSoul CodePen</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+
+    <!-- Additional CSS Files -->
+    <link rel="stylesheet" href="assets/css/fontawesome.css">
+    <link rel="stylesheet" href="assets/css/darksoul-codepen.css">
+    <link rel="stylesheet" href="assets/css/owl.css">
+    <link rel="stylesheet" href="assets/css/animate.css">
+    <link rel="stylesheet"href="https://unpkg.com/swiper@7/swiper-bundle.min.css"/>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+    <style>
+      .clips p 
+      {
+        text-align: justify !important;
+        color: white;
+      }
+      h1
+    {
+      font-weight: 900 !important;
+    }
+    h2,h4
+          {
+            font-weight: 900 !important;
+          }
+                  /* width */
+        ::-webkit-scrollbar 
+        {
+            width: 5px;
+        }
+
+        /* Track */
+        ::-webkit-scrollbar-track 
+        {
+            background-color: rgba(226, 247, 255, 0);
+        }
+
+        /* Handle */
+        ::-webkit-scrollbar-thumb 
+        {
+        background: #ec6090;
+        border-radius: 10px;
+        height: 10px;
+        width: 3px;
+        }
+    </style>
+  </head>
+
+<body>
+
+  <!-- ***** Preloader Start ***** -->
+  <div id="js-preloader" class="js-preloader">
+    <div class="preloader-inner">
+      <span class="dot"></span>
+      <div class="dots">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </div>
+  </div>
+  <!-- ***** Preloader End ***** -->
+
+  <!-- ***** Header Area Start ***** -->
+  <header class="header-area header-sticky" style="background-color: rgba(0, 0, 0, 0);">
+    <div class="container" style="padding: 0px;">
+        <div class="row">
+            <div class="col-12">
+                <nav class="main-nav">
+                    <!-- ***** Logo Start ***** -->
+                    <a href="index.html" class="logo">
+                        <img src="assets/images/logo.png" alt="" width="100%">
+                    </a>
+                    <!-- ***** Logo End ***** -->
+                    <!-- ***** Search End ***** -->
+                    <div class="search-input">
+                      <form id="search" action="#">
+                        <input type="text" placeholder="Type Something" id='searchText' name="searchKeyword" onkeypress="handle" />
+                        <i class="fa fa-search"></i>
+                      </form>
+                    </div>
+                    <!-- ***** Search End ***** -->
+                    <!-- ***** Menu Start ***** -->
+                    <ul class="nav">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="posts.html">Posts</a></li>
+                        <li><a href="codepen.html">CodePens</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="about.html" class="active">About Me <img src="assets/images/profile-header.png" alt=""></a></li>
+                    </ul>   
+                    <a class='menu-trigger'>
+                        <span>Menu</span>
+                    </a>
+                    <!-- ***** Menu End ***** -->
+                </nav>
+            </div>
+        </div>
+    </div>
+  </header>
+  <!-- ***** Header Area End ***** -->
+
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12">
+        <div class="page-content">
+
+          <!-- ***** Banner Start ***** -->
+          <div class="row">
+            <div class="col-lg-12">
+              <div class="main-profile ">
+                <div class="row">
+                  <div class="col-lg-4 align-self-center justify-content-center text-center heading-section">
+                    <h1><span style="color: #ec6090;">About</span> <span style="text-decoration: underline;">Me!</span></h1>
+                  </div>
+               
+                  <div class="col-lg-4">
+                    <img src="assets/images/profile.jpg" alt="" style="border-radius: 23px;">
+                  </div>
+                  <div class="col-lg-4 align-self-center">
+                    <div class="main-info header-text">
+                      <h4>DarkSoul</h4>
+                      <span>Entrepreneur</span>
+                      <span>Blogger</span>
+                      <span>UI/UX Designer</span>
+                      <span>Full Stack Developer</span>
+                      <p>Building a world where every pixel tells a story!</p>
+                      <div class="main-border-button">
+                        <a href="contact.html">Drop me a Line!</a>
+                      </div>
+                    </div>
+                  </div>
+                  
+                </div>
+                <div class="row">
+                  <div class="col-lg-12">
+                    <div class="clips">
+                      <div class="row">
+                        <div class="col-lg-12">
+                          <div class="heading-section">
+                            <h4>Hey <em>there!</em>👋🏻</h4>
+                          </div>
+                        </div>
+                        <p>I'm DarkSoul, the creative mind steering the ship of How-To blogs and UI/UX designs on this awesome platform. I'm all about making the complex seem simple, breaking things down with step-by-step guides for your DIY adventures. When it comes to UI/UX design, I'm on a mission to blend the pretty with the practical, making your digital experiences top-notch. Come join me on this journey where we explore, create, and turn ideas into something seriously cool. Ready to dive into the world of tech and design with me? Let's make it happen! 🚀✨</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- ***** Banner End ***** -->
+
+    
+        </div>
+      </div>
+    </div>
+  </div>
+  
+
+
+
+  <!-- Scripts -->
+  <!-- Bootstrap core JavaScript -->
+  <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+
+  <script src="assets/js/isotope.min.js"></script>
+  <script src="assets/js/owl-carousel.js"></script>
+  <script src="assets/js/tabs.js"></script>
+  <script src="assets/js/popup.js"></script>
+  <script src="assets/js/custom.js"></script>
+
+
+  </body>
+
+</html>

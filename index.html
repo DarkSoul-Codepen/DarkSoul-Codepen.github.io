@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name='robots' content='index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1' />
+	  <meta http-equiv="Permissions-Policy" content="interest-cohort=()">
+	  <meta name="referrer" content="strict-origin-when-cross-origin">
+	  <meta name="author" content="DarkSoul">
+ 
+    <!-- Favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+
+    <meta name="keywords" content="DarkSoul CodePen, Home page DarkSoul CodePen, Dark Soul Codepens, DarkSoul CodePen How To's Blogs, DarkSoul UI/UX Designs, DarkSoul Codedamn" />
+    <meta name="description" content="Unlock the creative potential at DarkSoul CodePen, your go-to destination for inspiring UI/UX designs and in-depth How-To guides. Dive into a world of innovation with step-by-step tutorials, perfect for unleashing your DIY spirit. Elevate your digital journey with us!" />
+  
+  
+    <title>DarkSoul CodePen - Your Hub for Creative UI/UX Designs and How-To Guides</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+
+    <!-- Additional CSS Files -->
+    <link rel="stylesheet" href="assets/css/fontawesome.css">
+    <link rel="stylesheet" href="assets/css/darksoul-codepen.css">
+    <link rel="stylesheet" href="assets/css/owl.css">
+    <link rel="stylesheet" href="assets/css/animate.css">
+    <link rel="stylesheet"href="https://unpkg.com/swiper@7/swiper-bundle.min.css"/>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+    <style>
+          @import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@700&display=swap');
+
+          .heading-section p 
+          {
+            text-align: justify !important;
+            color: white;
+          }
+
+          .item p
+          {
+            text-align: justify !important;
+            color: white;
+            transition-timing-function: cubic-bezier(0, 0, 0.175, 1);
+          }
+          .start-stream .item:hover
+          {
+            background-color: #ec6090;
+            transition-duration: 0.7s;
+            transform: scale(0.98);
+          }
+          .item:hover
+          {
+            transition-duration: 0.7s;
+            transform: scale(0.98);
+          }
+          h1
+          {
+            font-weight: 900 !important;
+            margin-bottom: 40px;
+          }
+          h2,h4
+          {
+            font-weight: 900 !important;
+          }
+                  /* width */
+        ::-webkit-scrollbar 
+        {
+            width: 5px;
+        }
+
+        /* Track */
+        ::-webkit-scrollbar-track 
+        {
+            background-color: rgba(226, 247, 255, 0);
+        }
+
+        /* Handle */
+        ::-webkit-scrollbar-thumb 
+        {
+        background: #ec6090;
+        border-radius: 10px;
+        height: 10px;
+        width: 3px;
+        }
+    </style>
+  </head>
+
+<body>
+
+  <!-- ***** Preloader Start ***** -->
+  <div id="js-preloader" class="js-preloader">
+    <div class="preloader-inner">
+      <span class="dot"></span>
+      <div class="dots">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </div>
+  </div>
+  <!-- ***** Preloader End ***** -->
+
+  <!-- ***** Header Area Start ***** -->
+  <header class="header-area header-sticky" style="background-color: rgba(0, 0, 0, 0);">
+    <div class="container" style="padding: 0px;">
+        <div class="row">
+            <div class="col-12">
+              <nav class="main-nav">
+                <!-- ***** Logo Start ***** -->
+                <a href="index.html" class="logo">
+                    <img src="assets/images/logo.png" alt="" width="100%">
+                </a>
+                <!-- ***** Logo End ***** -->
+                <!-- ***** Search End ***** -->
+                <div class="search-input">
+                  <form id="search" action="#">
+                    <input type="text" placeholder="Type Something" id='searchText' name="searchKeyword" onkeypress="handle" />
+                    <i class="fa fa-search"></i>
+                  </form>
+                </div>
+                <!-- ***** Search End ***** -->
+                <!-- ***** Menu Start ***** -->
+                <ul class="nav">
+                    <li><a href="index.html" class="active">Home</a></li>
+                    <li><a href="posts.html">Posts</a></li>
+                    <li><a href="codepen.html">CodePens</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="about.html">About Me <img src="assets/images/profile-header.png" alt=""></a></li>
+                </ul>   
+                <a class='menu-trigger'>
+                    <span>Menu</span>
+                </a>
+                <!-- ***** Menu End ***** -->
+            </nav>
+            </div>
+        </div>
+    </div>
+  </header>
+  <!-- ***** Header Area End ***** -->
+
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12">
+        <div class="page-content">
+
+          <!-- ***** Banner Start ***** -->
+         
+          <div class="index-banner">
+            <div class="row">
+              <div class="col-lg-7">
+                <div class="header-text">
+               
+                  <h4>&nbsp;</h4>
+                  <h4>&nbsp;</h4>
+                  <h4>&nbsp;</h4>
+                  <h4>&nbsp;</h4>
+                </div>
+              </div>
+            </div>
+          </div>
+        
+          <!-- ***** Banner End ***** -->
+
+          <div class="start-stream">
+            <div class="row">
+              <div class="col-lg-12">
+                <div class="heading-section">
+                  <h1 style="color: #ec6090;">Embrace, <strong style="color: white; text-decoration: underline;">Homies!</strong></h1>
+                  <p>DarkSoul CodePen is a digital playground where imagination meets innovation! Here, we go beyond coding – we're crafting a space where creativity and technology dance in harmony. Explore our curated collection of UI/UX designs that inspire, and dive into our How-To blogs, your go-to resource for step-by-step guides on various tech wonders. Whether you're a seasoned developer or just starting, DarkSoul CodePen is your canvas to unleash your digital dreams. Join us in a journey where every line of code tells a unique story!</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+                  <!-- ***** Start Stream Start ***** -->
+                  <div class="start-stream">
+                    <div class="col-lg-12">
+                      <div class="heading-section">
+                        <h2 style="color: #ec6090;">What's so <strong style="color: white; text-decoration: underline;">special</strong> in here?</h2>
+                      </div>
+                      <div class="row">
+                        <div class="col-lg-4">
+                          <div class="item">
+                            <div class="icon">
+                              <img src="assets/images/service-01.png" alt="" style="max-width: 60px;">
+                            </div>
+                            <h4>UI/UX Designs</h4>
+                            <p>DarkSoul CodePen's UI/UX designs, a fusion of creativity and functionality. Experience visually stunning interfaces and seamless interactions that elevate user experiences.</p>
+                          </div>
+                        </div>
+                       
+                        <div class="col-lg-4">
+                          <a href="posts.html">
+                          <div class="item">
+                            <div class="icon">
+                              <img src="assets/images/service-02.png" alt="" style="max-width: 60px;">
+                            </div>
+                            <h4>How To's</h4>
+                            <p>Explore DarkSoul CodePen's How-To blog – your gateway to mastering the tech realm. Unlock step-by-step guides on diverse topics, empowering you to know the nooks and corners while coding.</p>
+                          </div>
+                        </a>
+                        </div>
+                        
+                        <div class="col-lg-4">
+                          <a href="codepen.html">
+                          <div class="item">
+                            <div class="icon">
+                              <img src="assets/images/service-03.png" alt="" style="max-width: 60px;">
+                            </div>
+                            <h4>DarkSoul CodePens</h4>
+                            <p>The enchanting world of CodePens – My pens push boundaries, blending creativity with functionality. From interactive snippets to stunning animations, each CodePen is a testament to innovation.</p>
+                          </div>
+                          </a>
+                        </div>
+                       
+                      </div>
+                    </div>
+                  </div>
+                  <!-- ***** Start Stream End ***** -->
+
+                  <div class="start-stream">
+                    <div class="row">
+                      <div class="col-lg-12">
+                        <div class="heading-section">
+                          <a href="about.html"><h4>About <em>Me!</em></h4></a>
+                          <p>Hey, I'm DarkSoul the creative mind behind DarkSoul CodePen! With a passion for UI/UX design, I'm on a mission to blend innovation with aesthetics. As a blogger, I share insights on tech wonders. An entrepreneur at heart, I'm navigating the digital realm, crafting seamless experiences. Oh, and did I mention I'm a full-stack developer? Well, I'm.</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+           <!-- ***** Featured Games Start ***** -->
+           <div class="row">
+            <div class="col-lg-8">
+              <div class="featured-games header-text">
+                <div class="heading-section">
+                  <h4><em>Recent</em> Posts</h4>
+                </div>
+                <div class="owl-features owl-carousel">
+                  <div class="item">
+                    <div class="thumb">
+                      <img src="assets/images/CSS Shapes Lab cover image.png" alt="">
+                      <div class="hover-effect">
+                        <h6><a href="CSS-Shapes-Lab.html">Learn Now →</a></h6>
+                      </div>
+                    </div>
+                    <h4>How To's<br><span>Difficulty Level</span></h4>
+                    <ul>
+                      <li>Easy</li>
+                      <li><div class="easy"></div></li>
+                    </ul>
+                    
+                  </div>
+                
+                 
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4">
+              <div class="top-downloaded" style="max-height: fit-content;">
+                <div class="heading-section">
+                  <h4><em>Top</em> Posts</h4>
+                </div>
+                <ul>
+                  <li>
+                    <img src="assets/images/CSS Shapes Lab cover image.png" alt="" class="templatemo-item">
+                    <h4>CSS Shapes Lab</h4>
+                    <h6>Codedamn</h6>
+                    <div class="download">
+                      <a href="CSS-Shapes-Lab.html"><i class="fa fa-eye"></i></a>
+                    </div>
+                  </li>
+                 
+                </ul>
+                <div class="text-button">
+                  <a href="posts.html">View All Posts</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- ***** Featured Games End ***** -->
+
+
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <!-- <footer>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12">
+          <p>Copyright © 2024 <a href="#">DarkSoul CodePen</a>. All rights reserved. 
+          
+          <br><a href="disclaimer.html" target="_blank" title="free CSS templates">Disclaimer</a> | <a href="termsandconditions.html" target="_blank" >Terms & Conditions</a> | <a href="privacy.html" target="_blank">Privacy Policy</a></p>
+        </div>
+      </div>
+    </div>
+  </footer> -->
+
+
+  <!-- Scripts -->
+  <!-- Bootstrap core JavaScript -->
+  <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+
+  <script src="assets/js/isotope.min.js"></script>
+  <script src="assets/js/owl-carousel.js"></script>
+  <script src="assets/js/tabs.js"></script>
+  <script src="assets/js/popup.js"></script>
+  <script src="assets/js/custom.js"></script>
+
+
+  </body>
+
+</html>

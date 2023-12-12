@@ -1,0 +1,4 @@
+User-Agent: *
+allow: /
+
+Sitemap: https://darksoul-codepen.github.io/sitemap.xml

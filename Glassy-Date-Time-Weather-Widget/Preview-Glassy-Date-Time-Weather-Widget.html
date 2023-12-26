@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   
+  
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name='robots' content='index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1' />
+	<meta http-equiv="Permissions-Policy" content="interest-cohort=()">
+	<meta name="referrer" content="strict-origin-when-cross-origin">
+	<meta name="author" content="DarkSoul">
+ 
+    <!-- Favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+
+    <meta name="keywords" content="DarkSoul CodePen, Preview Glassy Date Time Weather Widget , Live Output Glassy Date Time Weather Widget Codepen , Glassy widget , Date widget, Time widget, Weather Widget, Dark Soul Codepens, DarkSoul CodePen How To's Blogs, DarkSoul UI/UX Designs, DarkSoul Codedamn" />
+    <meta name="description" content="Experience the elegance of our Glassy Date, Time & Weather Widget on DarkSoul CodePen's preview page. Immerse yourself in a seamless blend of real-time updates, stylish design, and dynamic weather information. Explore the source code with step-by-step instructions for easy integration." />
+  
+  
+    <title>Glassy Date Time Weather Widget Codepen - DarkSoul CodePen</title>
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Belanosima&family=Rubik+Vinyl&display=swap');
+   
+        body
+        {
+            margin: 0;
+            height: 100vh;
+            width: 100%;
+            display: flex;
+            background-image: url("https://darksoul-codepen.github.io/DarkSoul.png");
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            font-family: 'Belanosima', sans-serif;
+            color: #564d93;
+        }
+        .darksoul-notifications
+        {
+            margin: auto;
+            width: 350px;
+            height: 20%;
+            background-color: rgba(255, 255, 255, 0);
+            box-shadow: 0.5px 0.5px 2px #ffffff,50px 50px 200px #8677e2,50px 50px 200px #39306e, -0.5px -0.5px 2px #ffffff;
+            border-radius: 0px 10px 0px;
+            backdrop-filter: blur(7px);
+            display: flex;
+            animation-name: anim;
+            animation-duration: 5s;
+            animation-timing-function: linear;
+            animation-delay: 0s;
+            animation-iteration-count: infinite;
+           
+        }
+        .datetime
+        {
+            height: 100%;
+            width: 50%;
+            display: flex;
+            flex-direction: column;
+        }
+        .datetime h4
+        {
+            margin: auto;
+            margin-bottom: 1px;
+            margin-left: 20px;
+        }
+        .datetime p
+        {
+            margin: auto;
+            font-size: 65px;
+            margin-top: 1px;
+        }
+        .weather
+        {
+            margin: auto;
+            margin-right: 0px;
+            display: flex;
+            width: 50%;
+            height: 100%;
+            flex-direction: column;
+            
+            border-radius: 300px 30px 0px 0px;
+            backdrop-filter: blur(500px);
+            background-color: #ffffff4c;
+        }
+        .noti-icons
+        {
+            width: 100%;
+            height: 30%;
+            margin: auto;
+            display: flex;
+        }
+        .noti-icons img
+        {
+            margin: auto;
+            margin-right: 5px;
+            margin-top: 5px;
+            padding: 5px;
+           
+            background-color: rgba(125, 112, 213, 0.663);
+            border-radius: 50%;
+        }
+        .noti-icons img:hover
+        {
+            background-color: #7d70d5;
+            border-radius: 50%;
+            cursor: pointer;
+        }
+     
+        .combine
+        {
+            height: 80%;
+            margin: auto;
+            display: flex;
+            width: 70%;
+        }
+        
+        .combine h4
+        {
+            margin-top: 1px;
+            margin: auto;
+            color: white;
+        }
+        .combine img
+        {
+            margin-top: 1px;
+            margin: auto;
+        }
+        @keyframes anim 
+        {
+            0%
+            {
+                transform: translateY(0px) translateX(0px);
+            }
+            50%
+            {
+                transform: translateY(10px) translateX(5px);
+            }
+            100%
+            {
+                transform: translateY(0px) translateX(0px);
+            }
+        }
+        @media only screen and (max-width: 600px) 
+        {
+            .darksoul-notifications
+            {
+                margin: auto;
+                width: 90%;
+                height: 20%;
+                background-color: rgba(255, 255, 255, 0);
+                box-shadow: 0.5px 0.5px 2px #ffffff,50px 50px 200px #8677e2,50px 50px 200px #39306e, -0.5px -0.5px 2px #ffffff;
+                border-radius: 0px 10px 0px;
+                backdrop-filter: blur(7px);
+                display: flex;
+                animation-name: anim;
+                animation-duration: 5s;
+                animation-timing-function: linear;
+                animation-delay: 0s;
+                animation-iteration-count: infinite;
+            }    
+        }
+        .disclaimer
+        {
+            position: absolute;
+            bottom: 0px; 
+            left: 0; 
+            margin-left: auto; 
+            right: 0; 
+            margin-right: auto; 
+            width: fit-content;
+            color: rgb(0, 0, 0);
+            text-align: center;
+        }
+        .disclaimer a
+        {
+            text-decoration: none;
+            color: #584f95;
+        }
+        .disclaimer a:hover
+        {
+            font-weight: bolder;
+        }
+        ::selection
+        {
+            background-color: #453b7b;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <div class="darksoul-notifications">
+        <div class="datetime">
+            <h4 id="day"></h4>
+            <p id="time"></p>
+           
+        </div>
+        <div class="weather">
+            <div class="noti-icons">
+                <img width="20" height="20" src="https://img.icons8.com/external-sbts2018-lineal-color-sbts2018/58/FFFFFF/external-notification-ecommerce-basic-1-sbts2018-lineal-color-sbts2018.png" alt="external-notification-ecommerce-basic-1-sbts2018-lineal-color-sbts2018"/> </div>
+            <div class="combine">   
+                <h4>Fog</h4>
+                <img width="64" height="64" src="https://img.icons8.com/fluency/48/fog-night.png" alt="fog-night"/>
+            </div>
+         
+        </div>
+      
+    </div>
+    <p class="disclaimer">Designed & Created by <a href="https://darksoul-codepen.github.io/" target="_blank">DarkSoul</a> | Icons by <a href="https://icons8.com/" target="_blank">Icons8</a></p>
+    
+    <script async>
+
+        var day = document.getElementById("day");
+        const d = new Date();
+        const weekday = ["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"];
+        let getday = weekday[d.getDay()];
+        day.innerHTML = getday;
+         var time = document.getElementById("time");
+         
+
+      
+         setInterval( function()
+        {
+            time.innerHTML =   new Date().toLocaleTimeString([], {hour: '2-digit', minute:'2-digit', hour12: false});
+           
+        } ,1000);
+        
+    </script>
+    
+</body>
+</html>

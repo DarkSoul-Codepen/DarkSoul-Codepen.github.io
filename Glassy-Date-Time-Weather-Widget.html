@@ -1,0 +1,527 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+  
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name='robots' content='index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1' />
+	  <meta http-equiv="Permissions-Policy" content="interest-cohort=()">
+	  <meta name="referrer" content="strict-origin-when-cross-origin">
+	  <meta name="author" content="DarkSoul">
+ 
+    <!-- Favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+
+    <meta name="keywords" content="DarkSoul CodePen, Glassy Date Time Weather Widget , Glassy Date Time Weather Widget Codepen , Glassy widget , Date widget, Time widget, Weather Widget, Dark Soul Codepens, DarkSoul CodePen How To's Blogs, DarkSoul UI/UX Designs, DarkSoul Codedamn" />
+    <meta name="description" content="Elevate your website with the Glassy Date Time Weather Widget on DarkSoul CodePen. Access the source code for this sleek, dynamic widget, available for viewing and easy download. Follow our step-by-step guide to seamlessly integrate this modern feature, combining date, time, and weather updates. Transform your web design effortlessly with DarkSoul's accessible and customizable CodePen resources." />
+  
+  
+    <title>Glassy Date Time Weather Widget Codepen - DarkSoul CodePen</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+
+    <!-- Additional CSS Files -->
+    <link rel="stylesheet" href="assets/css/fontawesome.css">
+    <link rel="stylesheet" href="assets/css/darksoul-codepen.css">
+    <link rel="stylesheet" href="assets/css/owl.css">
+    <link rel="stylesheet" href="assets/css/animate.css">
+    <link rel="stylesheet"href="https://unpkg.com/swiper@7/swiper-bundle.min.css"/>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+<style>
+  textarea
+  {
+    
+    resize: none;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: large;
+    min-height: 400px;
+    background-color: rgba(19, 19, 19, 0.44);
+    border: none;
+    border-radius: 15px;
+    font-weight: 500;
+    
+    color: rgb(255, 255, 255);
+  }
+  p{
+    color: #ffffff;
+    margin: auto;
+  }
+  li
+  {
+    list-style-type: square;
+    color: rgb(255, 87, 154);
+    
+  }
+  strong
+  {
+    color: rgb(255, 87, 154);
+  }
+  h1
+  {
+    font-weight: 900 !important;
+    margin-bottom: 40px;
+  }
+  h2,h4
+  {
+    font-weight: 900 !important;
+  }
+  
+        /* width */
+        ::-webkit-scrollbar 
+        {
+            width: 5px;
+        }
+
+        /* Track */
+        ::-webkit-scrollbar-track 
+        {
+            background-color: rgba(226, 247, 255, 0);
+        }
+
+        /* Handle */
+        ::-webkit-scrollbar-thumb 
+        {
+        background: #ec6090;
+        border-radius: 10px;
+        height: 10px;
+        width: 3px;
+        }
+        .most-popular p 
+        {
+          text-align: justify;
+        }
+</style>
+
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-0XRHJTRGGH"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-0XRHJTRGGH');
+</script>
+
+   <!-- Clarity tracking code for https://darksoul-codepen.github.io/ -->
+   <script>
+    (function(c,l,a,r,i,t,y){
+        c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+        t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i+"?ref=bwt";
+        y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+    })(window, document, "clarity", "script", "k6ctefq607");
+  </script>
+  </head>
+
+<body>
+
+  <!-- ***** Preloader Start ***** -->
+  <div id="js-preloader" class="js-preloader">
+    <div class="preloader-inner">
+      <span class="dot"></span>
+      <div class="dots">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </div>
+  </div>
+  <!-- ***** Preloader End ***** -->
+
+  <!-- ***** Header Area Start ***** -->
+  <header class="header-area header-sticky" style="background-color: rgba(0, 0, 0, 0);">
+    <div class="container" style="padding: 0px;">
+        <div class="row">
+            <div class="col-12">
+              <nav class="main-nav">
+                <!-- ***** Logo Start ***** -->
+                <a href="https://darksoul-codepen.github.io/" class="logo">
+                    <img src="assets/images/logo.png" alt="DarkSoul CodePen - Logo" width="100%">
+                </a>
+                <!-- ***** Logo End ***** -->
+                <!-- ***** Search End ***** -->
+                <div class="search-input">
+                  <form id="search" action="#">
+                    <input type="text" placeholder="Type Something" id='searchText' name="searchKeyword" onkeypress="handle" />
+                    <i class="fa fa-search"></i>
+                  </form>
+                </div>
+                <!-- ***** Search End ***** -->
+                <!-- ***** Menu Start ***** -->
+                <ul class="nav">
+                    <li><a href="https://darksoul-codepen.github.io/">Home</a></li>
+                    <li><a href="posts.html">Posts</a></li>
+                    <li><a href="codepen.html" class="active">CodePens</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="about.html">About Me <img src="assets/images/profile-header.png" alt=""></a></li>
+                </ul>   
+                <a class='menu-trigger'>
+                    <span>Menu</span>
+                </a>
+                <!-- ***** Menu End ***** -->
+            </nav>
+            </div>
+        </div>
+    </div>
+  </header>
+  <!-- ***** Header Area End ***** -->
+
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12">
+        <div class="page-content">
+
+          <!-- ***** Banner Start ***** -->
+          <div class="main-banner">
+            <div class="row">
+              <div class="col-lg-7">
+                <div class="header-text">
+                  <h6 style="color: black;">CodePen</h6>
+                  <h4 style="color: #ec6090;">Glassy <em style="color: #000000;">date, time & weather widget</em> CodePen</h4>
+                  <div class="main-button">
+                    <a href="Glassy-Date-Time-Weather-Widget/Preview-Glassy-Date-Time-Weather-Widget.html">Preview</a>&nbsp;&nbsp;
+                    <a href="Zips/Glassy-Date-Time-Weather-Widget.zip" download>Download Source code</a>
+                  </div>
+                  
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- ***** Banner End ***** -->
+
+               <!-- ***** Most Popular Start ***** -->
+               <div class="most-popular">
+                <div class="row">
+                  <div class="col-lg-12">
+                    <div class="heading-section">
+                      <h4>Procedure</h4>
+                        
+                      <div class="row">
+                        <p><b>Step 1 - Create an HTML Structure:</b><br />Begin with an HTML file, setting the document structure, charset, viewport, and title.</p>
+                        <p><b>Step 2 - Import the External Resources:</b><br />Import external fonts from <a href="https://fonts.google.com/" target="_blank">Google Fonts</a> for a customized look. Then, choose a background image for the entire page to enhance aesthetics.</p>
+                        <p><b>Step 3 - Page Styling:</b><br />Style the body for a full-height display using flex properties. Design the widget container (darksoul-notifications) with a blend of colors, transparency, and shadows.</p>
+                        <p><b>Step 4 - Create Date/Time Section:</b><br /> Now, inside the widget, create a section (datetime) to display the day of the week and real-time clock. Apply styles to enhance visibility and aesthetic appeal.</p>
+                        <p><b>Step 5 - Create Weather Section:</b><br />Next, Design a section (weather) for weather information, incorporating notification icons and a combination of weather description and icon.</p>
+                        <p><b>Step 6 - Make the Design Responsive:</b><br />Implement media queries to ensure the widget adapts gracefully to smaller screens, adjusting dimensions and styles accordingly.</p>
+                        <p><b>Step 7 - Add JavaScript Functionality:</b><br /> At the end of the body, add a script section to handle dynamic content.
+                            Use JavaScript to update the day of the week and real-time clock every second, providing a real-time experience for users.
+                            Leverage asynchronous operations for smooth animations, enhancing the visual appeal.
+                            Consider using JS for interactive elements, such as future enhancements or dynamic weather updates based on user location.
+                            Ensure the JS code is modular, making it easy to maintain and extend in the future.</p>
+
+                      </div>
+                       
+
+                       
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- ***** Most Popular End ***** -->
+
+          <!-- ***** Most Popular Start ***** -->
+          <div class="most-popular">
+            <div class="row">
+              <div class="col-lg-12">
+                <div class="heading-section">
+                  <h4>Html</h4>
+                </div>
+                <div class="row">
+                
+                   
+<textarea disabled id="html">
+    
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+         /* Internal styles goes here.. */
+    </head>
+    <body>
+        <div class="darksoul-notifications">
+            <div class="datetime">
+                <h4 id="day"></h4>
+                <p id="time"></p>
+            </div>
+            <div class="weather">
+                <div class="noti-icons">
+                    <img width="20" height="20" src="https://img.icons8.com/external-sbts2018-lineal-color-sbts2018/58/FFFFFF/external-notification-ecommerce-basic-1-sbts2018-lineal-color-sbts2018.png" alt="external-notification-ecommerce-basic-1-sbts2018-lineal-color-sbts2018"/> </div>
+                <div class="combine">   
+                    <h4>Fog</h4>
+                    <img width="64" height="64" src="https://img.icons8.com/fluency/48/fog-night.png" alt="fog-night"/>
+                </div>
+            </div>
+        </div>
+        <p class="disclaimer">Designed & Created by <a href="https://darksoul-codepen.github.io/" target="_blank">DarkSoul</a> | Icons by <a href="https://icons8.com/" target="_blank">Icons8</a></p>
+        /* Script goes here.. */
+    </body>
+    </html>
+</textarea>
+                   
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- ***** Most Popular End ***** -->
+
+            <!-- ***** Most Popular Start ***** -->
+            <div class="most-popular">
+                <div class="row">
+                  <div class="col-lg-12">
+                    <div class="heading-section">
+                      <h4>Css</h4>
+                    </div>
+                    <div class="row">
+                                           
+<textarea disabled id="css">
+
+    @import url('https://fonts.googleapis.com/css2?family=Belanosima&family=Rubik+Vinyl&display=swap');
+   
+    body
+    {
+        margin: 0;
+        height: 100vh;
+        width: 100%;
+        display: flex;
+        background-image: url("https://darksoul-codepen.github.io/DarkSoul.png");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        font-family: 'Belanosima', sans-serif;
+        color: #564d93;
+    }
+    .darksoul-notifications
+    {
+        margin: auto;
+        width: 350px;
+        height: 20%;
+        background-color: rgba(255, 255, 255, 0);
+        box-shadow: 0.5px 0.5px 2px #ffffff,50px 50px 200px #8677e2,50px 50px 200px #39306e, -0.5px -0.5px 2px #ffffff;
+        border-radius: 0px 10px 0px;
+        backdrop-filter: blur(7px);
+        display: flex;
+        animation-name: anim;
+        animation-duration: 5s;
+        animation-timing-function: linear;
+        animation-delay: 0s;
+        animation-iteration-count: infinite;
+       
+    }
+    .datetime
+    {
+        height: 100%;
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+    }
+    .datetime h4
+    {
+        margin: auto;
+        margin-bottom: 1px;
+        margin-left: 20px;
+    }
+    .datetime p
+    {
+        margin: auto;
+        font-size: 65px;
+        margin-top: 1px;
+    }
+    .weather
+    {
+        margin: auto;
+        margin-right: 0px;
+        display: flex;
+        width: 50%;
+        height: 100%;
+        flex-direction: column;
+        
+        border-radius: 300px 30px 0px 0px;
+        backdrop-filter: blur(500px);
+        background-color: #ffffff4c;
+    }
+    .noti-icons
+    {
+        width: 100%;
+        height: 30%;
+        margin: auto;
+        display: flex;
+    }
+    .noti-icons img
+    {
+        margin: auto;
+        margin-right: 5px;
+        margin-top: 5px;
+        padding: 5px;
+       
+        background-color: rgba(125, 112, 213, 0.663);
+        border-radius: 50%;
+    }
+    .noti-icons img:hover
+    {
+        background-color: #7d70d5;
+        border-radius: 50%;
+        cursor: pointer;
+    }
+ 
+    .combine
+    {
+        height: 80%;
+        margin: auto;
+        display: flex;
+        width: 70%;
+    }
+    
+    .combine h4
+    {
+        margin-top: 1px;
+        margin: auto;
+        color: white;
+    }
+    .combine img
+    {
+        margin-top: 1px;
+        margin: auto;
+    }
+    @keyframes anim 
+    {
+        0%
+        {
+            transform: translateY(0px) translateX(0px);
+        }
+        50%
+        {
+            transform: translateY(10px) translateX(5px);
+        }
+        100%
+        {
+            transform: translateY(0px) translateX(0px);
+        }
+    }
+    @media only screen and (max-width: 600px) 
+    {
+        .darksoul-notifications
+        {
+            margin: auto;
+            width: 90%;
+            height: 20%;
+            background-color: rgba(255, 255, 255, 0);
+            box-shadow: 0.5px 0.5px 2px #ffffff,50px 50px 200px #8677e2,50px 50px 200px #39306e, -0.5px -0.5px 2px #ffffff;
+            border-radius: 0px 10px 0px;
+            backdrop-filter: blur(7px);
+            display: flex;
+            animation-name: anim;
+            animation-duration: 5s;
+            animation-timing-function: linear;
+            animation-delay: 0s;
+            animation-iteration-count: infinite;
+        }    
+    }
+    .disclaimer
+    {
+        position: absolute;
+        bottom: 0px; 
+        left: 0; 
+        margin-left: auto; 
+        right: 0; 
+        margin-right: auto; 
+        width: fit-content;
+        color: rgb(0, 0, 0);
+        text-align: center;
+    }
+    .disclaimer a
+    {
+        text-decoration: none;
+        color: #584f95;
+    }
+    .disclaimer a:hover
+    {
+        font-weight: bolder;
+    }
+    ::selection
+    {
+        background-color: #453b7b;
+        color: white;
+    }
+  </textarea>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- ***** Most Popular End ***** -->
+
+                <!-- ***** Most Popular Start ***** -->
+          <div class="most-popular">
+            <div class="row">
+              <div class="col-lg-12">
+                <div class="heading-section">
+                  <h4>Js</h4>
+                </div>
+                <div class="row">
+                                       
+<textarea disabled id="js">
+
+    <script async>
+
+        var day = document.getElementById("day");
+        const d = new Date();
+        const weekday = ["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"];
+        let getday = weekday[d.getDay()];
+        day.innerHTML = getday;
+        var time = document.getElementById("time");
+        setInterval( function()
+        {
+            time.innerHTML =   new Date().toLocaleTimeString([], {hour: '2-digit', minute:'2-digit', hour12: false}); 
+        } ,1000);
+        
+    </script>
+</textarea>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- ***** Most Popular End ***** -->
+
+          <!-- ***** Gaming Library Start ***** -->
+          <div class="gaming-library">
+            <div class="col-lg-12">
+              <div class="heading-section">
+                <h4>Output Screenshot</h4>
+              </div>
+              <img src="Glassy-Date-Time-Weather-Widget/Output Screenshot - Glassy Date Time Weather Widget.png" alt="Output Screenshot - Glassy Date Time Weather Widget" style="width: 100%; border-radius: 10px;"/>
+              <p>&nbsp;</p>
+            <div class="col-lg-12">
+              <div class="main-button">
+                <a href="Glassy-Date-Time-Weather-Widget/Preview-Glassy-Date-Time-Weather-Widget.html">View Live Output</a>
+              </div>
+            </div>
+          </div>
+          <!-- ***** Gaming Library End ***** -->
+        </div>
+      </div>
+    </div>
+  </div>
+  
+
+
+
+  <!-- Scripts -->
+  <!-- Bootstrap core JavaScript -->
+  <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+
+  <script src="assets/js/isotope.min.js"></script>
+  <script src="assets/js/owl-carousel.js"></script>
+  <script src="assets/js/tabs.js"></script>
+  <script src="assets/js/popup.js"></script>
+  <script src="assets/js/custom.js"></script>
+
+
+  </body>
+
+</html>

@@ -9,7 +9,7 @@
 
 <url>
   <loc>https://darksoul-codepen.github.io/</loc>
-  <lastmod>2023-12-26T14:51:10+00:00</lastmod>
+  <lastmod>2024-01-04T14:21:10+00:00</lastmod>
    <image:image>
       <image:loc>https://darksoul-codepen.github.io/assets/images/CSS%20Shapes%20Lab%20cover%20image.png</image:loc>
     </image:image>
@@ -19,22 +19,28 @@
    <image:image>
       <image:loc>https://darksoul-codepen.github.io/assets/images/Glassy%20Date,Time%20Weather%20Widget%20-%20post%20cover%20image.png</image:loc>
     </image:image>
+    <image:image>
+      <image:loc>https://darksoul-codepen.github.io/assets/images/Header%20Tag%20Lab%20cover%20image.png</image:loc>
+    </image:image>
   <priority>1.00</priority>
 </url>
 <url>
   <loc>https://darksoul-codepen.github.io/posts.html</loc>
-  <lastmod>2023-12-26T14:51:10+00:00</lastmod>
+  <lastmod>2024-01-04T14:21:10+00:00</lastmod>
      <image:image>
       <image:loc>https://darksoul-codepen.github.io/assets/images/CSS%20Shapes%20Lab%20cover%20image.png</image:loc>
     </image:image>
      <image:image>
       <image:loc>https://darksoul-codepen.github.io/assets/images/How-to-center-an-image-using-display-flex.png</image:loc>
     </image:image>
+      <image:image>
+      <image:loc>https://darksoul-codepen.github.io/assets/images/Header%20Tag%20Lab%20cover%20image.png</image:loc>
+    </image:image>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://darksoul-codepen.github.io/codepen.html</loc>
-  <lastmod>2023-12-26T14:51:10+00:00</lastmod>
+  <lastmod>2024-01-04T14:21:10+00:00</lastmod>
   <image:image>
       <image:loc>https://darksoul-codepen.github.io/assets/images/Glassy%20Date,Time%20Weather%20Widget.png</image:loc>
     </image:image>
@@ -42,12 +48,12 @@
 </url>
 <url>
   <loc>https://darksoul-codepen.github.io/contact.html</loc>
-  <lastmod>2023-12-26T14:51:10+00:00</lastmod>
+  <lastmod>2024-01-04T14:21:10+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://darksoul-codepen.github.io/about.html</loc>
-  <lastmod>2023-12-26T14:51:10+00:00</lastmod>
+  <lastmod>2024-01-04T14:21:10+00:00</lastmod>
      <image:image>
       <image:loc>https://darksoul-codepen.github.io/assets/images/darksoul.jpg</image:loc>
     </image:image>
@@ -55,7 +61,7 @@
 </url>
 <url>
   <loc>https://darksoul-codepen.github.io/CSS-Shapes-Lab.html</loc>
-  <lastmod>2023-12-26T14:51:10+00:00</lastmod>
+  <lastmod>2024-01-04T14:21:10+00:00</lastmod>
      <image:image>
       <image:loc>https://darksoul-codepen.github.io/CSS-Shapes-Lab/Output%20Screenshot%20CSS%20Shapes%20Lab.png</image:loc>
     </image:image>
@@ -63,7 +69,7 @@
 </url>
 <url>
   <loc>https://darksoul-codepen.github.io/How-to-center-an-image-using-display-flex.html</loc>
-  <lastmod>2023-12-26T14:51:10+00:00</lastmod>
+  <lastmod>2024-01-04T14:21:10+00:00</lastmod>
     <image:image>
       <image:loc>https://darksoul-codepen.github.io/How-to-center-an-image-using-display-flex/Output%20Screenshot-How-to-center-an-image-using-display-flex.png</image:loc>
     </image:image>
@@ -74,20 +80,28 @@
 </url>
 <url>
   <loc>https://darksoul-codepen.github.io/Glassy-Date-Time-Weather-Widget.html</loc>
-  <lastmod>2023-12-26T14:51:10+00:00</lastmod>
+  <lastmod>2024-01-04T14:21:10+00:00</lastmod>
     <image:image>
       <image:loc>https://darksoul-codepen.github.io/Glassy-Date-Time-Weather-Widget/Output%20Screenshot%20-%20Glassy%20Date%20Time%20Weather%20Widget.png</image:loc>
     </image:image>
   <priority>0.80</priority>
 </url>
 <url>
+  <loc>https://darksoul-codepen.github.io/Header-Tag-Lab.html</loc>
+  <lastmod>2024-01-04T14:21:10+00:00</lastmod>
+  <image:image>
+      <image:loc>https://darksoul-codepen.github.io/Header-Tag-Lab/Output%20Screenshot%20Header%20Tag%20Lab.png</image:loc>
+    </image:image>
+  <priority>0.80</priority>
+</url>
+<url>
   <loc>https://darksoul-codepen.github.io/CSS-Shapes-Lab/Preview-CSS-Shapes-Lab.html</loc>
-  <lastmod>2023-12-26T14:51:10+00:00</lastmod>
+  <lastmod>2024-01-04T14:21:10+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>https://darksoul-codepen.github.io/How-to-center-an-image-using-display-flex/Preview-How-to-center-an-image-using-display-flex.html</loc>
-  <lastmod>2023-12-26T14:51:10+00:00</lastmod>
+  <lastmod>2024-01-04T14:21:10+00:00</lastmod>
    <image:image>
       <image:loc>https://darksoul-codepen.github.io/How-to-center-an-image-using-display-flex/How-to-center-an-image-using-display-flex.png</image:loc>
     </image:image>
@@ -95,7 +109,12 @@
 </url>
 <url>
   <loc>https://darksoul-codepen.github.io/Glassy-Date-Time-Weather-Widget/Preview-Glassy-Date-Time-Weather-Widget.html</loc>
-  <lastmod>2023-12-26T14:51:10+00:00</lastmod>
+  <lastmod>2024-01-04T14:21:10+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://darksoul-codepen.github.io/Header-Tag-Lab/Preview-Header-Tag-Lab.html</loc>
+  <lastmod>2024-01-04T14:21:10+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 

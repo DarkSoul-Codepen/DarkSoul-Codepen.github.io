@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name='robots' content='index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1' />
+	<meta http-equiv="Permissions-Policy" content="interest-cohort=()">
+	<meta name="referrer" content="strict-origin-when-cross-origin">
+	<meta name="author" content="DarkSoul">
+ 
+    <!-- Favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+
+    <meta name="keywords" content="DarkSoul CodePen, Preview Glassy Music Player , Live Output Glassy Music Player Codepen , Glassy Player , Music Player, Glassy Music Player live output, Dark Soul Codepens, DarkSoul CodePen How To's Blogs, DarkSoul UI/UX Designs, DarkSoul Codedamn" />
+    <meta name="description" content="Explore live previews of the sleek music player, featuring a glassy aesthetic, interactive controls, and dynamic animations on DarkSoul CodePen. Elevate your audio journey with this visually captivating and user-friendly creation by DarkSoul." />
+  
+  
+    <title>Glassy Music Player - DarkSoul CodePen</title>
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Belanosima&family=Rubik+Vinyl&display=swap');
+   
+        body
+        {
+            margin: 0;
+            height: 100vh;
+            width: 100%;
+            display: flex;
+            background-image: url("https://darksoul-codepen.github.io/DarkSoul.png");
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            font-family: 'Belanosima', sans-serif;
+            color: #564d93;
+        }
+        .darksoul-music
+        {
+            margin: auto;
+            width: 300px;
+            height: 500px;
+            background-color: rgba(255, 255, 255, 0.175);
+            box-shadow: 0.5px 0.5px 2px rgba(255, 255, 255, 0.404), -0.5px -0.5px 2px rgba(255, 255, 255, 0.481);
+            border-radius: 0px 20px 0px;
+            backdrop-filter: blur(10px);
+            display: flex;
+            flex-direction: column;
+            animation-name: anim;
+            animation-duration: 5s;
+            animation-timing-function: linear;
+            animation-delay: 0s;
+            animation-iteration-count: infinite;
+           z-index: 600;
+        }
+        
+        .music-mediaplayer
+        {
+            height: 40%;
+            width: 90%;
+            margin: auto;
+            background-color: rgba(255, 255, 255, 0);
+           
+            display: flex;
+            flex-direction: column;
+            z-index: 500;
+        }
+        .music-mediaplayer h4
+        {
+            margin: auto;
+            font-size: 40px;
+        }
+        .music-mediaplayer input
+        {
+            margin: auto;
+            width: 100%;
+            margin-bottom: 1px;
+        }
+
+        input[type='range'] 
+        {
+            -webkit-appearance: none;
+            appearance: none; 
+            width: 80%;
+        
+            outline: none;
+            border-radius: 15px;
+            height: 6px;
+            background: #564d931d;
+        }
+    
+     
+    
+        input[type='range']::-webkit-slider-thumb 
+        {
+            -webkit-appearance: none;
+          
+            appearance: none; 
+            height: 15px;
+            width: 15px;
+            background-color: #564d93;
+            border-radius: 50%;
+            border: none;
+            
+            animation-name: slider;
+            animation-duration: 2s;
+            animation-fill-mode: forwards;
+            animation-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+            animation-iteration-count: infinite;
+        }
+
+        @keyframes slider 
+        {
+            0%
+            {
+                transform: translateX(0px);
+            } 
+            100%
+            {
+                transform: translateX(50px);
+            }
+        }
+        .media-player-icons
+        {
+            display: flex;
+            width: 50%;
+            height: fit-content;
+            margin: auto;
+            margin-bottom: 1px;
+            z-index: 500;
+        }
+      
+        .music-banner
+        {
+            height: 50%;
+            width: 90%;
+            margin: auto;
+            background-color: #d1cfde55;
+            border-radius: 25px;
+            z-index: 600;
+        }
+        .music-banner img
+        {
+            width: 100%;
+            height: 100%;
+            border-radius: 0px 20px 0px;
+            box-shadow: 0px 5px 100px #f2f1fa;
+            backdrop-filter: blur(100px);
+        }
+        .darksoul-playicon
+        {
+            display: none;
+            margin: auto;
+            margin-bottom: 1px;
+            padding: 5px;
+        }
+        
+        .darksoul-pauseicon
+        {
+            display: flex;
+            margin: auto;
+            margin-bottom: 1px;
+            padding: 5px;
+        }
+        .darksoul-pauseicon:hover, .darksoul-playicon:hover, .backward:hover, .forward:hover
+        {
+            background-color: rgba(198, 190, 255, 0.696);
+            border-radius: 50%;
+            cursor: pointer;
+            backdrop-filter: blur(1000px);
+        }
+        .backward
+        {
+            margin: auto;
+            padding: 5px;
+            margin-bottom: 4px;
+        }
+        .forward
+        {
+            margin: auto;
+            padding: 5px;
+            margin-bottom: 1px;
+        }
+
+        .disclaimer
+        {
+            position: absolute;
+            bottom: 0px; 
+            left: 0; 
+            margin-left: auto; 
+            right: 0; 
+            margin-right: auto; 
+            width: fit-content;
+            color: white;
+            text-align: center;
+        }
+        .disclaimer a
+        {
+            text-decoration: none;
+            color: #584f95;
+        }
+        .disclaimer a:hover
+        {
+            font-weight: bolder;
+        }
+        ::selection
+        {
+            background-color: #453b7b;
+            color: white;
+        }
+        @media only screen and (max-width: 500px) 
+        {
+            .darksoul-music
+        {
+            margin: auto;
+            width: 90%;
+            height: 70%;
+            background-color: rgba(255, 255, 255, 0.379);
+            box-shadow: 0.5px 0.5px 2px rgb(255, 255, 255), -0.5px -0.5px 2px rgb(255, 255, 255);
+            border-radius: 0px 20px 0px;
+            backdrop-filter: blur(5px);
+            display: flex;
+            flex-direction: column;
+            animation-name: anim;
+            animation-duration: 5s;
+            animation-timing-function: linear;
+            animation-delay: 0s;
+            animation-iteration-count: infinite;
+           
+        }
+          
+        }
+        @keyframes anim 
+        {
+            0%
+            {
+                transform: translateY(0px) translateX(0px);
+            }
+            50%
+            {
+                transform: translateY(5px) translateX(5px);
+            }
+            100%
+            {
+                transform: translateY(0px) translateX(0px);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="darksoul-music">
+        <div class="music-mediaplayer">
+
+            <audio src="https://darksoul-codepen.github.io/Justin-Bieber-Company.mp3" type="audio/mp3" autoplay></audio>
+            <h4>🎵Justin Bieber - Company</h4>
+           
+            <input type="range" min="0" max="64" value="0" class="darksoul-range" id="slider" smooth=yes/>
+
+            <div class="media-player-icons">
+                <img class="backward" width="23" height="23" src="https://img.icons8.com/external-creatype-glyph-colourcreatype/64/7950F2/external-skip-web-application-v2-creatype-glyph-colourcreatype.png" alt="external-skip-web-application-v2-creatype-glyph-colourcreatype"/>
+                <img class="darksoul-playicon" id="play" width="28" height="28" src="https://img.icons8.com/sf-black-filled/64/7950F2/play.png" alt="play" onclick="{play()}"/>
+                <img class="darksoul-pauseicon" id="pause" width="28" height="28" src="https://img.icons8.com/external-solid-kawalan-studio/24/7950F2/external-pause-user-interface-solid-kawalan-studio.png" alt="external-pause-user-interface-solid-kawalan-studio" alt="pause" onclick="{play()}"/>
+                <img class="forward" width="28" height="28" src="https://img.icons8.com/external-creatype-glyph-colourcreatype/64/7950F2/external-forward-essential-ui-v3-creatype-glyph-colourcreatype.png" alt="external-forward-essential-ui-v3-creatype-glyph-colourcreatype"/>    
+            </div>
+
+         </div>
+        <div class="music-banner">
+            <img src="https://darksoul-codepen.github.io/artworks-000156861583-kdtytg-t500x500.jpg" />
+        </div>
+    </div>
+    <p class="disclaimer">Designed & Created by <a href="https://darksoul-codepen.github.io/" target="_blank">DarkSoul</a> | Icons by <a href="https://icons8.com/" target="_blank">Icons8</a></p>
+
+    <script async>
+        var audio = document.querySelector('audio');
+        var playicon = document.getElementById("play");
+        var pauseicon = document.getElementById("pause");
+      
+
+        var range = document.getElementById("slider");
+        var n =0;
+
+        setInterval( function()
+        {
+            n+=0.5;
+            range.value = n;
+
+        } ,1000);
+        function play() 
+        {
+           
+            if (audio.paused) 
+            {
+                audio.play();
+                pauseicon.style.display = "flex";
+                playicon.style.display = "none";
+            } 
+            else 
+            {
+                audio.pause();
+                pauseicon.style.display = "none";
+                playicon.style.display = "flex";
+            }
+        }
+    </script>
+</body>
+</html>

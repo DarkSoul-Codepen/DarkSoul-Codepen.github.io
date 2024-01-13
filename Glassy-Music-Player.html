@@ -1,0 +1,616 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+  
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name='robots' content='index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1' />
+	  <meta http-equiv="Permissions-Policy" content="interest-cohort=()">
+	  <meta name="referrer" content="strict-origin-when-cross-origin">
+	  <meta name="author" content="DarkSoul">
+ 
+    <!-- Favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+
+    <meta name="keywords" content="DarkSoul CodePen, Glassy Music Player, Glassy Music Player Codepen , Glassy Player , Music Player, glassy audio player, audio player, Dark Soul Codepens, DarkSoul CodePen How To's Blogs, DarkSoul UI/UX Designs, DarkSoul Codedamn" />
+    <meta name="description" content="Immerse yourself in a sleek musical experience with our Glassy Music Player on DarkSoul CodePen. Discover a harmonious blend of minimalist design and cutting-edge functionality. Navigate your tunes effortlessly in this visually captivating and intuitive audio haven." />
+  
+  
+    <title>Glassy Music Player Codepen - DarkSoul CodePen</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+
+    <!-- Additional CSS Files -->
+    <link rel="stylesheet" href="assets/css/fontawesome.css">
+    <link rel="stylesheet" href="assets/css/darksoul-codepen.css">
+    <link rel="stylesheet" href="assets/css/owl.css">
+    <link rel="stylesheet" href="assets/css/animate.css">
+    <link rel="stylesheet"href="https://unpkg.com/swiper@7/swiper-bundle.min.css"/>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+<style>
+  textarea
+  {
+    
+    resize: none;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: large;
+    min-height: 400px;
+    background-color: rgba(19, 19, 19, 0.44);
+    border: none;
+    border-radius: 15px;
+    font-weight: 500;
+    
+    color: rgb(255, 255, 255);
+  }
+  p{
+    color: #ffffff;
+    margin: auto;
+  }
+  li
+  {
+    list-style-type: square;
+    color: rgb(255, 87, 154);
+    
+  }
+  strong
+  {
+    color: rgb(255, 87, 154);
+  }
+  h1
+  {
+    font-weight: 900 !important;
+    margin-bottom: 40px;
+  }
+  h2,h4
+  {
+    font-weight: 900 !important;
+  }
+  
+        /* width */
+        ::-webkit-scrollbar 
+        {
+            width: 5px;
+        }
+
+        /* Track */
+        ::-webkit-scrollbar-track 
+        {
+            background-color: rgba(226, 247, 255, 0);
+        }
+
+        /* Handle */
+        ::-webkit-scrollbar-thumb 
+        {
+        background: #ec6090;
+        border-radius: 10px;
+        height: 10px;
+        width: 3px;
+        }
+        .most-popular p 
+        {
+          text-align: justify;
+        }
+</style>
+
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-0XRHJTRGGH"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-0XRHJTRGGH');
+</script>
+
+   <!-- Clarity tracking code for https://darksoul-codepen.github.io/ -->
+   <script>
+    (function(c,l,a,r,i,t,y){
+        c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+        t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i+"?ref=bwt";
+        y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+    })(window, document, "clarity", "script", "k6ctefq607");
+  </script>
+  </head>
+
+<body>
+
+  <!-- ***** Preloader Start ***** -->
+  <div id="js-preloader" class="js-preloader">
+    <div class="preloader-inner">
+      <span class="dot"></span>
+      <div class="dots">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </div>
+  </div>
+  <!-- ***** Preloader End ***** -->
+
+  <!-- ***** Header Area Start ***** -->
+  <header class="header-area header-sticky" style="background-color: rgba(0, 0, 0, 0);">
+    <div class="container" style="padding: 0px;">
+        <div class="row">
+            <div class="col-12">
+              <nav class="main-nav">
+                <!-- ***** Logo Start ***** -->
+                <a href="https://darksoul-codepen.github.io/" class="logo">
+                    <img src="assets/images/logo.png" alt="DarkSoul CodePen - Logo" width="100%">
+                </a>
+                <!-- ***** Logo End ***** -->
+                <!-- ***** Search End ***** -->
+                <div class="search-input">
+                  <form id="search" action="#">
+                    <input type="text" placeholder="Type Something" id='searchText' name="searchKeyword" onkeypress="handle" />
+                    <i class="fa fa-search"></i>
+                  </form>
+                </div>
+                <!-- ***** Search End ***** -->
+                <!-- ***** Menu Start ***** -->
+                <ul class="nav">
+                    <li><a href="https://darksoul-codepen.github.io/">Home</a></li>
+                    <li><a href="posts.html">Posts</a></li>
+                    <li><a href="codepen.html" class="active">CodePens</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="about.html">About Me <img src="assets/images/profile-header.png" alt=""></a></li>
+                </ul>   
+                <a class='menu-trigger'>
+                    <span>Menu</span>
+                </a>
+                <!-- ***** Menu End ***** -->
+            </nav>
+            </div>
+        </div>
+    </div>
+  </header>
+  <!-- ***** Header Area End ***** -->
+
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12">
+        <div class="page-content">
+
+          <!-- ***** Banner Start ***** -->
+          <div class="main-banner">
+            <div class="row">
+              <div class="col-lg-7">
+                <div class="header-text">
+                  <h6 style="color: black;">CodePen</h6>
+                  <h4 style="color: #ec6090;">Glassy <em style="color: #000000;">Music Player</em> CodePen</h4>
+                  <div class="main-button">
+                    <a href="Glassy-Music-Player/Preview-Glassy-Music-Player.html">Preview</a>&nbsp;&nbsp;
+                    <a href="Zips/Glassy-Music-Player.zip" download>Download Source code</a>
+                  </div>
+                  
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- ***** Banner End ***** -->
+
+               <!-- ***** Most Popular Start ***** -->
+               <div class="most-popular">
+                <div class="row">
+                  <div class="col-lg-12">
+                    <div class="heading-section">
+                      <h4>Procedure</h4>
+        
+                      <div class="row">
+                        <p><b>Step 1 - HTML Structure:</b><br />Declare the document type and set the language to English.
+                          Include metadata in the head, such as character set, viewport settings, and page title.
+                          Import Google Fonts ('Belanosima' and 'Rubik+Vinyl').
+                          Create a body with a background image and 'Belanosima' font..</p>
+                        <p><b>Step 2 - Music Player Container (div class="darksoul-music"):</b><br />Style a container for the music player with dimensions, background, and a glassy effect.
+                          Use flexbox for proper alignment and apply keyframe animations for a subtle movement.</p>
+                        <p><b>Step 3 - Media Player Section (div class="music-mediaplayer"):</b><br />Include an audio element with the source set to your music file.
+                          Display the song title, an input range slider, and control icons.</p>
+                        <p><b>Step 4 - Range Slider Styling (input type="range"):</b><br /> Style the range slider with a custom appearance.
+                          Add a cubic-bezier animation for the slider thumb.</p>
+                        <p><b>Step 5 - Media Player Icons (div class="media-player-icons"):</b><br />Use flexbox to align play, pause, backward, and forward icons.
+                          Apply styles, including a hover effect for better visibility.</p>
+                        <p><b>Step 6 - Music Banner (div class="music-banner"):</b><br />Create a banner with a semi-transparent background, rounded border, and shadow.
+                          Insert an image for the album cover.</p>
+                        <p><b>Step 7 - JavaScript Script:</b><br /> Implement JavaScript functions to play/pause audio.
+                          Set an interval to simulate the range slider movement.</p>
+                          <p><b>Step 8 - Responsive Design (@media):</b><br /> Adjust the music player's dimensions and styles for screens with a width of 500px or less.</p>
+
+                      </div>
+                       
+
+                       
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- ***** Most Popular End ***** -->
+
+          <!-- ***** Most Popular Start ***** -->
+          <div class="most-popular">
+            <div class="row">
+              <div class="col-lg-12">
+                <div class="heading-section">
+                  <h4>Html</h4>
+                </div>
+                <div class="row">
+                
+                   
+<textarea disabled id="html">
+    
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+         /* Internal styles goes here.. */
+    </head>
+    <body>
+      <div class="darksoul-music">
+          <div class="music-mediaplayer">
+  
+              <audio src="https://darksoul-codepen.github.io/Justin-Bieber-Company.mp3" type="audio/mp3" autoplay></audio>
+              <h4>🎵Justin Bieber - Company</h4>
+             
+              <input type="range" min="0" max="64" value="0" class="darksoul-range" id="slider" smooth=yes/>
+  
+              <div class="media-player-icons">
+                  <img class="backward" width="23" height="23" src="https://img.icons8.com/external-creatype-glyph-colourcreatype/64/7950F2/external-skip-web-application-v2-creatype-glyph-colourcreatype.png" alt="external-skip-web-application-v2-creatype-glyph-colourcreatype"/>
+                  <img class="darksoul-playicon" id="play" width="28" height="28" src="https://img.icons8.com/sf-black-filled/64/7950F2/play.png" alt="play" onclick="{play()}"/>
+                  <img class="darksoul-pauseicon" id="pause" width="28" height="28" src="https://img.icons8.com/external-solid-kawalan-studio/24/7950F2/external-pause-user-interface-solid-kawalan-studio.png" alt="external-pause-user-interface-solid-kawalan-studio" alt="pause" onclick="{play()}"/>
+                  <img class="forward" width="28" height="28" src="https://img.icons8.com/external-creatype-glyph-colourcreatype/64/7950F2/external-forward-essential-ui-v3-creatype-glyph-colourcreatype.png" alt="external-forward-essential-ui-v3-creatype-glyph-colourcreatype"/>    
+              </div>
+  
+           </div>
+          <div class="music-banner">
+              <img src="https://darksoul-codepen.github.io/artworks-000156861583-kdtytg-t500x500.jpg" />
+          </div>
+      </div>
+      <p class="disclaimer">Designed & Created by <a href="https://darksoul-codepen.github.io/" target="_blank">DarkSoul</a> | Icons by <a href="https://icons8.com/" target="_blank">Icons8</a></p>
+  
+        /* Script goes here.. */
+    </body>
+    </html>
+</textarea>
+                   
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- ***** Most Popular End ***** -->
+
+            <!-- ***** Most Popular Start ***** -->
+            <div class="most-popular">
+                <div class="row">
+                  <div class="col-lg-12">
+                    <div class="heading-section">
+                      <h4>Css</h4>
+                    </div>
+                    <div class="row">
+                                           
+<textarea disabled id="css">
+
+  @import url('https://fonts.googleapis.com/css2?family=Belanosima&family=Rubik+Vinyl&display=swap');
+   
+  body
+  {
+      margin: 0;
+      height: 100vh;
+      width: 100%;
+      display: flex;
+      background-image: url("https://darksoul-codepen.github.io/DarkSoul.png");
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      font-family: 'Belanosima', sans-serif;
+      color: #564d93;
+  }
+  .darksoul-music
+  {
+      margin: auto;
+      width: 300px;
+      height: 500px;
+      background-color: rgba(255, 255, 255, 0.175);
+      box-shadow: 0.5px 0.5px 2px rgba(255, 255, 255, 0.404), -0.5px -0.5px 2px rgba(255, 255, 255, 0.481);
+      border-radius: 0px 20px 0px;
+      backdrop-filter: blur(10px);
+      display: flex;
+      flex-direction: column;
+      animation-name: anim;
+      animation-duration: 5s;
+      animation-timing-function: linear;
+      animation-delay: 0s;
+      animation-iteration-count: infinite;
+     z-index: 600;
+  }
+  
+  .music-mediaplayer
+  {
+      height: 40%;
+      width: 90%;
+      margin: auto;
+      background-color: rgba(255, 255, 255, 0);
+     
+      display: flex;
+      flex-direction: column;
+      z-index: 500;
+  }
+  .music-mediaplayer h4
+  {
+      margin: auto;
+      font-size: 40px;
+  }
+  .music-mediaplayer input
+  {
+      margin: auto;
+      width: 100%;
+      margin-bottom: 1px;
+  }
+
+  input[type='range'] 
+  {
+      -webkit-appearance: none;
+      appearance: none; 
+      width: 80%;
+  
+      outline: none;
+      border-radius: 15px;
+      height: 6px;
+      background: #564d931d;
+  }
+
+
+
+  input[type='range']::-webkit-slider-thumb 
+  {
+      -webkit-appearance: none;
+    
+      appearance: none; 
+      height: 15px;
+      width: 15px;
+      background-color: #564d93;
+      border-radius: 50%;
+      border: none;
+      
+      animation-name: slider;
+      animation-duration: 2s;
+      animation-fill-mode: forwards;
+      animation-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+      animation-iteration-count: infinite;
+  }
+
+  @keyframes slider 
+  {
+      0%
+      {
+          transform: translateX(0px);
+      } 
+      100%
+      {
+          transform: translateX(50px);
+      }
+  }
+  .media-player-icons
+  {
+      display: flex;
+      width: 50%;
+      height: fit-content;
+      margin: auto;
+      margin-bottom: 1px;
+      z-index: 500;
+  }
+
+  .music-banner
+  {
+      height: 50%;
+      width: 90%;
+      margin: auto;
+      background-color: #d1cfde55;
+      border-radius: 25px;
+      z-index: 600;
+  }
+  .music-banner img
+  {
+      width: 100%;
+      height: 100%;
+      border-radius: 0px 20px 0px;
+      box-shadow: 0px 5px 100px #f2f1fa;
+      backdrop-filter: blur(100px);
+  }
+  .darksoul-playicon
+  {
+      display: none;
+      margin: auto;
+      margin-bottom: 1px;
+      padding: 5px;
+  }
+  
+  .darksoul-pauseicon
+  {
+      display: flex;
+      margin: auto;
+      margin-bottom: 1px;
+      padding: 5px;
+  }
+  .darksoul-pauseicon:hover, .darksoul-playicon:hover, .backward:hover, .forward:hover
+  {
+      background-color: rgba(198, 190, 255, 0.696);
+      border-radius: 50%;
+      cursor: pointer;
+      backdrop-filter: blur(1000px);
+  }
+  .backward
+  {
+      margin: auto;
+      padding: 5px;
+      margin-bottom: 4px;
+  }
+  .forward
+  {
+      margin: auto;
+      padding: 5px;
+      margin-bottom: 1px;
+  }
+
+  .disclaimer
+  {
+      position: absolute;
+      bottom: 0px; 
+      left: 0; 
+      margin-left: auto; 
+      right: 0; 
+      margin-right: auto; 
+      width: fit-content;
+      color: white;
+      text-align: center;
+  }
+  .disclaimer a
+  {
+      text-decoration: none;
+      color: #584f95;
+  }
+  .disclaimer a:hover
+  {
+      font-weight: bolder;
+  }
+  ::selection
+  {
+      background-color: #453b7b;
+      color: white;
+  }
+  @media only screen and (max-width: 500px) 
+  {
+      .darksoul-music
+  {
+      margin: auto;
+      width: 90%;
+      height: 70%;
+      background-color: rgba(255, 255, 255, 0.379);
+      box-shadow: 0.5px 0.5px 2px rgb(255, 255, 255), -0.5px -0.5px 2px rgb(255, 255, 255);
+      border-radius: 0px 20px 0px;
+      backdrop-filter: blur(5px);
+      display: flex;
+      flex-direction: column;
+      animation-name: anim;
+      animation-duration: 5s;
+      animation-timing-function: linear;
+      animation-delay: 0s;
+      animation-iteration-count: infinite;
+     
+  }
+    
+  }
+  @keyframes anim 
+  {
+      0%
+      {
+          transform: translateY(0px) translateX(0px);
+      }
+      50%
+      {
+          transform: translateY(5px) translateX(5px);
+      }
+      100%
+      {
+          transform: translateY(0px) translateX(0px);
+      }
+  }
+  </textarea>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- ***** Most Popular End ***** -->
+
+                <!-- ***** Most Popular Start ***** -->
+          <div class="most-popular">
+            <div class="row">
+              <div class="col-lg-12">
+                <div class="heading-section">
+                  <h4>Js</h4>
+                </div>
+                <div class="row">
+                                       
+<textarea disabled id="js">
+
+    <script async>
+        var audio = document.querySelector('audio');
+        var playicon = document.getElementById("play");
+        var pauseicon = document.getElementById("pause");
+      
+
+        var range = document.getElementById("slider");
+        var n =0;
+
+        setInterval( function()
+        {
+            n+=0.5;
+            range.value = n;
+
+        } ,1000);
+        function play() 
+        {
+           
+            if (audio.paused) 
+            {
+                audio.play();
+                pauseicon.style.display = "flex";
+                playicon.style.display = "none";
+            } 
+            else 
+            {
+                audio.pause();
+                pauseicon.style.display = "none";
+                playicon.style.display = "flex";
+            }
+        }
+    </script>
+</textarea>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- ***** Most Popular End ***** -->
+
+          <!-- ***** Gaming Library Start ***** -->
+          <div class="gaming-library">
+            <div class="col-lg-12">
+              <div class="heading-section">
+                <h4>Output Screenshot</h4>
+              </div>
+              <img src="Glassy-Music-Player/Output Screenshot - Glassy Music Player.webp" alt="Output Screenshot - Glassy Music Player" style="width: 100%; border-radius: 10px;"/>
+              <p>&nbsp;</p>
+            <div class="col-lg-12">
+              <div class="main-button">
+                <a href="Glassy-Music-Player/Preview-Glassy-Music-Player.html">View Live Output</a>
+              </div>
+            </div>
+          </div>
+          <!-- ***** Gaming Library End ***** -->
+        </div>
+      </div>
+    </div>
+  </div>
+  
+
+
+
+  <!-- Scripts -->
+  <!-- Bootstrap core JavaScript -->
+  <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+
+  <script src="assets/js/isotope.min.js"></script>
+  <script src="assets/js/owl-carousel.js"></script>
+  <script src="assets/js/tabs.js"></script>
+  <script src="assets/js/popup.js"></script>
+  <script src="assets/js/custom.js"></script>
+
+
+  </body>
+
+</html>

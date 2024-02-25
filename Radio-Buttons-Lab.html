@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+   
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name='robots' content='index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1' />
+	  <meta http-equiv="Permissions-Policy" content="interest-cohort=()">
+	  <meta name="referrer" content="strict-origin-when-cross-origin">
+	  <meta name="author" content="DarkSoul">
+ 
+    <!-- Favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+
+    <meta name="keywords" content="DarkSoul CodePen, Radio Buttons Lab, Radio Buttons Lab Codedamn, Radio Buttons Lab Solution, Solution for Radio Buttons Lab Codedamn, Dark Soul Codepens, DarkSoul CodePen How To's Blogs, DarkSoul UI/UX Designs, DarkSoul Codedamn" />
+    <meta name="description" content="Master the intricacies of radio buttons with DarkSoul CodePen's Radio Buttons Lab. Follow my detailed procedures and access the accompanying source code to conquer this challenge effortlessly. Elevate your UI design skills and level up your coding game by exploring Radio Buttons Lab, where challenges become gateways to expertise." />
+  
+  
+    <title>Radio Buttons Lab Solution - DarkSoul CodePen</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+
+    <!-- Additional CSS Files -->
+    <link rel="stylesheet" href="assets/css/fontawesome.css">
+    <link rel="stylesheet" href="assets/css/darksoul-codepen.css">
+    <link rel="stylesheet" href="assets/css/owl.css">
+    <link rel="stylesheet" href="assets/css/animate.css">
+    <link rel="stylesheet"href="https://unpkg.com/swiper@7/swiper-bundle.min.css"/>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+<style>
+  textarea
+  {
+    
+    resize: none;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: large;
+    min-height: 400px;
+    background-color: rgba(19, 19, 19, 0.44);
+    border: none;
+    border-radius: 15px;
+    font-weight: 500;
+    
+    color: rgb(255, 255, 255);
+  }
+  p{
+    color: #ffffff;
+    margin: auto;
+  }
+  li
+  {
+    list-style-type: square;
+    color: rgb(255, 87, 154);
+    
+  }
+  strong
+  {
+    color: rgb(255, 87, 154);
+  }
+  h1
+  {
+    font-weight: 900 !important;
+    margin-bottom: 40px;
+  }
+  h2,h4
+  {
+    font-weight: 900 !important;
+  }
+  
+        /* width */
+        ::-webkit-scrollbar 
+        {
+            width: 5px;
+        }
+
+        /* Track */
+        ::-webkit-scrollbar-track 
+        {
+            background-color: rgba(226, 247, 255, 0);
+        }
+
+        /* Handle */
+        ::-webkit-scrollbar-thumb 
+        {
+        background: #ec6090;
+        border-radius: 10px;
+        height: 10px;
+        width: 3px;
+        }
+        .most-popular p 
+        {
+          text-align: justify;
+        }
+
+</style>
+
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-0XRHJTRGGH"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-0XRHJTRGGH');
+</script>
+
+   <!-- Clarity tracking code for https://darksoul-codepen.github.io/ -->
+   <script>
+    (function(c,l,a,r,i,t,y){
+        c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+        t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i+"?ref=bwt";
+        y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+    })(window, document, "clarity", "script", "k6ctefq607");
+  </script>
+  </head>
+
+<body>
+
+  <!-- ***** Preloader Start ***** -->
+  <div id="js-preloader" class="js-preloader">
+    <div class="preloader-inner">
+      <span class="dot"></span>
+      <div class="dots">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </div>
+  </div>
+  <!-- ***** Preloader End ***** -->
+
+ <!-- ***** Header Area Start ***** -->
+ <header class="header-area header-sticky" style="background-color: rgba(0, 0, 0, 0);">
+  <div class="container" style="padding: 0px;">
+      <div class="row">
+          <div class="col-12">
+            <nav class="main-nav">
+              <!-- ***** Logo Start ***** -->
+              <a href="https://darksoul-codepen.github.io/" class="logo">
+                  <img src="assets/images/logo.png" alt="DarkSoul CodePen - Logo" width="100%">
+              </a>
+              <!-- ***** Logo End ***** -->
+              <!-- ***** Search End ***** -->
+              <div class="search-input">
+                <form id="search" action="#">
+                  <input type="text" placeholder="Type Something" id='searchText' name="searchKeyword" onkeypress="handle" />
+                  <i class="fa fa-search"></i>
+                </form>
+              </div>
+              <!-- ***** Search End ***** -->
+              <!-- ***** Menu Start ***** -->
+              <ul class="nav">
+                  <li><a href="https://darksoul-codepen.github.io/">Home</a></li>
+                  <li><a href="posts.html"  class="active">Posts</a></li>
+                  <li><a href="codepen.html">CodePens</a></li>
+                  <li><a href="contact.html">Contact</a></li>
+                  <li><a href="about.html">About Me <img src="assets/images/profile-header.png" alt=""></a></li>
+              </ul>   
+              <a class='menu-trigger'>
+                  <span>Menu</span>
+              </a>
+              <!-- ***** Menu End ***** -->
+          </nav>
+          </div>
+      </div>
+  </div>
+</header>
+<!-- ***** Header Area End ***** -->
+
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12">
+        <div class="page-content">
+
+          <!-- ***** Banner Start ***** -->
+          <div class="main-banner">
+            <div class="row">
+              <div class="col-lg-7">
+                <div class="header-text">
+                  <h6 style="color: black;">Codedamn</h6>
+                  <h4 style="color: black;"><em style="color: #ec6090;">Radio</em> Buttons Lab</h4>
+                  <div class="main-button">
+                    <a href="Radio-Buttons-Lab/Preview-Radio-Buttons-Lab.html">Preview</a>&nbsp;&nbsp;
+                    <a href="Zips/Radio-Buttons-Lab.zip" download>Download Source code</a>
+                  </div>
+                  
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- ***** Banner End ***** -->
+
+               <!-- ***** Most Popular Start ***** -->
+               <div class="most-popular">
+                <div class="row">
+                  <div class="col-lg-12">
+                    <div class="heading-section">
+                      <h4>Procedure</h4>
+                     
+                      <div class="row">
+  
+                        <p><b>Step 1:</b> Creating Radio Buttons <br />Within your HTML file, locate the body section and add a div element with an id of 'wrapper'. This div will encapsulate your radio buttons. Inside the 'wrapper' div, insert a form element to house your radio buttons. Create three radio buttons by adding input elements with a type="radio" attribute and a name="group" attribute. Each radio button should have a unique id attribute for identification purposes. Provide labels for each radio button to indicate their purpose.
+                        </p>
+                         
+                         <p><b>Step 2:</b> Setting Default and Disabled States <br />To set a default selection, add the checked attribute to one of the radio buttons. Additionally, to make a radio button disabled, include the disabled attribute in its corresponding input tag.
+                        </p>
+                          <p><b>Step 3:</b> Styling (Optional) <br />For visual appeal, you can customize the appearance of your radio buttons using CSS. Target the radio buttons using their ids or the input[type="radio"] selector. You can modify properties such as color, size, and alignment to match your design preferences.
+                        </p>
+                    
+                        <p><b>Note:</b> Ensure proper nesting of elements and attribute values to maintain HTML validity. Testing your radio buttons in various browsers is recommended to ensure compatibility and functionality.</p>
+                    
+                      </div>
+                       
+
+                       
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- ***** Most Popular End ***** -->
+
+          <!-- ***** Most Popular Start ***** -->
+          <div class="most-popular">
+            <div class="row">
+              <div class="col-lg-12">
+                <div class="heading-section">
+                  <h4>Html</h4>
+                </div>
+                <div class="row">
+                
+                   
+<textarea disabled id="html">
+
+    <!DOCTYPE html>
+    <html>
+        <head>
+            <title>Radio Buttons Lab</title>
+        </head>
+        <body>
+            <!-- write your code inside the 'wrapper' div -->
+            <div id="wrapper">
+                <form>
+                    <label>Radio button 1</label>
+                    <input type="radio" name="group" id="option1"/>
+                    <label>Radio button 2</label>
+                    <input type="radio" name="group" id="option2" checked/>
+                    <label>Radio button 3</label>
+                    <input type="radio" name="group" id="option3" disabled/>
+                </form>
+            </div>
+        </body>
+    </html>
+
+</textarea>
+                   
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- ***** Most Popular End ***** -->
+
+            <!-- ***** Most Popular Start ***** -->
+            <div class="most-popular">
+                <div class="row">
+                  <div class="col-lg-12">
+                    <div class="heading-section">
+                      <h4>Css</h4>
+                    </div>
+                    <div class="row">
+                                           
+<textarea disabled id="css">
+
+CSS is not required.(It is optional)
+    
+</textarea>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- ***** Most Popular End ***** -->
+
+                <!-- ***** Most Popular Start ***** -->
+          <div class="most-popular">
+            <div class="row">
+              <div class="col-lg-12">
+                <div class="heading-section">
+                  <h4>Js</h4>
+                </div>
+                <div class="row">
+                                       
+<textarea disabled id="js">
+
+JavaScript is not necessary.
+</textarea>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- ***** Most Popular End ***** -->
+
+                <!-- ***** Most Popular Start ***** -->
+                <div class="most-popular">
+                  <div class="row">
+                    <div class="col-lg-12">
+                      <div class="heading-section">
+                        <h4>Explanation</h4>
+                       
+                        <div class="row">
+                            <p>In summary, the provided HTML creates a webpage with radio buttons grouped together. Each radio button is labeled and corresponds to a specific option. One radio button is pre-selected by default, while another is disabled.
+                            </p>
+                        </div>
+                         
+  
+                         
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- ***** Most Popular End ***** -->
+
+          <!-- ***** Gaming Library Start ***** -->
+          <div class="gaming-library">
+            <div class="col-lg-12">
+              <div class="heading-section">
+                <h4>Output Screenshot</h4>
+              </div>
+              <img src="Radio-Buttons-Lab/Output-Screenshot-Radio-Buttons-Lab.png" alt="Output Screenshot of Radio Buttons Lab" style="width: 100%; border-radius: 10px;"/>
+              <p>&nbsp;</p>
+            <div class="col-lg-12">
+              <div class="main-button">
+                <a href="Radio-Buttons-Lab/Preview-Radio-Buttons-Lab.html">View Live Output</a>
+              </div>
+            </div>
+          </div>
+          <!-- ***** Gaming Library End ***** -->
+        </div>
+      </div>
+    </div>
+  </div>
+  
+ 
+
+
+  <!-- Scripts -->
+  <!-- Bootstrap core JavaScript -->
+  <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+
+  <script src="assets/js/isotope.min.js"></script>
+  <script src="assets/js/owl-carousel.js"></script>
+  <script src="assets/js/tabs.js"></script>
+  <script src="assets/js/popup.js"></script>
+  <script src="assets/js/custom.js"></script>
+
+
+  </body>
+
+</html>

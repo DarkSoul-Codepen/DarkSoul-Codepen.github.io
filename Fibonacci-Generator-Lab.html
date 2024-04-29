@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+   
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name='robots' content='index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1' />
+	  <meta http-equiv="Permissions-Policy" content="interest-cohort=()">
+	  <meta name="referrer" content="strict-origin-when-cross-origin">
+	  <meta name="author" content="DarkSoul">
+ 
+    <!-- Favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+
+    <meta name="keywords" content="DarkSoul CodePen, Fibonacci Generator Lab, Fibonacci Generator Lab Codedamn, Fibonacci Generator Lab Solution, Solution for Fibonacci Generator Lab Codedamn, Dark Soul Codepens, DarkSoul CodePen How To's Blogs, DarkSoul UI/UX Designs, DarkSoul Codedamn" />
+    <meta name="description" content="Experience the magic of Fibonacci sequences with the Fibonacci Generator Lab on DarkSoul CodePen. Explore, preview, and download the source code for this codedamn exercise. Dive into the world of mathematics and coding, unraveling the beauty of Fibonacci numbers with ease." />
+  
+  
+    <title>Fibonacci Generator Lab Solution - DarkSoul CodePen</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+
+    <!-- Additional CSS Files -->
+    <link rel="stylesheet" href="assets/css/fontawesome.css">
+    <link rel="stylesheet" href="assets/css/darksoul-codepen.css">
+    <link rel="stylesheet" href="assets/css/owl.css">
+    <link rel="stylesheet" href="assets/css/animate.css">
+    <link rel="stylesheet"href="https://unpkg.com/swiper@7/swiper-bundle.min.css"/>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+<style>
+  textarea
+  {
+    
+    resize: none;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: large;
+    min-height: 400px;
+    background-color: rgba(19, 19, 19, 0.44);
+    border: none;
+    border-radius: 15px;
+    font-weight: 500;
+    
+    color: rgb(255, 255, 255);
+  }
+  p{
+    color: #ffffff;
+    margin: auto;
+  }
+  li
+  {
+    list-style-type: square;
+    color: #B1E3FA;
+    
+  }
+  strong
+  {
+    color: #B1E3FA;
+  }
+  h1
+  {
+    font-weight: 900 !important;
+    margin-bottom: 40px;
+  }
+  h2,h4
+  {
+    font-weight: 900 !important;
+  }
+  
+        /* width */
+        ::-webkit-scrollbar 
+        {
+            width: 5px;
+        }
+
+        /* Track */
+        ::-webkit-scrollbar-track 
+        {
+            background-color: rgba(226, 247, 255, 0);
+        }
+
+        /* Handle */
+        ::-webkit-scrollbar-thumb 
+        {
+        background: #B1E3FA;
+        border-radius: 10px;
+        height: 10px;
+        width: 3px;
+        }
+        .most-popular p 
+        {
+          text-align: justify;
+        }
+
+</style>
+
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-0XRHJTRGGH"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-0XRHJTRGGH');
+</script>
+
+   <!-- Clarity tracking code for https://darksoul-codepen.github.io/ -->
+   <script>
+    (function(c,l,a,r,i,t,y){
+        c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+        t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i+"?ref=bwt";
+        y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+    })(window, document, "clarity", "script", "k6ctefq607");
+  </script>
+  </head>
+
+<body>
+
+  <!-- ***** Preloader Start ***** -->
+  <div id="js-preloader" class="js-preloader">
+    <div class="preloader-inner">
+      <span class="dot"></span>
+      <div class="dots">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </div>
+  </div>
+  <!-- ***** Preloader End ***** -->
+
+ <!-- ***** Header Area Start ***** -->
+ <header class="header-area header-sticky" style="background-color: rgba(0, 0, 0, 0);">
+  <div class="container" style="padding: 0px;">
+      <div class="row">
+          <div class="col-12">
+            <nav class="main-nav">
+              <!-- ***** Logo Start ***** -->
+              <a href="https://darksoul-codepen.github.io/" class="logo">
+                  <img src="assets/images/logo.png" alt="DarkSoul CodePen - Logo" width="100%">
+              </a>
+              <!-- ***** Logo End ***** -->
+              <!-- ***** Search End ***** -->
+              <div class="search-input">
+                <form id="search" action="#">
+                  <input type="text" placeholder="Type Something" id='searchText' name="searchKeyword" onkeypress="handle" />
+                  <i class="fa fa-search"></i>
+                </form>
+              </div>
+              <!-- ***** Search End ***** -->
+              <!-- ***** Menu Start ***** -->
+              <ul class="nav">
+                  <li><a href="https://darksoul-codepen.github.io/">Home</a></li>
+                  <li><a href="posts.html"  class="active">Posts</a></li>
+                  <li><a href="codepen.html">CodePens</a></li>
+                  <li><a href="contact.html">Contact</a></li>
+                  <li><a href="about.html">About Me <img src="assets/images/profile-header.png" alt=""></a></li>
+              </ul>   
+              <a class='menu-trigger'>
+                  <span>Menu</span>
+              </a>
+              <!-- ***** Menu End ***** -->
+          </nav>
+          </div>
+      </div>
+  </div>
+</header>
+<!-- ***** Header Area End ***** -->
+
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12">
+        <div class="page-content">
+
+          <!-- ***** Banner Start ***** -->
+          <div class="main-banner">
+            <div class="row">
+              <div class="col-lg-7">
+                <div class="header-text">
+                  <h6 style="color: black;">Codedamn</h6>
+                  <h4 style="color: black;"><em style="color: #38B6FF;">Fibonacci</em> Generator Lab</h4>
+                  <div class="main-button">
+                    <a href="Zips/Fibonacci-Generator-Lab.zip" download>Download Source code</a>
+                  </div>
+                  
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- ***** Banner End ***** -->
+
+               <!-- ***** Most Popular Start ***** -->
+               <div class="most-popular">
+                <div class="row">
+                  <div class="col-lg-12">
+                    <div class="heading-section">
+                      <h4>Procedure</h4>
+                     
+                      <div class="row">
+  
+                        <p><b>Step 1:</b> Generating Fibonacci Numbers <br />We're creating a special function called fibGenerator that helps us make Fibonacci numbers. These are numbers where each one is the sum of the two before it. Like 0, 1, 1, 2, 3, 5, 8, and so on.
+                        </p>
+                         
+                         <p><b>Step 2:</b> Setting Up <br />Inside our function, we're starting with current set to 0 and next set to 1. These are our starting numbers.
+                           </p>
+                          <p><b>Step 3:</b> Looping Forever <br />We're going to keep doing something over and over again. That's what while (true) means. In this case, we're going to keep making Fibonacci numbers forever.
+                            </p>
+                            <p><b>Step 4:</b> Getting the Next Number <br />Each time we go through the loop, we're going to give out a number (yield current). Then, we'll update current to be the same as next, and next to be the sum of the previous next and current.
+                             </p>
+                    
+                        <p><b>Example Usage: </b>Below the generator function, an example usage is provided using comments.
+                            It demonstrates how to create an instance of the generator (const gen = fibGenerator();) and retrieve Fibonacci numbers using the next() method.
+                            Each call to gen.next().value returns the next Fibonacci number in the sequence.</p>
+                    <p>In summary, this code defines a generator function fibGenerator that generates Fibonacci numbers indefinitely. It demonstrates how to use generator functions in JavaScript to efficiently generate sequences like the Fibonacci sequence.
+                                            </p>
+                      </div>
+                       
+
+                       
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- ***** Most Popular End ***** -->
+
+          <!-- ***** Most Popular Start ***** -->
+          <div class="most-popular">
+            <div class="row">
+              <div class="col-lg-12">
+                <div class="heading-section">
+                  <h4>Html</h4>
+                </div>
+                <div class="row">
+                
+                   
+<textarea disabled id="html">
+
+    HTML is not necessary. 
+
+</textarea>
+                   
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- ***** Most Popular End ***** -->
+
+            <!-- ***** Most Popular Start ***** -->
+            <div class="most-popular">
+                <div class="row">
+                  <div class="col-lg-12">
+                    <div class="heading-section">
+                      <h4>Css</h4>
+                    </div>
+                    <div class="row">
+                                           
+<textarea disabled id="css">
+
+    CSS is not required.
+    
+</textarea>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- ***** Most Popular End ***** -->
+
+                <!-- ***** Most Popular Start ***** -->
+          <div class="most-popular">
+            <div class="row">
+              <div class="col-lg-12">
+                <div class="heading-section">
+                  <h4>Js</h4>
+                </div>
+                <div class="row">
+                                       
+<textarea disabled id="js">
+
+    /**
+    * @return {Generator<number>}
+    */
+   export var fibGenerator = function* () {
+       let current = 0;
+       let next = 1;
+       while (true) {
+         yield current;
+         [current, next] = [next, next + current];
+        
+         }
+   }
+   
+   /**
+    * const gen = fibGenerator();
+    * gen.next().value; // 0
+    * gen.next().value; // 1
+    * gen.next().value; // 1
+    * gen.next().value; // 2
+    * gen.next().value; // 3
+    */
+
+</textarea>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- ***** Most Popular End ***** -->
+
+                <!-- ***** Most Popular Start ***** -->
+                <div class="most-popular">
+                  <div class="row">
+                    <div class="col-lg-12">
+                      <div class="heading-section">
+                        <h4>Key Concepts to Take Away</h4>
+                       
+                        <div class="row">
+                            <p><b>Destructuring Assignment: </b></p>
+                            <ul>
+                                <li style="margin-left: 25px;">It's like unpacking a box of goodies into individual spots.</li>
+                                <li style="margin-left: 25px;">Helps in assigning values from an array or object to variables in a concise way.</li>
+                                <li style="margin-left: 25px;">In our Fibonacci code, it neatly assigns the values from the Fibonacci sequence array to current and next variables.</li>
+                            </ul>
+                            <p><b>JavaScript Function Generators: </b></p>
+                            <ul>
+                                <li style="margin-left: 25px;">They're magical factories that produce an endless supply of something.</li>
+                                <li style="margin-left: 25px;">Defined using the function* keyword.</li>
+                                <li style="margin-left: 25px;">Utilizes the yield keyword to output values one at a time.</li>
+                                <li style="margin-left: 25px;">In our Fibonacci code, the generator continuously generates Fibonacci numbers on demand, creating an infinite sequence.</li>
+                            </ul>
+                        </div>
+                         
+  
+                         
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- ***** Most Popular End ***** -->
+
+        </div>
+      </div>
+    </div>
+  </div>
+  
+ 
+  <footer>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12">
+          <p>Copyright © 2024 <a href="https://darksoul-codepen.github.io/">DarkSoul CodePen</a>.</p>
+          <p><img src="assets/images/codepen_logo.png" alt="Codepen Logo" style="max-width: 20px;"/><a href="https://codepen.io/DarkSoul-" target="_blank" > CodePen</a> | <img src="assets/images/dribbble_logo.png" alt="Dribbble Logo" style="max-width: 20px;"/><a href="https://dribbble.com/dark-soul" target="_blank" > Dribbble</a> | <img src="assets/images/instagram-white-icon.webp" alt="Instagram Logo" style="max-width: 20px;"/><a href="https://www.instagram.com/dark.soul.io/" target="_blank"> Instagram</a></p>
+        </div>
+      </div>
+    </div>
+  </footer> 
+
+
+  <!-- Scripts -->
+  <!-- Bootstrap core JavaScript -->
+  <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+
+  <script src="assets/js/isotope.min.js"></script>
+  <script src="assets/js/owl-carousel.js"></script>
+  <script src="assets/js/tabs.js"></script>
+  <script src="assets/js/popup.js"></script>
+  <script src="assets/js/custom.js"></script>
+
+
+  </body>
+
+</html>

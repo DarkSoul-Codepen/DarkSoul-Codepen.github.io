@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Glowing Border Button</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Belanosima&family=Rubik+Vinyl&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Lilita+One&display=swap');
+        body
+        {
+            margin: 0;
+            width: 100%;
+            height: 100vh;
+            display: flex;
+            background: linear-gradient(90deg, rgb(21, 21, 21) 50%, rgb(238, 238, 238) 50%);
+           
+        }
+       .darksoul-glowing-button1
+       {
+            margin: auto;
+            width: 250px;
+            height: 70px;
+            display: flex;
+            border-radius: 35px;
+            animation: rotation 3s linear 0s infinite;
+            
+       }
+       .darksoul-glowing-button1:hover
+       {
+        
+            background: linear-gradient(var(--gradient-angle), rgb(255, 255, 255), rgb(0, 0, 0));
+       }
+       .darksoul-glowing-button2
+       {
+            margin: auto;
+            width: 250px;
+            height: 70px;
+            display: flex;
+            border-radius: 35px;
+            animation: rotation 3s linear 0s infinite;
+            
+       }
+       .darksoul-glowing-button2:hover
+       {
+        
+            background: linear-gradient(var(--gradient-angle), rgb(0, 0, 0), rgba(255, 255, 255, 0));
+       }
+       .darksoul-button1
+       {
+            width: 98%;
+            height: 94%;
+            background-color: rgba(0, 0, 0, 0.903);
+            margin: auto;
+            outline: none;
+            border: none;
+            border-radius: 35px;
+            color: rgb(255, 255, 255);
+            font-size: x-large;
+            font-family: 'Belanosima', sans-serif;
+       }
+       .darksoul-button2
+       {
+            width: 98%;
+            height: 94%;
+            background-color: rgba(255, 255, 255, 0.911);
+            margin: auto;
+            outline: none;
+            border: none;
+            border-radius: 35px;
+            color: rgb(0, 0, 0);
+            font-size: x-large;
+            font-family: 'Belanosima', sans-serif;
+       }
+       .disclaimer
+        {
+            font-family: 'Belanosima', sans-serif;
+            position: absolute;
+            bottom: 0px; 
+            left: 0; 
+            margin-left: auto; 
+            right: 0; 
+            margin-right: auto; 
+            width: fit-content;
+            color: rgb(82, 82, 82);
+            text-align: center;
+        }
+        .disclaimer a
+        {
+            text-decoration: none;
+            color: #000000;
+        }
+        .disclaimer a:hover
+        {
+            font-weight: bolder;
+        }
+        ::selection
+        {
+            background-color: #000000;
+            color: rgb(255, 255, 255);
+        }
+        @keyframes rotation 
+        {
+            0%
+            {
+                --gradient-angle: 0deg;
+            }
+            100%
+            {
+                --gradient-angle: 360deg;
+            }    
+        }
+        @property --gradient-angle
+        {
+            syntax: "<angle>";
+            initial-value: 0deg;
+            inherits: false;
+        }
+        @media only screen and (max-width: 600px) 
+        {
+            body
+        {
+            margin: 0;
+            width: 100%;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            background: linear-gradient(180deg, rgb(21, 21, 21) 50%, rgb(238, 238, 238) 50%)
+        }
+        }
+    </style>
+</head>
+<body>
+    <div class="darksoul-glowing-button1">
+        <button class="darksoul-button1" type="button">
+           Button
+        </button>
+    </div>
+    <div class="darksoul-glowing-button2">
+        <button class="darksoul-button2" type="button">
+            Button
+        </button>
+    </div>
+    <p class="disclaimer">Designed & Created by <a href="https://darksoul-codepen.github.io/" target="_blank">DarkSoul</a></p>
+
+</body>
+</html>

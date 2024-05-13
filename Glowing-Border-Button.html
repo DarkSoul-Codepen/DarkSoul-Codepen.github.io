@@ -1,0 +1,486 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+  
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name='robots' content='index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1' />
+	  <meta http-equiv="Permissions-Policy" content="interest-cohort=()">
+	  <meta name="referrer" content="strict-origin-when-cross-origin">
+	  <meta name="author" content="DarkSoul">
+ 
+    <!-- Favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+
+    <meta name="keywords" content="DarkSoul CodePen, Glowing Border Button, Glowing Border Button Codepen , Button with Glowing border, Glowing Button Border, Glowing Button, Button border glowing effect, Dark Soul Codepens, DarkSoul CodePen How To's Blogs, DarkSoul UI/UX Designs, DarkSoul Codedamn" />
+    <meta name="description" content="Explore the Glowing Border Button page on DarkSoul CodePen for stunning, interactive buttons with vibrant glow effects. Live preview and effortlessly download the source code for seamless integration into your projects." />
+  
+  
+    <title>Glowing Border Button Codepen - DarkSoul CodePen</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+
+    <!-- Additional CSS Files -->
+    <link rel="stylesheet" href="assets/css/fontawesome.css">
+    <link rel="stylesheet" href="assets/css/darksoul-codepen.css">
+    <link rel="stylesheet" href="assets/css/owl.css">
+    <link rel="stylesheet" href="assets/css/animate.css">
+    <link rel="stylesheet"href="https://unpkg.com/swiper@7/swiper-bundle.min.css"/>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+<style>
+  textarea
+  {
+    
+    resize: none;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: large;
+    min-height: 400px;
+    background-color: rgba(19, 19, 19, 0.44);
+    border: none;
+    border-radius: 15px;
+    font-weight: 500;
+    
+    color: rgb(255, 255, 255);
+  }
+  p{
+    color: #ffffff;
+    margin: auto;
+  }
+  li
+  {
+    list-style-type: square;
+    color: #B1E3FA;
+    
+  }
+  strong
+  {
+    color: #B1E3FA;
+  }
+  h1
+  {
+    font-weight: 900 !important;
+    margin-bottom: 40px;
+  }
+  h2,h4
+  {
+    font-weight: 900 !important;
+  }
+  
+        /* width */
+        ::-webkit-scrollbar 
+        {
+            width: 5px;
+        }
+
+        /* Track */
+        ::-webkit-scrollbar-track 
+        {
+            background-color: rgba(226, 247, 255, 0);
+        }
+
+        /* Handle */
+        ::-webkit-scrollbar-thumb 
+        {
+        background: #B1E3FA;
+        border-radius: 10px;
+        height: 10px;
+        width: 3px;
+        }
+        .most-popular p 
+        {
+          text-align: justify;
+        }
+</style>
+
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-0XRHJTRGGH"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-0XRHJTRGGH');
+</script>
+
+   <!-- Clarity tracking code for https://darksoul-codepen.github.io/ -->
+   <script>
+    (function(c,l,a,r,i,t,y){
+        c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+        t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i+"?ref=bwt";
+        y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+    })(window, document, "clarity", "script", "k6ctefq607");
+  </script>
+  </head>
+
+<body>
+
+  <!-- ***** Preloader Start ***** -->
+  <div id="js-preloader" class="js-preloader">
+    <div class="preloader-inner">
+      <span class="dot"></span>
+      <div class="dots">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </div>
+  </div>
+  <!-- ***** Preloader End ***** -->
+
+  <!-- ***** Header Area Start ***** -->
+  <header class="header-area header-sticky" style="background-color: rgba(0, 0, 0, 0);">
+    <div class="container" style="padding: 0px;">
+        <div class="row">
+            <div class="col-12">
+              <nav class="main-nav">
+                <!-- ***** Logo Start ***** -->
+                <a href="https://darksoul-codepen.github.io/" class="logo">
+                    <img src="assets/images/logo.png" alt="DarkSoul CodePen - Logo" width="100%">
+                </a>
+                <!-- ***** Logo End ***** -->
+                <!-- ***** Search End ***** -->
+                <div class="search-input">
+                  <form id="search" action="#">
+                    <input type="text" placeholder="Type Something" id='searchText' name="searchKeyword" onkeypress="handle" />
+                    <i class="fa fa-search"></i>
+                  </form>
+                </div>
+                <!-- ***** Search End ***** -->
+                <!-- ***** Menu Start ***** -->
+                <ul class="nav">
+                    <li><a href="https://darksoul-codepen.github.io/">Home</a></li>
+                    <li><a href="posts.html">Posts</a></li>
+                    <li><a href="codepen.html" class="active">CodePens</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="about.html">About Me <img src="assets/images/profile-header.png" alt=""></a></li>
+                </ul>   
+                <a class='menu-trigger'>
+                    <span>Menu</span>
+                </a>
+                <!-- ***** Menu End ***** -->
+            </nav>
+            </div>
+        </div>
+    </div>
+  </header>
+  <!-- ***** Header Area End ***** -->
+
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12">
+        <div class="page-content">
+
+          <!-- ***** Banner Start ***** -->
+          <div class="main-banner">
+            <div class="row">
+              <div class="col-lg-7">
+                <div class="header-text">
+                  <h6 style="color: black;">CodePen</h6>
+                  <h4 style="color: #38B6FF;">Glowing <em style="color: #000000;">Border Button</em> CodePen</h4>
+                  <div class="main-button">
+                    <a href="Glowing-Border-Button/Preview-Glowing-Border-Button.html">Preview</a>&nbsp;&nbsp;
+                    <a href="Zips/Glowing-Border-Button.zip" download>Download Source code</a>
+                  </div>
+                  
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- ***** Banner End ***** -->
+
+               <!-- ***** Most Popular Start ***** -->
+               <div class="most-popular">
+                <div class="row">
+                  <div class="col-lg-12">
+                    <div class="heading-section">
+                      <h4>Procedure</h4>
+        
+                      
+                      <div class="row">
+                        <p><b>Step 1 - Setting Up the HTML Structure: </b><br />We start with the basic HTML structure. It includes the DOCTYPE declaration, opening and closing html tags, and the head and body sections.</p>
+
+                        <p><b>Step 2 - Defining the Character Encoding and Viewport: </b><br /> In the head section, we set the character encoding to UTF-8 and define the viewport for responsive design.</p>
+
+                        <p><b>Step 3 - Title and Fonts: </b><br /> Inside the head, we set the title of the webpage and import some Google Fonts using @import rule to style our text later on. </p>
+
+                        <p><b>Step 4 - Body Styling: </b><br />  In the style section, we style the body element. We remove margins, set width and height to 100% to cover the whole viewport, and use flexbox to center elements vertically and horizontally. We also create a gradient background.</p>
+
+                        <p><b>Step 5 - Button Styles: </b><br /> We define styles for two types of buttons: darksoul-glowing-button1 and darksoul-glowing-button2. These buttons have similar properties but different gradient backgrounds.</p>
+
+                        <p><b>Step 6 - Button Hover Effects:</b><br /> When hovering over each button, the gradient background changes. This is achieved using the :hover pseudo-class in CSS.</p>
+
+                        <p><b>Step 7 - Button Inner Styles:</b><br />  Inside each button, we define the styles for the button element. This includes setting width, height, background color, margins, borders, font size, and font family.</p>
+
+                        <p><b>Step 8 - Keyframes Animation: </b><br />  We define a keyframe animation named rotation. This animation gradually changes the --gradient-angle property from 0 to 360 degrees, creating a rotating effect.</p>
+                       
+                        <p><b>Step 9 - Custom Property: </b><br /> We define a custom property --gradient-angle to control the angle of the gradient in the buttons' backgrounds.</p>
+                        
+                        <p><b>Step 10 - Responsive Design: </b><br /> Finally, we add media queries to adjust the layout for smaller screens. In this case, when the screen width is less than 600px, the gradient background changes direction.</p>
+                       
+                        <p>In conclusion, by following these step-by-step instructions, you can create a visually appealing and responsive Glowing Border Button with customizable styles and hover effects.</p>
+                      </div>
+                       
+
+                       
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- ***** Most Popular End ***** -->
+
+          <!-- ***** Most Popular Start ***** -->
+          <div class="most-popular">
+            <div class="row">
+              <div class="col-lg-12">
+                <div class="heading-section">
+                  <h4>Html</h4>
+                </div>
+                <div class="row">
+                
+                   
+<textarea disabled id="html">
+    
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+         /* Internal styles goes here.. */
+    </head>
+    <body>
+        <div class="darksoul-glowing-button1">
+            <button class="darksoul-button1" type="button">
+               Button
+            </button>
+        </div>
+        <div class="darksoul-glowing-button2">
+            <button class="darksoul-button2" type="button">
+                Button
+            </button>
+        </div>
+        <p class="disclaimer">Designed & Created by <a href="https://darksoul-codepen.github.io/" target="_blank">DarkSoul</a></p>
+    
+    </body>
+    </html>
+</textarea>
+                   
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- ***** Most Popular End ***** -->
+
+            <!-- ***** Most Popular Start ***** -->
+            <div class="most-popular">
+                <div class="row">
+                  <div class="col-lg-12">
+                    <div class="heading-section">
+                      <h4>Css</h4>
+                    </div>
+                    <div class="row">
+                                           
+<textarea disabled id="css">
+    @import url('https://fonts.googleapis.com/css2?family=Belanosima&family=Rubik+Vinyl&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Lilita+One&display=swap');
+    body
+    {
+        margin: 0;
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        background: linear-gradient(90deg, rgb(21, 21, 21) 50%, rgb(238, 238, 238) 50%);
+       
+    }
+   .darksoul-glowing-button1
+   {
+        margin: auto;
+        width: 250px;
+        height: 70px;
+        display: flex;
+        border-radius: 35px;
+        animation: rotation 3s linear 0s infinite;
+        
+   }
+   .darksoul-glowing-button1:hover
+   {
+    
+        background: linear-gradient(var(--gradient-angle), rgb(255, 255, 255), rgb(0, 0, 0));
+   }
+   .darksoul-glowing-button2
+   {
+        margin: auto;
+        width: 250px;
+        height: 70px;
+        display: flex;
+        border-radius: 35px;
+        animation: rotation 3s linear 0s infinite;
+        
+   }
+   .darksoul-glowing-button2:hover
+   {
+    
+        background: linear-gradient(var(--gradient-angle), rgb(0, 0, 0), rgba(255, 255, 255, 0));
+   }
+   .darksoul-button1
+   {
+        width: 98%;
+        height: 94%;
+        background-color: rgba(0, 0, 0, 0.903);
+        margin: auto;
+        outline: none;
+        border: none;
+        border-radius: 35px;
+        color: rgb(255, 255, 255);
+        font-size: x-large;
+        font-family: 'Belanosima', sans-serif;
+   }
+   .darksoul-button2
+   {
+        width: 98%;
+        height: 94%;
+        background-color: rgba(255, 255, 255, 0.911);
+        margin: auto;
+        outline: none;
+        border: none;
+        border-radius: 35px;
+        color: rgb(0, 0, 0);
+        font-size: x-large;
+        font-family: 'Belanosima', sans-serif;
+   }
+   .disclaimer
+    {
+        font-family: 'Belanosima', sans-serif;
+        position: absolute;
+        bottom: 0px; 
+        left: 0; 
+        margin-left: auto; 
+        right: 0; 
+        margin-right: auto; 
+        width: fit-content;
+        color: rgb(82, 82, 82);
+        text-align: center;
+    }
+    .disclaimer a
+    {
+        text-decoration: none;
+        color: #000000;
+    }
+    .disclaimer a:hover
+    {
+        font-weight: bolder;
+    }
+    ::selection
+    {
+        background-color: #000000;
+        color: rgb(255, 255, 255);
+    }
+    @keyframes rotation 
+    {
+        0%
+        {
+            --gradient-angle: 0deg;
+        }
+        100%
+        {
+            --gradient-angle: 360deg;
+        }    
+    }
+    @property --gradient-angle
+    {
+        syntax: "<angle>";
+        initial-value: 0deg;
+        inherits: false;
+    }
+    @media only screen and (max-width: 600px) 
+    {
+        body
+    {
+        margin: 0;
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        background: linear-gradient(180deg, rgb(21, 21, 21) 50%, rgb(238, 238, 238) 50%)
+    }
+    }
+  </textarea>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- ***** Most Popular End ***** -->
+
+                <!-- ***** Most Popular Start ***** -->
+          <div class="most-popular">
+            <div class="row">
+              <div class="col-lg-12">
+                <div class="heading-section">
+                  <h4>Js</h4>
+                </div>
+                <div class="row">
+                                       
+<textarea disabled id="js">
+       
+    JavaScript is not necessary.
+       
+</textarea>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- ***** Most Popular End ***** -->
+
+          <!-- ***** Gaming Library Start ***** -->
+          <div class="gaming-library">
+            <div class="col-lg-12 align-self-center justify-content-center text-center heading-section">
+              <div class="heading-section text-lg-start">
+                <h4>Output Screenshot</h4>
+              </div>
+              <img src="Glowing-Border-Button/Output-Glowing-Border-Button.gif" alt="Output Screenshot - Glowing Border Button CodePen" style="max-width: 60%; border-radius: 10px;"/>
+              <p>&nbsp;</p>
+            <div class="col-lg-12">
+              <div class="main-button">
+                <a href="Glowing-Border-Button/Preview-Glowing-Border-Button.html">View Live Output</a>
+              </div>
+            </div>
+          </div>
+          <!-- ***** Gaming Library End ***** -->
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <footer>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12">
+          <p>Copyright © 2024 <a href="https://darksoul-codepen.github.io/">DarkSoul CodePen</a>.</p>
+          <p><img src="assets/images/codepen_logo.png" alt="Codepen Logo" style="max-width: 20px;"/><a href="https://codepen.io/DarkSoul-" target="_blank" > CodePen</a> | <img src="assets/images/dribbble_logo.png" alt="Dribbble Logo" style="max-width: 20px;"/><a href="https://dribbble.com/dark-soul" target="_blank" > Dribbble</a> | <img src="assets/images/instagram-white-icon.webp" alt="Instagram Logo" style="max-width: 20px;"/><a href="https://www.instagram.com/dark.soul.io/" target="_blank"> Instagram</a></p>
+        </div>
+      </div>
+    </div>
+  </footer> 
+
+
+
+  <!-- Scripts -->
+  <!-- Bootstrap core JavaScript -->
+  <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+
+  <script src="assets/js/isotope.min.js"></script>
+  <script src="assets/js/owl-carousel.js"></script>
+  <script src="assets/js/tabs.js"></script>
+  <script src="assets/js/popup.js"></script>
+  <script src="assets/js/custom.js"></script>
+
+
+  </body>
+
+</html>

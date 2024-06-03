@@ -1,0 +1,498 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+  
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name='robots' content='index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1' />
+	  <meta http-equiv="Permissions-Policy" content="interest-cohort=()">
+	  <meta name="referrer" content="strict-origin-when-cross-origin">
+	  <meta name="author" content="DarkSoul">
+ 
+    <!-- Favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+
+    <meta name="keywords" content="DarkSoul CodePen, Sticky Search Bar , Sticky Search Bar Codepen , Sticky Search, Search Bar, Fixed Search Bar, trending search bar, Dark Soul Codepens, DarkSoul CodePen How To's Blogs, DarkSoul UI/UX Designs, DarkSoul Codedamn" />
+    <meta name="description" content="Explore the Sticky Search Bar on DarkSoul CodePen! Live preview and download the source code, complete with a step-by-step guide to creating your own fixed-top search bar." />
+  
+  
+    <title>Sticky Search Bar - DarkSoul CodePen</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+
+    <!-- Additional CSS Files -->
+    <link rel="stylesheet" href="assets/css/fontawesome.css">
+    <link rel="stylesheet" href="assets/css/darksoul-codepen.css">
+    <link rel="stylesheet" href="assets/css/owl.css">
+    <link rel="stylesheet" href="assets/css/animate.css">
+    <link rel="stylesheet"href="https://unpkg.com/swiper@7/swiper-bundle.min.css"/>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+<style>
+  textarea
+  {
+    
+    resize: none;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: large;
+    min-height: 400px;
+    background-color: rgba(19, 19, 19, 0.44);
+    border: none;
+    border-radius: 15px;
+    font-weight: 500;
+    
+    color: rgb(255, 255, 255);
+  }
+  p{
+    color: #ffffff;
+    margin: auto;
+  }
+  li
+  {
+    list-style-type: square;
+    color: #B1E3FA;
+    
+  }
+  strong
+  {
+    color: #B1E3FA;
+  }
+  h1
+  {
+    font-weight: 900 !important;
+    margin-bottom: 40px;
+  }
+  h2,h4
+  {
+    font-weight: 900 !important;
+  }
+  
+        /* width */
+        ::-webkit-scrollbar 
+        {
+            width: 5px;
+        }
+
+        /* Track */
+        ::-webkit-scrollbar-track 
+        {
+            background-color: rgba(226, 247, 255, 0);
+        }
+
+        /* Handle */
+        ::-webkit-scrollbar-thumb 
+        {
+        background: #B1E3FA;
+        border-radius: 10px;
+        height: 10px;
+        width: 3px;
+        }
+        .most-popular p 
+        {
+          text-align: justify;
+        }
+</style>
+
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-0XRHJTRGGH"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-0XRHJTRGGH');
+</script>
+
+   <!-- Clarity tracking code for https://darksoul-codepen.github.io/ -->
+   <script>
+    (function(c,l,a,r,i,t,y){
+        c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+        t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i+"?ref=bwt";
+        y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+    })(window, document, "clarity", "script", "k6ctefq607");
+  </script>
+  </head>
+
+<body>
+
+  <!-- ***** Preloader Start ***** -->
+  <div id="js-preloader" class="js-preloader">
+    <div class="preloader-inner">
+      <span class="dot"></span>
+      <div class="dots">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </div>
+  </div>
+  <!-- ***** Preloader End ***** -->
+
+  <!-- ***** Header Area Start ***** -->
+  <header class="header-area header-sticky" style="background-color: rgba(0, 0, 0, 0);">
+    <div class="container" style="padding: 0px;">
+        <div class="row">
+            <div class="col-12">
+              <nav class="main-nav">
+                <!-- ***** Logo Start ***** -->
+                <a href="https://darksoul-codepen.github.io/" class="logo">
+                    <img src="assets/images/logo.png" alt="DarkSoul CodePen - Logo" width="100%">
+                </a>
+                <!-- ***** Logo End ***** -->
+                <!-- ***** Search End ***** -->
+                <div class="search-input">
+                  <form id="search" action="#">
+                    <input type="text" placeholder="Type Something" id='searchText' name="searchKeyword" onkeypress="handle" />
+                    <i class="fa fa-search"></i>
+                  </form>
+                </div>
+                <!-- ***** Search End ***** -->
+                <!-- ***** Menu Start ***** -->
+                <ul class="nav">
+                    <li><a href="https://darksoul-codepen.github.io/">Home</a></li>
+                    <li><a href="posts.html">Posts</a></li>
+                    <li><a href="codepen.html" class="active">CodePens</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="about.html">About Me <img src="assets/images/profile-header.png" alt="DarkSoul Profile"></a></li>
+                </ul>   
+                <a class='menu-trigger'>
+                    <span>Menu</span>
+                </a>
+                <!-- ***** Menu End ***** -->
+            </nav>
+            </div>
+        </div>
+    </div>
+  </header>
+  <!-- ***** Header Area End ***** -->
+
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12">
+        <div class="page-content">
+
+          <!-- ***** Banner Start ***** -->
+          <div class="main-banner">
+            <div class="row">
+              <div class="col-lg-7">
+                <div class="header-text">
+                  <h6 style="color: black;">CodePen</h6>
+                  <h4 style="color: #38B6FF;">Sticky <em style="color: #000000;">Search Bar</em> CodePen</h4>
+                  <div class="main-button">
+                    <a href="Sticky-Search-Bar/Preview-Sticky-Search-Bar.html">Preview</a>&nbsp;&nbsp;
+                    <a href="Zips/Sticky-Search-Bar.zip" download>Download Source code</a>
+                  </div>
+                  
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- ***** Banner End ***** -->
+
+               <!-- ***** Most Popular Start ***** -->
+               <div class="most-popular">
+                <div class="row">
+                  <div class="col-lg-12">
+                    <div class="heading-section">
+                      <h4>Procedure</h4>
+             
+
+                      <div class="row">
+                        <p><b>Step 1 - Basic HTML Structure:</b> Set up the HTML with a div for the search bar, a search icon, and an input field.
+                            Include navigation and content sections for context.</p>
+                        <p><b>Step 2 - Add Google Fonts:</b> Import the 'Belanosima' and 'Rubik Vinyl' fonts from <a href="https://fonts.google.com/" target="_blank">Google Fonts</a>.</p>
+                        <p><b>Step 3 - Style the Body:</b> Use CSS to set height to 200vh for scrolling, set a background-color, and apply a font-family.</p>
+                        <p><b>Step 4 - Create the Sticky Search Bar:</b> Style the .darksoul-search-bar with width, height, background-color, border-radius, and box-shadow.
+                            Use position: fixed to keep it at the top center of the viewport and transition for smooth width change.</p>
+                        <p><b>Step 5 - Style the Search Icon:</b> Center the search icon within the bar using margin properties.</p>
+                        <p><b>Step 6 - Add Hover Effect to Expand the Search Bar:</b> Implement a :hover state to increase the width and adjust the border-radius.</p>
+                        <p><b>Step 7 - Style the Search Input:</b> Initially hide the input field with display: none.
+                            On hover, change display to inline-flex and set width and height.</p>
+                        <p><b>Step 8 - Handle Small Screens:</b> Use a media query (@media only screen and (max-width: 600px)) to adjust the search bar's width and border-radius.</p>     
+                        <p>By following these steps, you'll create an interactive and responsive sticky search bar that enhances user experience on your web page.</p>
+                      </div>
+                       
+
+                       
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- ***** Most Popular End ***** -->
+
+          <!-- ***** Most Popular Start ***** -->
+          <div class="most-popular">
+            <div class="row">
+              <div class="col-lg-12">
+                <div class="heading-section">
+                  <h4>Html</h4>
+                </div>
+                <div class="row">
+                
+                   
+<textarea disabled id="html">
+    
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+         /* Internal styles goes here.. */
+    </head>
+    <body>
+        <div class="darksoul-search-bar">
+            <img class="search-icon" src="https://darksoul-codepen.github.io/search-icon.png" width="50" height="50" />
+            <input type="text" name="search" placeholder="Search DarkSoul or type a URL" class="darksoul-search-input" autocomplete="on"/>
+        </div>
+        <div class="nav">
+            <p>Scroll down and Hover over the Search icon.</p>
+        </div>
+        <div class="content">
+        </div>
+        <div class="content">
+        </div>
+        <p class="disclaimer">Designed & Created by <a href="https://darksoul-codepen.github.io/" target="_blank">DarkSoul</a></p>
+    </body>
+    </html>
+</textarea>
+                   
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- ***** Most Popular End ***** -->
+
+            <!-- ***** Most Popular Start ***** -->
+            <div class="most-popular">
+                <div class="row">
+                  <div class="col-lg-12">
+                    <div class="heading-section">
+                      <h4>Css</h4>
+                    </div>
+                    <div class="row">
+                                           
+<textarea disabled id="css">
+
+    @import url('https://fonts.googleapis.com/css2?family=Belanosima&family=Rubik+Vinyl&display=swap');
+    body
+    {
+        margin: 0;
+        width: 100%;
+        height: 200vh;
+        display: flex;
+        flex-direction: column;
+        background-color: #E9F1FF;
+        overflow-y: scroll;
+        font-family: 'Belanosima', sans-serif;
+    }
+    .darksoul-search-bar
+    {
+        width: 60px;
+        height: 60px;
+        margin: auto;
+        background-color: white;
+        display: flex;
+        border-radius: 0% 30px 30px 30px;
+        transition: width 1s;
+        box-shadow: 5px 5px 20px #d8e6fd, -5px -5px 30px white;
+        position: fixed;
+        top: 102px;
+        left: 0;
+        right: 0;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .search-icon
+    {
+        margin-bottom: auto;
+        margin-top: auto;
+        margin-left: 5px;
+        margin-right: auto;
+        border-radius: 50%;
+    }
+    .darksoul-search-bar:hover
+    {
+        width: 400px;
+        border-radius:  0% 30px 30px 30px;
+    }
+    .darksoul-search-input
+    {
+        margin: auto;
+        display: none;
+        transition: display 12s;
+        outline: none;
+        border: none;
+        font-family: 'Belanosima', sans-serif;
+        border-radius: 25px;
+        padding-left: 10px;
+    }
+    .darksoul-search-bar:hover .darksoul-search-input
+    {
+        display: inline-flex;
+        width: 78%;
+        height: 70%;
+    }
+    input[type="submit"]
+    {
+        display: none;
+    }
+    @media only screen and (max-width: 600px) 
+    {
+        .darksoul-search-bar:hover
+        {
+            width: 80%;
+            border-radius:  0% 30px 30px 15px;
+        }
+    }
+
+    .nav
+    {
+        width: 80%;
+        height: 60px;
+        margin: auto;
+        background-color: white;
+        display: flex;
+        border-radius: 15px;
+        box-shadow: 5px 5px 20px #d8e6fd, -5px -5px 30px white;
+        margin-bottom: 50px;
+        margin-top: 250px;
+    }
+    .content
+    {
+        width: 80%;
+        height: 400px;
+        margin: auto;
+        background-color: white;
+        display: flex;
+        border-radius: 15px;
+        box-shadow: 5px 5px 20px #d8e6fd, -5px -5px 30px white;
+        margin-bottom: 50px;
+        margin-top: 50px;
+    }
+
+     /* width */
+     ::-webkit-scrollbar 
+    {
+        width: 5px;
+    }
+
+    /* Track */
+    ::-webkit-scrollbar-track 
+    {
+        background-color: rgba(226, 247, 255, 0);
+    }
+
+    /* Handle */
+    ::-webkit-scrollbar-thumb 
+    {
+    background: #99beff;
+    border-radius: 10px;
+    height: 10px;
+    width: 3px;
+    }
+    .nav p
+    {
+        margin: auto;
+        color: #303030;
+    }
+    .disclaimer
+    {
+        margin: auto;
+        width: fit-content;
+        color: rgb(0, 0, 0);
+    }
+    .disclaimer a
+    {
+        text-decoration: none;
+        color: #6fa4ff;
+    }
+    .disclaimer a:hover
+    {
+        color: #4a8cff;
+    }
+    ::selection
+    {
+        background-color: #E9F1FF;
+        color: #000000;
+    }
+    
+  </textarea>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- ***** Most Popular End ***** -->
+
+                <!-- ***** Most Popular Start ***** -->
+          <div class="most-popular">
+            <div class="row">
+              <div class="col-lg-12">
+                <div class="heading-section">
+                  <h4>Js</h4>
+                </div>
+                <div class="row">
+                                       
+<textarea disabled id="js">
+
+    JavaScript is not necessary
+        
+</textarea>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- ***** Most Popular End ***** -->
+
+          <!-- ***** Gaming Library Start ***** -->
+          <div class="gaming-library">
+            <div class="col-lg-12">
+              <div class="heading-section">
+                <h4>Output Screenshot</h4>
+              </div>
+              <img src="Sticky-Search-Bar/Output Screenshot - Sticky Search Bar.png" alt="Output Screenshot - Sticky Search Bar" style="width: 100%; border-radius: 10px;"/>
+              <p>&nbsp;</p>
+            <div class="col-lg-12">
+              <div class="main-button">
+                <a href="Sticky-Search-Bar/Preview-Sticky-Search-Bar.html">View Live Output</a>
+              </div>
+            </div>
+          </div>
+          <!-- ***** Gaming Library End ***** -->
+        </div>
+      </div>
+    </div>
+  </div>
+  
+
+  <footer>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12">
+          <p>Copyright © 2024 <a href="https://darksoul-codepen.github.io/">DarkSoul CodePen</a> | <a href="https://darksoul-codepen.github.io/Privacy-policy.html">Privacy Policy</a></p>
+          <p><img src="assets/images/codepen_logo.png" alt="Codepen Logo" style="max-width: 20px;"/><a href="https://codepen.io/DarkSoul-" target="_blank" > CodePen</a> | <img src="assets/images/dribbble_logo.png" alt="Dribbble Logo" style="max-width: 20px;"/><a href="https://dribbble.com/dark-soul" target="_blank" > Dribbble</a> | <img src="assets/images/instagram-white-icon.webp" alt="Instagram Logo" style="max-width: 20px;"/><a href="https://www.instagram.com/dark.soul.io/" target="_blank"> Instagram</a></p>
+        </div>
+      </div>
+    </div>
+  </footer> 
+
+
+  <!-- Scripts -->
+  <!-- Bootstrap core JavaScript -->
+  <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+
+  <script src="assets/js/isotope.min.js"></script>
+  <script src="assets/js/owl-carousel.js"></script>
+  <script src="assets/js/tabs.js"></script>
+  <script src="assets/js/popup.js"></script>
+  <script src="assets/js/custom.js"></script>
+
+
+  </body>
+
+</html>

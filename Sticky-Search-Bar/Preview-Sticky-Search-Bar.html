@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name='robots' content='index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1' />
+    <meta http-equiv="Permissions-Policy" content="interest-cohort=()">
+    <meta name="referrer" content="strict-origin-when-cross-origin">
+    <meta name="author" content="DarkSoul">
+ 
+    <!-- Favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+
+    <meta name="keywords" content="DarkSoul CodePen, Preview Sticky Search Bar , Live Output Sticky Search Bar Codepen , Sticky Search Bar , Sticky Search, Search Bar live output, Dark Soul Codepens, DarkSoul CodePen How To's Blogs, DarkSoul UI/UX Designs, DarkSoul Codedamn" />
+    <meta name="description" content="Live preview the Sticky Search Bar on DarkSoul CodePen! Experience a sleek, fixed-top search bar in real-time, perfect for web developers and designers seeking inspiration and functionality" /> 
+    <title>Preview Sticky Search Bar</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Belanosima&family=Rubik+Vinyl&display=swap');
+        body
+        {
+            margin: 0;
+            width: 100%;
+            height: 200vh;
+            display: flex;
+            flex-direction: column;
+            background-color: #E9F1FF;
+            overflow-y: scroll;
+            font-family: 'Belanosima', sans-serif;
+        }
+        .darksoul-search-bar
+        {
+            width: 60px;
+            height: 60px;
+            margin: auto;
+            background-color: white;
+            display: flex;
+            border-radius: 0% 30px 30px 30px;
+            transition: width 1s;
+            box-shadow: 5px 5px 20px #d8e6fd, -5px -5px 30px white;
+            position: fixed;
+            top: 102px;
+            left: 0;
+            right: 0;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .search-icon
+        {
+            margin-bottom: auto;
+            margin-top: auto;
+            margin-left: 5px;
+            margin-right: auto;
+            border-radius: 50%;
+        }
+        .darksoul-search-bar:hover
+        {
+            width: 400px;
+            border-radius:  0% 30px 30px 30px;
+        }
+        .darksoul-search-input
+        {
+            margin: auto;
+            display: none;
+            transition: display 12s;
+            outline: none;
+            border: none;
+            font-family: 'Belanosima', sans-serif;
+            border-radius: 25px;
+            padding-left: 10px;
+        }
+        .darksoul-search-bar:hover .darksoul-search-input
+        {
+            display: inline-flex;
+            width: 78%;
+            height: 70%;
+        }
+        input[type="submit"]
+        {
+            display: none;
+        }
+        @media only screen and (max-width: 600px) 
+        {
+            .darksoul-search-bar:hover
+            {
+                width: 80%;
+                border-radius:  0% 30px 30px 15px;
+            }
+        }
+
+        .nav
+        {
+            width: 80%;
+            height: 60px;
+            margin: auto;
+            background-color: white;
+            display: flex;
+            border-radius: 15px;
+            box-shadow: 5px 5px 20px #d8e6fd, -5px -5px 30px white;
+            margin-bottom: 50px;
+            margin-top: 250px;
+        }
+        .content
+        {
+            width: 80%;
+            height: 400px;
+            margin: auto;
+            background-color: white;
+            display: flex;
+            border-radius: 15px;
+            box-shadow: 5px 5px 20px #d8e6fd, -5px -5px 30px white;
+            margin-bottom: 50px;
+            margin-top: 50px;
+        }
+
+         /* width */
+         ::-webkit-scrollbar 
+        {
+            width: 5px;
+        }
+
+        /* Track */
+        ::-webkit-scrollbar-track 
+        {
+            background-color: rgba(226, 247, 255, 0);
+        }
+
+        /* Handle */
+        ::-webkit-scrollbar-thumb 
+        {
+        background: #99beff;
+        border-radius: 10px;
+        height: 10px;
+        width: 3px;
+        }
+        .nav p
+        {
+            margin: auto;
+            color: #303030;
+        }
+        .disclaimer
+        {
+            margin: auto;
+            width: fit-content;
+            color: rgb(0, 0, 0);
+        }
+        .disclaimer a
+        {
+            text-decoration: none;
+            color: #6fa4ff;
+        }
+        .disclaimer a:hover
+        {
+            color: #4a8cff;
+        }
+        ::selection
+        {
+            background-color: #E9F1FF;
+            color: #000000;
+        }
+    </style>
+</head>
+<body>
+    
+    <div class="darksoul-search-bar">
+      
+        <img class="search-icon" src="https://darksoul-codepen.github.io/search-icon.png" width="50" height="50" />
+        <input type="text" name="search" placeholder="Search DarkSoul or type a URL" class="darksoul-search-input" autocomplete="on"/>
+ 
+    </div>
+    <div class="nav">
+        <p>Scroll down and Hover over the Search icon.</p>
+    </div>
+    <div class="content">
+
+    </div>
+   
+    <div class="content">
+
+    </div>
+    <p class="disclaimer">Designed & Created by <a href="https://darksoul-codepen.github.io/" target="_blank">DarkSoul</a></p>
+   
+</body>
+</html>

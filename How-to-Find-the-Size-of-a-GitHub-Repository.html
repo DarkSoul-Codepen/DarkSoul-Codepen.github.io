@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+  
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name='robots' content='index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1' />
+	  <meta http-equiv="Permissions-Policy" content="interest-cohort=()">
+    <meta http-equiv="content-language" content="en">
+	  <meta name="referrer" content="strict-origin-when-cross-origin">
+	  <meta name="author" content="DarkSoul">
+ 
+    <!-- Favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+
+    <meta name="keywords" content="DarkSoul CodePen, How to Find the Size of a GitHub Repository , Finding the Size of a GitHub Repository Alert box, How to find GitHub Repo size , How to find repo size using Github Settings, How to Find the Size of a GitHub Repo using GitHub API, How to Find the Size of a GitHub Repository in Online, Dark Soul Codepens, DarkSoul CodePen How To's Blogs, DarkSoul UI/UX Designs, DarkSoul Codedamn" />
+    <meta name="description" content="Learn how to find the size of your GitHub repository with four simple methods: GitHub settings, online tools, a Chrome extension, and the GitHub API. Optimize your project management with these easy steps." />
+  
+  
+    <title>How to Find the Size of a GitHub Repository - DarkSoul CodePen</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+
+    <!-- Additional CSS Files -->
+    <link rel="stylesheet" href="assets/css/fontawesome.css">
+    <link rel="stylesheet" href="assets/css/darksoul-codepen.css">
+    <link rel="stylesheet" href="assets/css/owl.css">
+    <link rel="stylesheet" href="assets/css/animate.css">
+    <link rel="stylesheet"href="https://unpkg.com/swiper@7/swiper-bundle.min.css"/>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+<style>
+  textarea
+  {
+    
+    resize: none;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: large;
+    min-height: 400px;
+    background-color: rgba(19, 19, 19, 0.44);
+    border: none;
+    border-radius: 15px;
+    font-weight: 500;
+    
+    color: rgb(255, 255, 255);
+  }
+  p{
+    color: #ffffff;
+    margin: auto;
+  }
+  li
+  {
+    list-style-type: disc;
+    color: #ffffff;
+    margin-top: 10px;
+    margin-left: 15px;
+  }
+  strong
+  {
+    color: #B1E3FA;
+  }
+  h1
+  {
+    font-weight: 900 !important;
+    margin-bottom: 40px;
+  }
+  h2,h4
+  {
+    margin-top: 30px !important;
+    margin-bottom: 30px !important;
+    font-weight: 900 !important;
+  }
+  
+        /* width */
+        ::-webkit-scrollbar 
+        {
+            width: 5px;
+        }
+
+        /* Track */
+        ::-webkit-scrollbar-track 
+        {
+            background-color: rgba(226, 247, 255, 0);
+        }
+
+        /* Handle */
+        ::-webkit-scrollbar-thumb 
+        {
+        background: #B1E3FA;
+        border-radius: 10px;
+        height: 10px;
+        width: 3px;
+        }
+        .most-popular p 
+        {
+          text-align: justify;
+        }
+</style>
+
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-0XRHJTRGGH"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-0XRHJTRGGH');
+</script>
+
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9669180356185936"
+     crossorigin="anonymous"></script>
+
+   <!-- Clarity tracking code for https://darksoul-codepen.github.io/ -->
+   <script>
+    (function(c,l,a,r,i,t,y){
+        c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+        t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i+"?ref=bwt";
+        y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+    })(window, document, "clarity", "script", "k6ctefq607");
+  </script>
+  </head>
+
+<body>
+
+  <!-- ***** Preloader Start ***** -->
+  <div id="js-preloader" class="js-preloader">
+    <div class="preloader-inner">
+      <span class="dot"></span>
+      <div class="dots">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </div>
+  </div>
+  <!-- ***** Preloader End ***** -->
+
+  <!-- ***** Header Area Start ***** -->
+  <header class="header-area header-sticky" style="background-color: rgba(0, 0, 0, 0);">
+    <div class="container" style="padding: 0px;">
+        <div class="row">
+            <div class="col-12">
+              <nav class="main-nav">
+                <!-- ***** Logo Start ***** -->
+                <a href="https://darksoul-codepen.github.io/" class="logo">
+                    <img src="assets/images/logo.png" alt="DarkSoul CodePen - Logo" width="100%">
+                </a>
+                <!-- ***** Logo End ***** -->
+                <!-- ***** Search End ***** -->
+                <div class="search-input">
+                  <form id="search" action="#">
+                    <input type="text" placeholder="Type Something" id='searchText' name="searchKeyword" onkeypress="handle" />
+                    <i class="fa fa-search"></i>
+                  </form>
+                </div>
+                <!-- ***** Search End ***** -->
+                <!-- ***** Menu Start ***** -->
+                <ul class="nav">
+                    <li><a href="https://darksoul-codepen.github.io/">Home</a></li>
+                    <li><a href="posts.html" class="active">Posts</a></li>
+                    <li><a href="codepen.html">CodePens</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="about.html">About Me <img src="assets/images/profile-header.png" alt="DarkSoul Profile"></a></li>
+                </ul>   
+                <a class='menu-trigger'>
+                    <span>Menu</span>
+                </a>
+                <!-- ***** Menu End ***** -->
+            </nav>
+            </div>
+        </div>
+    </div>
+  </header>
+  <!-- ***** Header Area End ***** -->
+
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12">
+        <div class="page-content">
+
+          <!-- ***** Banner Start ***** -->
+          <div class="main-banner">
+            <div class="row">
+              <div class="col-lg-7">
+                <div class="header-text">
+                  
+                  <h1 style="color: #38B6FF;">How to <b style="color: #000000;">Find the </b>Size <b style="color: #000000;">of a </b>GitHub Repo</h1>
+                  <h6 style="color: black;">How To's</h6>
+                
+                  
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- ***** Banner End ***** -->
+
+               <!-- ***** Most Popular Start ***** -->
+               <div class="most-popular">
+                <div class="row">
+                  <div class="col-lg-12">
+                    <div class="heading-section">
+    
+
+                      <div class="row">
+                        <p>Ever wondered how big your GitHub repository actually is? Whether you're managing a large project or just curious about your code's footprint, knowing the size of your repo can be pretty important. It helps with understanding storage needs, optimizing performance, and managing costs if you're using storage-sensitive services. In this blog, I'll walk you through four simple ways to find out the size of a GitHub repository. Let's dive in!</p>
+
+                        <h2>1. Using GitHub Settings</h2>
+                        <p>The easiest way to know your repo size is by navigating to the <b>Settings</b> page on GitHub. Head over to <a href="https://github.com/settings/repositories" target="_blank">GitHub Settings</a>, where you'll find a list of your repositories and their sizes. If you haven’t signed in to GitHub, sign in first and then go to the settings page.</p>
+
+                        <img style="margin-top: 20px; border-radius: 18px;" src="assets/images/How to Find the Size of a GitHub Repository using GitHub Settings.png" alt="How to Find the Size of a GitHub Repository using GitHub Settings" />
+
+                        <h2>2. Using an Online Tool</h2>
+                        <p>There are many online tools available to get this done. One popular tool is Online Mini Tools - GitHub Repo Checker. Simply search for "online mini tools GitHub repo checker," visit the link, enter your repository URL, and get its size in seconds.</p>
+
+                        <img style="margin-top: 20px; border-radius: 28px;" src="assets/images/How to Find the Size of a GitHub Repository - Online GitHub Repo Size Checker.png" alt="How to Find the Size of a GitHub Repository - Online GitHub Repo Size Checker" />
+
+                        <h2>3. Using a Chrome Extension</h2>
+                        <p>The GitHub Repo Size Chrome Extension lets you easily view the size of each file and the total repository size directly on GitHub. It’s a handy tool for developers to manage their projects more efficiently.</p>
+                        
+                        <ul>
+                          <li>Go to the <a href="https://chromewebstore.google.com/" target="_blank">Chrome Web Store</a>.</li>
+                          <li>Search for 'GitHub Repo Size' or visit the <a href="https://chromewebstore.google.com/detail/github-repo-size/jpdmfnflpdgefbfkafcikmhipofhanfl" target="_blank">GitHub Repo Size</a>.</li>
+                          <img style="margin-top: 20px; border-radius: 18px;" src="assets/images/How to Find the Size of a GitHub Repository - GitHub Repo Size.png" alt="How to Find the Size of a GitHub Repository - Online GitHub Repo Size Checker" />
+                          <li>Add the extension to your browser.</li>
+                          <li>Authenticate the extension to access your GitHub account. You can now view the size of your repo along with the size of individual files.</li>
+                        </ul>
+                      
+                        <h2>4. Using GitHub API</h2>
+                        <p>Alternatively, you can also use the GitHub API to view your repo's details.</p><p> Access the GitHub API by entering the following url in your browser - https://api.github.com/repos/ YourUsername/ YourRepoName. (For example, <a href="https://api.github.com/repos/DarkSoul-Codepen/darksoul-codepen.github.io" target="_blank">https://api.github.com/repos/ DarkSoul-Codepen/ darksoul-codepen.github.io</a>).</p> 
+                          <p>In the JSON response, look for the <b>size</b> property, which gives the size in <b>kilobytes</b>.
+                            <img style="margin-top: 20px; border-radius: 18px;" src="assets/images/How to Find the Size of a GitHub Repository using GitHub API.png" alt="How to Find the Size of a GitHub Repository using GitHub API" />
+                        </p>
+                     <h6 style="margin-top: 15px; margin-bottom: 15px;">Note: For large repositories or those with many forks, this value might not be accurate and might not update immediately.</h6>
+                      
+                      <p>Each method has its pros and cons, so choose the one that best fits your needs.</p>
+                      </div>
+                       
+
+                       
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- ***** Most Popular End ***** -->
+
+          
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <footer>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12">
+          <p>Copyright © 2024 <a href="https://darksoul-codepen.github.io/">DarkSoul CodePen</a> | <a href="https://darksoul-codepen.github.io/Privacy-policy.html">Privacy Policy</a></p>
+          <p><img src="assets/images/codepen_logo.png" alt="Codepen Logo" style="max-width: 20px;"/><a href="https://codepen.io/DarkSoul-" target="_blank" > CodePen</a> | <img src="assets/images/dribbble_logo.png" alt="Dribbble Logo" style="max-width: 20px;"/><a href="https://dribbble.com/dark-soul" target="_blank" > Dribbble</a> | <img src="assets/images/instagram-white-icon.webp" alt="Instagram Logo" style="max-width: 20px;"/><a href="https://www.instagram.com/dark.soul.io/" target="_blank"> Instagram</a></p>
+        </div>
+      </div>
+    </div>
+  </footer> 
+
+
+
+  <!-- Scripts -->
+  <!-- Bootstrap core JavaScript -->
+  <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+
+  <script src="assets/js/isotope.min.js"></script>
+  <script src="assets/js/owl-carousel.js"></script>
+  <script src="assets/js/tabs.js"></script>
+  <script src="assets/js/popup.js"></script>
+  <script src="assets/js/custom.js"></script>
+
+
+  </body>
+
+</html>

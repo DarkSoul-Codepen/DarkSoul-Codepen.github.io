@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+  
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name='robots' content='index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1' />
+	  <meta http-equiv="Permissions-Policy" content="interest-cohort=()">
+    <meta http-equiv="content-language" content="en">
+	  <meta name="referrer" content="strict-origin-when-cross-origin">
+	  <meta name="author" content="DarkSoul">
+ 
+    <!-- Favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+
+    <meta name="keywords" content="DarkSoul CodePen, How to merge Video and Text in PPT, merging Video and Text in PPT, How to merge Video and Text, How to merge Video and Text in PPT using Merge Shapes, How to merge Video and Text in PowerPoint, Dark Soul Codepens, DarkSoul CodePen How To's Blogs, DarkSoul UI/UX Designs, DarkSoul Codedamn" />
+    <meta name="description" content="Learn how to merge video and text in PowerPoint with our easy step-by-step guide. Create stunning presentations by blending video and text seamlessly. Perfect for making your slides more dynamic and engaging!" />
+  
+  
+    <title>How to merge Video and Text in PPT - DarkSoul CodePen</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+
+    <!-- Additional CSS Files -->
+    <link rel="stylesheet" href="assets/css/fontawesome.css">
+    <link rel="stylesheet" href="assets/css/darksoul-codepen.css">
+    <link rel="stylesheet" href="assets/css/owl.css">
+    <link rel="stylesheet" href="assets/css/animate.css">
+    <link rel="stylesheet"href="https://unpkg.com/swiper@7/swiper-bundle.min.css"/>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+<style>
+  textarea
+  {
+    
+    resize: none;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: large;
+    min-height: 400px;
+    background-color: rgba(19, 19, 19, 0.44);
+    border: none;
+    border-radius: 15px;
+    font-weight: 500;
+    
+    color: rgb(255, 255, 255);
+  }
+  p{
+    color: #ffffff;
+    margin: auto;
+  }
+  li
+  {
+    list-style-type: disc;
+    color: #ffffff;
+    margin-top: 10px;
+    margin-left: 15px;
+  }
+  strong
+  {
+    color: #B1E3FA;
+  }
+  h1
+  {
+    font-weight: 900 !important;
+    margin-bottom: 40px;
+  }
+  h2,h4
+  {
+    margin-top: 30px !important;
+    margin-bottom: 30px !important;
+    font-weight: 900 !important;
+  }
+  
+        /* width */
+        ::-webkit-scrollbar 
+        {
+            width: 5px;
+        }
+
+        /* Track */
+        ::-webkit-scrollbar-track 
+        {
+            background-color: rgba(226, 247, 255, 0);
+        }
+
+        /* Handle */
+        ::-webkit-scrollbar-thumb 
+        {
+        background: #B1E3FA;
+        border-radius: 10px;
+        height: 10px;
+        width: 3px;
+        }
+        .most-popular p 
+        {
+          text-align: justify;
+        }
+</style>
+
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-0XRHJTRGGH"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-0XRHJTRGGH');
+</script>
+
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9669180356185936"
+     crossorigin="anonymous"></script>
+
+   <!-- Clarity tracking code for https://darksoul-codepen.github.io/ -->
+   <script>
+    (function(c,l,a,r,i,t,y){
+        c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+        t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i+"?ref=bwt";
+        y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+    })(window, document, "clarity", "script", "k6ctefq607");
+  </script>
+  </head>
+
+<body>
+
+  <!-- ***** Preloader Start ***** -->
+  <div id="js-preloader" class="js-preloader">
+    <div class="preloader-inner">
+      <span class="dot"></span>
+      <div class="dots">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </div>
+  </div>
+  <!-- ***** Preloader End ***** -->
+
+  <!-- ***** Header Area Start ***** -->
+  <header class="header-area header-sticky" style="background-color: rgba(0, 0, 0, 0);">
+    <div class="container" style="padding: 0px;">
+        <div class="row">
+            <div class="col-12">
+              <nav class="main-nav">
+                <!-- ***** Logo Start ***** -->
+                <a href="https://darksoul-codepen.github.io/" class="logo">
+                    <img src="assets/images/logo.png" alt="DarkSoul CodePen - Logo" width="100%">
+                </a>
+                <!-- ***** Logo End ***** -->
+                <!-- ***** Search End ***** -->
+                <div class="search-input">
+                  <form id="search" action="#">
+                    <input type="text" placeholder="Type Something" id='searchText' name="searchKeyword" onkeypress="handle" />
+                    <i class="fa fa-search"></i>
+                  </form>
+                </div>
+                <!-- ***** Search End ***** -->
+                <!-- ***** Menu Start ***** -->
+                <ul class="nav">
+                    <li><a href="https://darksoul-codepen.github.io/">Home</a></li>
+                    <li><a href="posts.html" class="active">Posts</a></li>
+                    <li><a href="codepen.html">CodePens</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="about.html">About Me <img src="assets/images/profile-header.png" alt="DarkSoul Profile"></a></li>
+                </ul>   
+                <a class='menu-trigger'>
+                    <span>Menu</span>
+                </a>
+                <!-- ***** Menu End ***** -->
+            </nav>
+            </div>
+        </div>
+    </div>
+  </header>
+  <!-- ***** Header Area End ***** -->
+
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12">
+        <div class="page-content">
+
+          <!-- ***** Banner Start ***** -->
+          <div class="main-banner">
+            <div class="row">
+              <div class="col-lg-7">
+                <div class="header-text">
+                  
+                  <h1 style="color: #38B6FF;">How to <b style="color: #000000;">Merge video and text </b>in <b style="color: #000000;">PPT: A Step-by-Step Guide</b></h1>
+                  <h6 style="color: black;">How To's</h6>
+                
+                  
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- ***** Banner End ***** -->
+
+               <!-- ***** Most Popular Start ***** -->
+               <div class="most-popular">
+                <div class="row">
+                  <div class="col-lg-12">
+                    <div class="heading-section">
+
+                      <div class="row">
+                        <p> Hey there, PowerPoint enthusiasts! Have you ever wanted to create eye-catching slides by merging video and text? Well, you're in luck! Today, I'm going to walk you through a simple yet impressive technique to make your presentations pop. Let's dive in!
+                        </p>
+
+                        <h2>Step 1: Create a New Blank Slide</h2>
+                        <p>First things first, open up PowerPoint and create a new blank slide. This gives us a clean canvas to work on without any distractions. You can do this by clicking on the "New Slide" button on the ribbon and selecting "Blank" from the dropdown menu.
+                        </p>
+
+
+                        <h2>Step 2: Insert a Text Box</h2>
+                        <p>Next, we need some text. Insert a text box by going to the "Insert" tab and selecting "Text Box." Click anywhere on the slide to place your text box. Now, type in your text. To make it stand out, set the font to 'Impact' and the size to 300. This bold, large text will be perfect for our effect.</p>
+
+                        <img style="margin-top: 20px; border-radius: 28px;" src="assets/images/How to merge Video and Text in PPT - Insert text into a blank slide.webp" alt="Insert text into a blank slide" />
+
+                        <h2>Step 3: Insert a Video</h2>
+                        <p>Now for the fun part – adding a video! Go to the "Insert" tab again, but this time select "Video." You can choose a video from your files or even embed one from an online source. Once your video is on the slide, resize it so it's the same size as your text. This ensures that the video fills the text completely.</p>
+                          
+                        <h2>Step 4: Send the Video Backwards</h2>
+                        <p>To create the merging effect, we need the text to sit on top of the video. Right-click on the video and select "Send Backward." Now, the video is behind the text.</p>
+                        
+                        <img style="margin-top: 20px; border-radius: 18px;" src="assets/images/How to merge Video and Text in PPT - Send video backwards using Send Backward option.webp" alt="Send video backwards using Send Backward option" />
+
+                        <h2>Step 5: Select Both Text and Video</h2>
+                        <p>Hold down the "Shift" key and click on both the text and the video to select them simultaneously. This step is crucial for merging them together.</p>
+                        
+                        <img style="margin-top: 20px; border-radius: 18px;" src="assets/images/How to merge Video and Text in PPT - select both text and video.webp" alt="select both text and video" />
+
+                        <h2>Step 6: Merge Shapes</h2>
+                        <p>With both the text and video selected, search "Merge Shapes" in the search bar at the top. From the options, select Merge Shapes and choose Intersect. This nifty trick will cut the video to fit exactly within the text, creating a stunning visual effect.</p>
+                        
+                        <img style="margin-top: 20px; border-radius: 18px;" src="assets/images/How to merge Video and Text in PPT - Search for merge Shapes and choose Intersect option.webp" alt="Search for merge Shapes and choose Intersect option" />
+
+                        <h2>Step 7: Set Video Playback to Automatic</h2>
+                        <p>Last but not least, we want the video to play automatically when the slide appears. Select the video (now merged with the text) and go to the "Playback" tab under Video Tools. Set the "Start" option to "Automatically."</p>
+                        
+                        <h2>Extra Tips for a Perfect Presentation</h2>
+
+                        <ul>
+                            <li>Choose the Right Video: Make sure your video is high-quality and relevant to your presentation's topic. A visually appealing video enhances the overall impact.</li>
+                            <li>Adjust the Timing: If your video is long, consider trimming it to focus on the most important parts. You can do this in the "Playback" tab by selecting "Trim Video."</li>
+                            <li>Use Contrasting Colors: Ensure your text stands out against the video background. If the video is dark, use light-colored text, and vice versa.</li>
+                            <li>Test Your Slide: Before presenting, run through your slides to ensure everything works smoothly. Check that the video plays automatically and that the merging effect looks good on all devices.</li>
+                          </ul>
+
+                        <h2>Conclusion</h2>
+                        <p>And there you have it! A simple way to merge video and text in PowerPoint to create stunning slides that will captivate your audience. This technique is perfect for making your presentations more dynamic and engaging. So go ahead, give it a try, and impress your viewers with your new skills!
+                        
+                            Happy presenting! 🚀✨</p>
+                           
+                      </div>
+                       
+
+                       
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- ***** Most Popular End ***** -->
+
+          
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <footer>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12">
+          <p>Copyright © 2024 <a href="https://darksoul-codepen.github.io/">DarkSoul CodePen</a> | <a href="https://darksoul-codepen.github.io/Disclaimer.html">Disclaimer</a> | <a href="https://darksoul-codepen.github.io/Privacy-policy.html">Privacy Policy</a> | <a href="https://darksoul-codepen.github.io/FAQ.html">FAQ</a> | <a href="https://darksoul-codepen.github.io/sitemap.xml">Sitemap</a></p>
+          <p><img src="assets/images/codepen_logo.png" alt="Codepen Logo" style="max-width: 20px;"/><a href="https://codepen.io/DarkSoul-" target="_blank" > CodePen</a> | <img src="assets/images/dribbble_logo.png" alt="Dribbble Logo" style="max-width: 20px;"/><a href="https://dribbble.com/dark-soul" target="_blank" > Dribbble</a> | <img src="assets/images/instagram-white-icon.webp" alt="Instagram Logo" style="max-width: 20px;"/><a href="https://www.instagram.com/dark.soul.io/" target="_blank"> Instagram</a></p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+
+  <!-- Scripts -->
+  <!-- Bootstrap core JavaScript -->
+  <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+
+  <script src="assets/js/isotope.min.js"></script>
+  <script src="assets/js/owl-carousel.js"></script>
+  <script src="assets/js/tabs.js"></script>
+  <script src="assets/js/popup.js"></script>
+  <script src="assets/js/custom.js"></script>
+
+
+  </body>
+
+</html>

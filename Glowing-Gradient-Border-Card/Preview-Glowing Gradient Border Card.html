@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name='robots' content='index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1' />
+	<meta http-equiv="Permissions-Policy" content="interest-cohort=()">
+    <meta http-equiv="content-language" content="en">
+	<meta name="referrer" content="strict-origin-when-cross-origin">
+	<meta name="author" content="DarkSoul">
+ 
+    <!-- Favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+
+    <meta name="keywords" content="DarkSoul CodePen, Preview  Glowing Gradient Border Card , Live Output  Glowing Gradient Border Card Codepen , Glowing Card , Border Cards ,Glowing Border Cards live output, Dark Soul Codepens, DarkSoul CodePen How To's Blogs, DarkSoul UI/UX Designs, DarkSoul Codedamn" />
+    <meta name="description" content="Preview the Glowing Gradient Border Card on DarkSoul CodePen. Experience stunning interactive card designs with beautiful gradient borders and download the source code.">
+
+  
+    <title>Preview Glowing Gradient Border Card</title>
+    <style>
+           @import url('https://fonts.googleapis.com/css2?family=Belanosima&family=Rubik+Vinyl&display=swap');
+   
+       @import url('https://fonts.googleapis.com/css2?family=Lilita+One&display=swap');
+        body
+        {
+            margin: 0;
+            width: 100%;
+            height: 100vh;
+            display: flex;
+            background-color: rgb(13, 13, 13);
+            flex-direction: column;
+        }
+        .darksoul-glowing-gradient-cards
+        {
+            margin: auto;
+            display: flex;
+            width: 100%;
+            height: 90%;
+        }
+        .darksoul-gradient-card1
+        {
+            margin: auto;
+            margin-right: 1px;
+            display: flex;
+            width: 200px;
+            height: 300px;
+            background: linear-gradient(var(--gradient-angle),rgb(104, 3, 255), rgb(0, 0, 0));
+            border-radius: 5px;
+            animation: rotation 5s linear 0s infinite normal forwards;
+            backdrop-filter: blur(50px);
+        }
+        .darksoul-gradient-card2
+        {
+            margin: auto;
+            display: flex;
+            width: 250px;
+            height: 400px;
+            background: linear-gradient(var(--gradient-angle),rgb(3, 133, 255), rgb(0, 0, 0));
+            border-radius: 5px;
+            animation: rotation 5s linear 0s infinite normal forwards;
+            backdrop-filter: blur(50px);
+        }
+        .darksoul-gradient-card3
+        {
+            margin: auto;
+            margin-left: 1px;
+            display: flex;
+            width: 200px;
+            height: 300px;
+            background: linear-gradient(var(--gradient-angle),rgb(205, 3, 255), rgb(0, 0, 0));
+            border-radius: 5px;
+            animation: rotation 5s linear 0s infinite normal forwards;
+            backdrop-filter: blur(50px);
+        }
+        .darksoul-content-card
+        {
+            margin: auto;
+            width: 98%;
+            height: 99%;
+            background-color: black;
+            border-radius: 5px;
+            transition: all 0.2s;
+            backdrop-filter: blur(5px);
+            display: flex;
+            flex-direction: column;
+        }
+        .darksoul-content-card h1
+        {
+            font-family: 'Lilita One', sans-serif;
+            color: rgb(255, 255, 255);
+            font-size: 80px;
+            margin: auto;
+            font-weight: 100;
+        }
+        .darksoul-content-card p
+        {
+            font-family: 'Lilita One', sans-serif;
+            color: rgb(255, 255, 255);
+            font-size: 16px;
+            margin: auto;
+            font-weight: lighter;
+            text-align: justify;
+            width: 90%;
+        }
+        @keyframes rotation 
+        {
+           0%
+           {
+                --gradient-angle : 0deg;
+           }
+           100%
+           {
+                --gradient-angle : 360deg;
+           }
+        }
+        @property --gradient-angle
+        {
+            syntax: "<angle>";
+            initial-value: 0deg;
+            inherits: false;
+        }
+        @media only screen and (max-width: 600px) 
+        {
+            body
+            {
+                margin: 0;
+                width: 100%;
+                height: 100vh;
+                display: flex;
+                flex-direction: column;
+                background-color: rgb(13, 13, 13);
+            }
+            .darksoul-glowing-gradient-cards
+            {
+                margin: auto;
+                width: 80%;
+                height: 90%;
+                flex-direction: column;
+            }
+            .darksoul-gradient-card1, .darksoul-gradient-card2, .darksoul-gradient-card3
+            {
+                margin: auto;
+                margin-top: 10px;
+                margin-bottom: 10px;
+                width: 80%;
+            }
+     
+        }
+        .darksoul-footer
+        {
+            margin: auto;
+            display: flex;
+            width: 100%;
+            height: 10%;
+        }
+
+        .disclaimer
+        {
+            
+            font-family: 'Belanosima', sans-serif;
+            margin: auto;
+            width: fit-content;
+            color: white;
+            text-align: center;
+        }
+        .disclaimer a
+        {
+            text-decoration: none;
+            color: #0184ff;
+        }
+        .disclaimer a:hover
+        {
+            font-weight: bolder;
+        }
+        ::selection
+        {
+            background-color: #000000;
+            color: rgb(255, 255, 255);
+        }
+    </style>
+</head>
+<body>
+    <div class="darksoul-glowing-gradient-cards">
+        <div class="darksoul-gradient-card1">
+            <div class="darksoul-content-card">
+                <p></p>
+                <h1>UI</h1>
+            </div>
+        </div>
+        <div class="darksoul-gradient-card2">
+            <div class="darksoul-content-card">
+                <p></p>
+                <h1>UX</h1>
+            </div>
+        </div>
+        <div class="darksoul-gradient-card3">
+            <div class="darksoul-content-card">
+                <p></p>
+                <h1>AI</h1>
+            </div>
+        </div>
+    </div>
+    <div class="darksoul-footer">
+        <p class="disclaimer">Designed & Created by <a href="https://darksoul-codepen.github.io/" target="_blank">DarkSoul</a></p>
+    </div>
+   
+
+</body>
+</html>

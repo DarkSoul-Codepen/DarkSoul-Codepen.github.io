@@ -1,0 +1,539 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+  
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name='robots' content='index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1' />
+	  <meta http-equiv="Permissions-Policy" content="interest-cohort=()">
+    <meta http-equiv="content-language" content="en">
+	  <meta name="referrer" content="strict-origin-when-cross-origin">
+	  <meta name="author" content="DarkSoul">
+ 
+    <!-- Favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+
+    <meta name="keywords" content="DarkSoul CodePen, Glowing Gradient Border Cards, Glowing Gradient Border Cards Codepen , cards with Glowing border, Glowing Cards Border, Glowing cards, Card border glowing effect, Dark Soul Codepens, DarkSoul CodePen How To's Blogs, DarkSoul UI/UX Designs, DarkSoul Codedamn" />
+    <meta name="description" content="Explore Glowing Gradient Border Cards on DarkSoul CodePen. Live preview and download the source code for stunning, interactive card designs with beautiful gradient borders.">
+
+  
+    <title>Glowing Gradient Border Cards Codepen - DarkSoul CodePen</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+
+    <!-- Additional CSS Files -->
+    <link rel="stylesheet" href="assets/css/fontawesome.css">
+    <link rel="stylesheet" href="assets/css/darksoul-codepen.css">
+    <link rel="stylesheet" href="assets/css/owl.css">
+    <link rel="stylesheet" href="assets/css/animate.css">
+    <link rel="stylesheet"href="https://unpkg.com/swiper@7/swiper-bundle.min.css"/>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+<style>
+  textarea
+  {
+    
+    resize: none;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: large;
+    min-height: 400px;
+    background-color: rgba(19, 19, 19, 0.44);
+    border: none;
+    border-radius: 15px;
+    font-weight: 500;
+    
+    color: rgb(255, 255, 255);
+  }
+  p{
+    color: #ffffff;
+    margin: auto;
+  }
+  li
+  {
+    list-style-type: square;
+    color: #B1E3FA;
+    
+  }
+  strong
+  {
+    color: #B1E3FA;
+  }
+  h1
+  {
+    font-weight: 900 !important;
+    margin-bottom: 40px;
+  }
+  h2,h4
+  {
+    font-weight: 900 !important;
+  }
+  
+        /* width */
+        ::-webkit-scrollbar 
+        {
+            width: 5px;
+        }
+
+        /* Track */
+        ::-webkit-scrollbar-track 
+        {
+            background-color: rgba(226, 247, 255, 0);
+        }
+
+        /* Handle */
+        ::-webkit-scrollbar-thumb 
+        {
+        background: #B1E3FA;
+        border-radius: 10px;
+        height: 10px;
+        width: 3px;
+        }
+        .most-popular p 
+        {
+          text-align: justify;
+        }
+</style>
+
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-0XRHJTRGGH"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-0XRHJTRGGH');
+</script>
+
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9669180356185936"
+     crossorigin="anonymous"></script>
+
+   <!-- Clarity tracking code for https://darksoul-codepen.github.io/ -->
+   <script>
+    (function(c,l,a,r,i,t,y){
+        c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+        t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i+"?ref=bwt";
+        y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+    })(window, document, "clarity", "script", "k6ctefq607");
+  </script>
+  </head>
+
+<body>
+
+  <!-- ***** Preloader Start ***** -->
+  <div id="js-preloader" class="js-preloader">
+    <div class="preloader-inner">
+      <span class="dot"></span>
+      <div class="dots">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </div>
+  </div>
+  <!-- ***** Preloader End ***** -->
+
+  <!-- ***** Header Area Start ***** -->
+  <header class="header-area header-sticky" style="background-color: rgba(0, 0, 0, 0);">
+    <div class="container" style="padding: 0px;">
+        <div class="row">
+            <div class="col-12">
+              <nav class="main-nav">
+                <!-- ***** Logo Start ***** -->
+                <a href="https://darksoul-codepen.github.io/" class="logo">
+                    <img src="assets/images/logo.png" alt="DarkSoul CodePen - Logo" width="100%">
+                </a>
+                <!-- ***** Logo End ***** -->
+                <!-- ***** Search End ***** -->
+                <div class="search-input">
+                  <form id="search" action="#">
+                    <input type="text" placeholder="Type Something" id='searchText' name="searchKeyword" onkeypress="handle" />
+                    <i class="fa fa-search"></i>
+                  </form>
+                </div>
+                <!-- ***** Search End ***** -->
+                <!-- ***** Menu Start ***** -->
+                <ul class="nav">
+                    <li><a href="https://darksoul-codepen.github.io/">Home</a></li>
+                    <li><a href="posts.html">Posts</a></li>
+                    <li><a href="codepen.html" class="active">CodePens</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="about.html">About Me <img src="assets/images/profile-header.png" alt="DarkSoul Profile"></a></li>
+                </ul>   
+                <a class='menu-trigger'>
+                    <span>Menu</span>
+                </a>
+                <!-- ***** Menu End ***** -->
+            </nav>
+            </div>
+        </div>
+    </div>
+  </header>
+  <!-- ***** Header Area End ***** -->
+
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12">
+        <div class="page-content">
+
+          <!-- ***** Banner Start ***** -->
+          <div class="main-banner">
+            <div class="row">
+              <div class="col-lg-7">
+                <div class="header-text">
+                  
+                  <h1 style="color: #38B6FF;">Glowing <b style="color: #000000;">Gradient Border Cards</b> CodePen</h1>
+                  <h6 style="color: black;">CodePen</h6>
+                  <div class="main-button">
+                    <a href="Glowing-Gradient-Border-Card/Preview-Glowing Gradient Border Card.html">Preview</a>&nbsp;&nbsp;
+                    <a href="Zips/Glowing-Gradient-Border-Card.zip" download>Download Source code</a>
+                  </div>
+                  
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- ***** Banner End ***** -->
+
+               <!-- ***** Most Popular Start ***** -->
+               <div class="most-popular">
+                <div class="row">
+                  <div class="col-lg-12">
+                    <div class="heading-section">
+                      <h4>Procedure</h4>
+        
+                      
+                      <div class="row">
+                        <p><b>Step 1 - Setting Up the HTML Structure: </b><br />We start with the basic HTML structure. It includes the DOCTYPE declaration, opening and closing html tags, and the head and body sections.</p>
+                    
+                        <p><b>Step 2 - Defining the Character Encoding and Viewport: </b><br />In the head section, we set the character encoding to UTF-8 and define the viewport for responsive design.</p>
+                    
+                        <p><b>Step 3 - Title and Fonts: </b><br />Inside the head, we set the title of the webpage and import some Google Fonts using @import rule to style our text later on.</p>
+                    
+                        <p><b>Step 4 - Body Styling: </b><br />In the style section, we style the body element. We remove margins, set width and height to 100% to cover the whole viewport, and use flexbox to center elements vertically and horizontally. We also set a dark background color.</p>
+                    
+                        <p><b>Step 5 - Cards Container: </b><br />We define a container for the cards with the class <b>.darksoul-glowing-gradient-cards</b>. This container is centered within the viewport and takes up 90% of the height.</p>
+                    
+                        <p><b>Step 6 - Card Styles: </b><br />We define styles for three different cards: <b>.darksoul-gradient-card1</b>, <b>.darksoul-gradient-card2</b>, and <b>.darksoul-gradient-card3</b>. Each card has a different size and gradient background, a rotation animation, rounded corners, and a blur effect for the background.</p>
+                    
+                        <p><b>Step 7 - Content Within Cards: </b><br />Inside each card, we create a <b>.darksoul-content-card</b> div to hold the text content. The content card has a black background, rounded corners, and a blur effect.</p>
+                    
+                        <p><b>Step 8 - Keyframes for Animation: </b><br />We define the <b>@keyframes rotation</b> rule to create a full 360-degree rotation animation for the gradient. The <b>@property --gradient-angle</b> rule is used to animate the custom CSS property for the gradient angle.</p>
+                    
+                        <p><b>Step 9 - Responsive Design: </b><br />We use the <b>@media</b> rule to ensure the layout adjusts on screens smaller than 600px. The cards stack vertically and adjust their width for a better viewing experience on mobile devices.</p>
+                    
+                        <p><b>Step 10 - Footer and Text Selection Styles: </b><br />We create a footer with the class <b>.darksoul-footer</b>, containing a disclaimer and a link to DarkSoul's homepage. The disclaimer text uses the 'Belanosima' font and changes color when hovered over. Additionally, the <b>::selection</b> pseudo-element is styled to have a black background with white text when text is selected.</p>
+                    
+                        <p style="margin-top: 20px;">In conclusion, by following these step-by-step instructions, you can create a visually appealing and responsive Glowing Gradient Border Card with customizable styles and animations.</p>
+                    </div>
+                    
+                       
+
+                       
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- ***** Most Popular End ***** -->
+
+          <!-- ***** Most Popular Start ***** -->
+          <div class="most-popular">
+            <div class="row">
+              <div class="col-lg-12">
+                <div class="heading-section">
+                  <h4>Html</h4>
+                </div>
+                <div class="row">
+                
+                   
+<textarea disabled id="html">
+    
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+         /* Internal styles goes here.. */
+    </head>
+    <body>
+        <div class="darksoul-glowing-gradient-cards">
+            <div class="darksoul-gradient-card1">
+                <div class="darksoul-content-card">
+                    <p></p>
+                    <h1>UI</h1>
+                </div>
+            </div>
+            <div class="darksoul-gradient-card2">
+                <div class="darksoul-content-card">
+                    <p></p>
+                    <h1>UX</h1>
+                </div>
+            </div>
+            <div class="darksoul-gradient-card3">
+                <div class="darksoul-content-card">
+                    <p></p>
+                    <h1>AI</h1>
+                </div>
+            </div>
+        </div>
+        <div class="darksoul-footer">
+            <p class="disclaimer">Designed & Created by <a href="https://darksoul-codepen.github.io/" target="_blank">DarkSoul</a></p>
+        </div>
+    </body>
+    </html>
+</textarea>
+                   
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- ***** Most Popular End ***** -->
+
+            <!-- ***** Most Popular Start ***** -->
+            <div class="most-popular">
+                <div class="row">
+                  <div class="col-lg-12">
+                    <div class="heading-section">
+                      <h4>Css</h4>
+                    </div>
+                    <div class="row">
+                                           
+<textarea disabled id="css">
+    @import url('https://fonts.googleapis.com/css2?family=Belanosima&family=Rubik+Vinyl&display=swap');
+   
+    @import url('https://fonts.googleapis.com/css2?family=Lilita+One&display=swap');
+     body
+     {
+         margin: 0;
+         width: 100%;
+         height: 100vh;
+         display: flex;
+         background-color: rgb(13, 13, 13);
+         flex-direction: column;
+     }
+     .darksoul-glowing-gradient-cards
+     {
+         margin: auto;
+         display: flex;
+         width: 100%;
+         height: 90%;
+     }
+     .darksoul-gradient-card1
+     {
+         margin: auto;
+         margin-right: 1px;
+         display: flex;
+         width: 200px;
+         height: 300px;
+         background: linear-gradient(var(--gradient-angle),rgb(104, 3, 255), rgb(0, 0, 0));
+         border-radius: 5px;
+         animation: rotation 5s linear 0s infinite normal forwards;
+         backdrop-filter: blur(50px);
+     }
+     .darksoul-gradient-card2
+     {
+         margin: auto;
+         display: flex;
+         width: 250px;
+         height: 400px;
+         background: linear-gradient(var(--gradient-angle),rgb(3, 133, 255), rgb(0, 0, 0));
+         border-radius: 5px;
+         animation: rotation 5s linear 0s infinite normal forwards;
+         backdrop-filter: blur(50px);
+     }
+     .darksoul-gradient-card3
+     {
+         margin: auto;
+         margin-left: 1px;
+         display: flex;
+         width: 200px;
+         height: 300px;
+         background: linear-gradient(var(--gradient-angle),rgb(205, 3, 255), rgb(0, 0, 0));
+         border-radius: 5px;
+         animation: rotation 5s linear 0s infinite normal forwards;
+         backdrop-filter: blur(50px);
+     }
+     .darksoul-content-card
+     {
+         margin: auto;
+         width: 98%;
+         height: 99%;
+         background-color: black;
+         border-radius: 5px;
+         transition: all 0.2s;
+         backdrop-filter: blur(5px);
+         display: flex;
+         flex-direction: column;
+     }
+     .darksoul-content-card h1
+     {
+         font-family: 'Lilita One', sans-serif;
+         color: rgb(255, 255, 255);
+         font-size: 80px;
+         margin: auto;
+         font-weight: 100;
+     }
+     .darksoul-content-card p
+     {
+         font-family: 'Lilita One', sans-serif;
+         color: rgb(255, 255, 255);
+         font-size: 16px;
+         margin: auto;
+         font-weight: lighter;
+         text-align: justify;
+         width: 90%;
+     }
+     @keyframes rotation 
+     {
+        0%
+        {
+             --gradient-angle : 0deg;
+        }
+        100%
+        {
+             --gradient-angle : 360deg;
+        }
+     }
+     @property --gradient-angle
+     {
+         syntax: "<angle>";
+         initial-value: 0deg;
+         inherits: false;
+     }
+     @media only screen and (max-width: 600px) 
+     {
+         body
+         {
+             margin: 0;
+             width: 100%;
+             height: 100vh;
+             display: flex;
+             flex-direction: column;
+             background-color: rgb(13, 13, 13);
+         }
+         .darksoul-glowing-gradient-cards
+         {
+             margin: auto;
+             width: 80%;
+             height: 90%;
+             flex-direction: column;
+         }
+         .darksoul-gradient-card1, .darksoul-gradient-card2, .darksoul-gradient-card3
+         {
+             margin: auto;
+             margin-top: 10px;
+             margin-bottom: 10px;
+             width: 80%;
+         }
+  
+     }
+     .darksoul-footer
+     {
+         margin: auto;
+         display: flex;
+         width: 100%;
+         height: 10%;
+     }
+
+     .disclaimer
+     {
+         
+         font-family: 'Belanosima', sans-serif;
+         margin: auto;
+         width: fit-content;
+         color: white;
+         text-align: center;
+     }
+     .disclaimer a
+     {
+         text-decoration: none;
+         color: #0184ff;
+     }
+     .disclaimer a:hover
+     {
+         font-weight: bolder;
+     }
+     ::selection
+     {
+         background-color: #000000;
+         color: rgb(255, 255, 255);
+     }
+  </textarea>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- ***** Most Popular End ***** -->
+
+                <!-- ***** Most Popular Start ***** -->
+          <div class="most-popular">
+            <div class="row">
+              <div class="col-lg-12">
+                <div class="heading-section">
+                  <h4>Js</h4>
+                </div>
+                <div class="row">
+                                       
+<textarea disabled id="js">
+       
+    JavaScript is not necessary.
+       
+</textarea>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- ***** Most Popular End ***** -->
+
+          <!-- ***** Gaming Library Start ***** -->
+          <div class="gaming-library">
+            <div class="col-lg-12 align-self-center justify-content-center text-center heading-section">
+              <div class="heading-section text-lg-start">
+                <h4>Output Screenshot</h4>
+              </div>
+              <img src="Glowing-Gradient-Border-Card/Output Screenshot - Glowing Gradient Border Cards.png" alt="Output Screenshot - Glowing Gradient Border Cards CodePen" style="max-width: 60%; border-radius: 10px;"/>
+              <p>&nbsp;</p>
+            <div class="col-lg-12">
+              <div class="main-button">
+                <a href="Glowing-Gradient-Border-Card/Preview-Glowing Gradient Border Card.html">View Live Output</a>
+              </div>
+            </div>
+          </div>
+          <!-- ***** Gaming Library End ***** -->
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <footer>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12">
+          <p>Copyright © 2024 <a href="https://darksoul-codepen.github.io/">DarkSoul CodePen</a> | <a href="https://darksoul-codepen.github.io/Disclaimer.html">Disclaimer</a> | <a href="https://darksoul-codepen.github.io/Privacy-policy.html">Privacy Policy</a> | <a href="https://darksoul-codepen.github.io/FAQ.html">FAQ</a> | <a href="https://darksoul-codepen.github.io/sitemap.xml">Sitemap</a></p>
+          <p><img src="assets/images/codepen_logo.png" alt="Codepen Logo" style="max-width: 20px;"/><a href="https://codepen.io/DarkSoul-" target="_blank" > CodePen</a> | <img src="assets/images/dribbble_logo.png" alt="Dribbble Logo" style="max-width: 20px;"/><a href="https://dribbble.com/dark-soul" target="_blank" > Dribbble</a> | <img src="assets/images/instagram-white-icon.webp" alt="Instagram Logo" style="max-width: 20px;"/><a href="https://www.instagram.com/dark.soul.io/" target="_blank"> Instagram</a></p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+
+
+  <!-- Scripts -->
+  <!-- Bootstrap core JavaScript -->
+  <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+
+  <script src="assets/js/isotope.min.js"></script>
+  <script src="assets/js/owl-carousel.js"></script>
+  <script src="assets/js/tabs.js"></script>
+  <script src="assets/js/popup.js"></script>
+  <script src="assets/js/custom.js"></script>
+
+
+  </body>
+
+</html>

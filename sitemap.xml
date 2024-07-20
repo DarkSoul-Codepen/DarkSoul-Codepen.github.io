@@ -2,7 +2,7 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
   <url>
     <loc>https://darksoul-codepen.github.io/</loc>
-    <lastmod>2024-07-10</lastmod>
+    <lastmod>2024-07-20</lastmod>
     <priority>1.0</priority>
       <image:image>
         <image:loc>https://darksoul-codepen.github.io/assets/images/service-01.png</image:loc>
@@ -61,10 +61,13 @@
       <image:image>
         <image:loc>https://darksoul-codepen.github.io/assets/images/How%20to%20merge%20Picture%20and%20Text%20in%20PPT%20-%20Post%20Cover%20image.webp</image:loc>
       </image:image>
+      <image:image>
+        <image:loc>https://darksoul-codepen.github.io/assets/images/Glowing%20Gradient%20Border%20Cards%20-%20Post%20Cover.png</image:loc>
+      </image:image>
   </url>
   <url>
     <loc>https://darksoul-codepen.github.io/How-to-Find-the-Size-of-a-GitHub-Repository.html</loc>
-    <lastmod>2024-07-10</lastmod>
+    <lastmod>2024-07-20</lastmod>
     <priority>0.9</priority>
       <image:image>
         <image:loc>https://darksoul-codepen.github.io/assets/images/How%20to%20Find%20the%20Size%20of%20a%20GitHub%20Repository%20using%20GitHub%20Settings.png</image:loc>
@@ -81,7 +84,7 @@
   </url>
   <url>
     <loc>https://darksoul-codepen.github.io/Glassy-Date-Time-Weather-Widget.html</loc>
-    <lastmod>2024-07-10</lastmod>
+    <lastmod>2024-07-20</lastmod>
     <priority>0.9</priority>
       <image:image>
         <image:loc>https://darksoul-codepen.github.io/Glassy-Date-Time-Weather-Widget/Output%20Screenshot%20-%20Glassy%20Date%20Time%20Weather%20Widget.png</image:loc>
@@ -89,12 +92,12 @@
   </url>
   <url>
     <loc>https://darksoul-codepen.github.io/contact.html</loc>
-    <lastmod>2024-07-10</lastmod>
+    <lastmod>2024-07-20</lastmod>
     <priority>0.9</priority>
   </url>
   <url>
     <loc>https://darksoul-codepen.github.io/Neumorphic-Theme-Toggle-Switch.html</loc>
-    <lastmod>2024-07-10</lastmod>
+    <lastmod>2024-07-20</lastmod>
     <priority>0.9</priority>
       <image:image>
         <image:loc>https://darksoul-codepen.github.io/Neumorphic-Theme-Toggle-Switch/Output%20Screenshot%20-%20Neumorphism%20Toggle%20Switch%20CodePen.png</image:loc>
@@ -102,17 +105,17 @@
   </url>
   <url>
     <loc>https://darksoul-codepen.github.io/Fibonacci-Generator-Lab.html</loc>
-    <lastmod>2024-07-10</lastmod>
+    <lastmod>2024-07-20</lastmod>
     <priority>0.9</priority>
   </url>
   <url>
     <loc>https://darksoul-codepen.github.io/FAQ.html</loc>
-    <lastmod>2024-07-10</lastmod>
+    <lastmod>2024-07-20</lastmod>
     <priority>0.9</priority>
   </url>
   <url>
     <loc>https://darksoul-codepen.github.io/Circular-Navigation-Menu.html</loc>
-    <lastmod>2024-07-10</lastmod>
+    <lastmod>2024-07-20</lastmod>
     <priority>0.9</priority>
       <image:image>
         <image:loc>https://darksoul-codepen.github.io/Circular-Navigation-Menu/Output-Screenshot-Circular-Navigation-Menu.png</image:loc>
@@ -120,7 +123,7 @@
   </url>
   <url>
     <loc>https://darksoul-codepen.github.io/Sticky-Search-Bar.html</loc>
-    <lastmod>2024-07-10</lastmod>
+    <lastmod>2024-07-20</lastmod>
     <priority>0.9</priority>
       <image:image>
         <image:loc>https://darksoul-codepen.github.io/Sticky-Search-Bar/Output%20Screenshot%20-%20Sticky%20Search%20Bar.png</image:loc>
@@ -128,7 +131,7 @@
   </url>
   <url>
     <loc>https://darksoul-codepen.github.io/Header-Tag-Lab.html</loc>
-    <lastmod>2024-07-10</lastmod>
+    <lastmod>2024-07-20</lastmod>
     <priority>0.9</priority>
       <image:image>
         <image:loc>https://darksoul-codepen.github.io/Header-Tag-Lab/Output%20Screenshot%20Header%20Tag%20Lab.png</image:loc>
@@ -136,7 +139,7 @@
   </url>
   <url>
     <loc>https://darksoul-codepen.github.io/How-to-merge-Picture-and-Text-in-PPT.html</loc>
-    <lastmod>2024-07-10</lastmod>
+    <lastmod>2024-07-20</lastmod>
     <priority>0.9</priority>
       <image:image>
         <image:loc>https://darksoul-codepen.github.io/assets/images/How-to-merge-Picture-and-Text-in-PPT%20-%20Insert%20text%20in%20a%20blank%20slide.webp</image:loc>
@@ -150,12 +153,12 @@
   </url>
   <url>
     <loc>https://darksoul-codepen.github.io/Privacy-policy.html</loc>
-    <lastmod>2024-07-10</lastmod>
+    <lastmod>2024-07-20</lastmod>
     <priority>0.9</priority>
   </url>
   <url>
     <loc>https://darksoul-codepen.github.io/How-to-create-and-style-buttons-like-bootstrap.html</loc>
-    <lastmod>2024-07-10</lastmod>
+    <lastmod>2024-07-20</lastmod>
     <priority>0.9</priority>
       <image:image>
         <image:loc>https://darksoul-codepen.github.io/How-to-create-and-style-buttons-like-bootstrap/Output-Screenshot-How-to-create-and-style-buttons-like-bootstrap.png</image:loc>
@@ -163,7 +166,7 @@
   </url>
   <url>
     <loc>https://darksoul-codepen.github.io/How-to-center-an-image-using-display-flex.html</loc>
-    <lastmod>2024-07-10</lastmod>
+    <lastmod>2024-07-20</lastmod>
     <priority>0.9</priority>
       <image:image>
         <image:loc>https://darksoul-codepen.github.io/assets/images/How-to-center-an-image-using-display-flex-img-tag-src.png</image:loc>
@@ -174,7 +177,7 @@
   </url>
   <url>
     <loc>https://darksoul-codepen.github.io/CSS-Shapes-Lab.html</loc>
-    <lastmod>2024-07-10</lastmod>
+    <lastmod>2024-07-20</lastmod>
     <priority>0.9</priority>
       <image:image>
         <image:loc>https://darksoul-codepen.github.io/CSS-Shapes-Lab/Output%20Screenshot%20CSS%20Shapes%20Lab.png</image:loc>
@@ -182,15 +185,23 @@
   </url>
   <url>
     <loc>https://darksoul-codepen.github.io/about.html</loc>
-    <lastmod>2024-07-10</lastmod>
+    <lastmod>2024-07-20</lastmod>
     <priority>0.9</priority>
       <image:image>
         <image:loc>https://darksoul-codepen.github.io/assets/images/darksoul.jpg</image:loc>
       </image:image>
   </url>
   <url>
+    <loc>https://darksoul-codepen.github.io/Glowing-Gradient-Border-cards.html</loc>
+    <lastmod>2024-07-20</lastmod>
+    <priority>0.9</priority>
+      <image:image>
+        <image:loc>https://darksoul-codepen.github.io/Glowing-Gradient-Border-Card/Output%20Screenshot%20-%20Glowing%20Gradient%20Border%20Cards.png</image:loc>
+      </image:image>
+  </url>
+  <url>
     <loc>https://darksoul-codepen.github.io/How-to-Create-an-Animated-Alert-box.html</loc>
-    <lastmod>2024-07-10</lastmod>
+    <lastmod>2024-07-20</lastmod>
     <priority>0.9</priority>
       <image:image>
         <image:loc>https://darksoul-codepen.github.io/How-to-Create-an-Animated-Alert-box/Output-Screenshot-How-to-Create-an-Animated-Alert-box.png</image:loc>
@@ -198,7 +209,7 @@
   </url>
   <url>
     <loc>https://darksoul-codepen.github.io/Glassy-Music-Player.html</loc>
-    <lastmod>2024-07-10</lastmod>
+    <lastmod>2024-07-20</lastmod>
     <priority>0.9</priority>
       <image:image>
         <image:loc>https://darksoul-codepen.github.io/Glassy-Music-Player/Output%20Screenshot%20-%20Glassy%20Music%20Player.webp</image:loc>
@@ -206,7 +217,7 @@
   </url>
   <url>
     <loc>https://darksoul-codepen.github.io/posts.html</loc>
-    <lastmod>2024-07-10</lastmod>
+    <lastmod>2024-07-20</lastmod>
     <priority>0.9</priority>
       <image:image>
         <image:loc>https://darksoul-codepen.github.io/assets/images/How-to-center-an-image-using-display-flex.png</image:loc>
@@ -241,7 +252,7 @@
   </url>
   <url>
     <loc>https://darksoul-codepen.github.io/codepen.html</loc>
-    <lastmod>2024-07-10</lastmod>
+    <lastmod>2024-07-20</lastmod>
     <priority>0.9</priority>
       <image:image>
         <image:loc>https://darksoul-codepen.github.io/assets/images/Glassy%20Date,Time%20Weather%20Widget.png</image:loc>
@@ -264,10 +275,13 @@
       <image:image>
         <image:loc>https://darksoul-codepen.github.io/assets/images/Sticky%20Search%20Bar.png</image:loc>
       </image:image>
+      <image:image>
+        <image:loc>https://darksoul-codepen.github.io/assets/images/Glowing%20Gradient%20Border%20Cards.png</image:loc>
+      </image:image>
   </url>
   <url>
     <loc>https://darksoul-codepen.github.io/Glowing-Border-Button.html</loc>
-    <lastmod>2024-07-10</lastmod>
+    <lastmod>2024-07-20</lastmod>
     <priority>0.9</priority>
       <image:image>
         <image:loc>https://darksoul-codepen.github.io/Glowing-Border-Button/Output-Glowing-Border-Button.gif</image:loc>
@@ -275,12 +289,12 @@
   </url>
   <url>
     <loc>https://darksoul-codepen.github.io/Disclaimer.html</loc>
-    <lastmod>2024-07-10</lastmod>
+    <lastmod>2024-07-20</lastmod>
     <priority>0.9</priority>
   </url>
   <url>
     <loc>https://darksoul-codepen.github.io/Radio-Buttons-Lab.html</loc>
-    <lastmod>2024-07-10</lastmod>
+    <lastmod>2024-07-20</lastmod>
     <priority>0.9</priority>
       <image:image>
         <image:loc>https://darksoul-codepen.github.io/Radio-Buttons-Lab/Output-Screenshot-Radio-Buttons-Lab.png</image:loc>
@@ -288,7 +302,7 @@
   </url>
   <url>
     <loc>https://darksoul-codepen.github.io/How-to-merge-Video-and-Text-in-PPT.html</loc>
-    <lastmod>2024-07-10</lastmod>
+    <lastmod>2024-07-20</lastmod>
     <priority>0.9</priority>
       <image:image>
         <image:loc>https://darksoul-codepen.github.io/assets/images/How%20to%20merge%20Video%20and%20Text%20in%20PPT%20-%20Insert%20text%20into%20a%20blank%20slide.webp</image:loc>
@@ -305,17 +319,17 @@
   </url>
   <url>
     <loc>https://darksoul-codepen.github.io/Glowing-Border-Button/Preview-Glowing-Border-Button.html</loc>
-    <lastmod>2024-07-10</lastmod>
+    <lastmod>2024-07-20</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://darksoul-codepen.github.io/Radio-Buttons-Lab/Preview-Radio-Buttons-Lab.html</loc>
-    <lastmod>2024-07-10</lastmod>
+    <lastmod>2024-07-20</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://darksoul-codepen.github.io/Glassy-Music-Player/Preview-Glassy-Music-Player.html</loc>
-    <lastmod>2024-07-10</lastmod>
+    <lastmod>2024-07-20</lastmod>
     <priority>0.8</priority>
       <image:image>
         <image:loc>https://darksoul-codepen.github.io/artworks-000156861583-kdtytg-t500x500.jpg</image:loc>
@@ -323,17 +337,22 @@
   </url>
   <url>
     <loc>https://darksoul-codepen.github.io/How-to-Create-an-Animated-Alert-box/Preview-How-to-Create-an-Animated-Alert-box.html</loc>
-    <lastmod>2024-07-10</lastmod>
+    <lastmod>2024-07-20</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://darksoul-codepen.github.io/Glowing-Gradient-Border-Card/Preview-Glowing%20Gradient%20Border%20Card.html</loc>
+    <lastmod>2024-07-20</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://darksoul-codepen.github.io/CSS-Shapes-Lab/Preview-CSS-Shapes-Lab.html</loc>
-    <lastmod>2024-07-10</lastmod>
+    <lastmod>2024-07-20</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://darksoul-codepen.github.io/How-to-center-an-image-using-display-flex/Preview-How-to-center-an-image-using-display-flex.html</loc>
-    <lastmod>2024-07-10</lastmod>
+    <lastmod>2024-07-20</lastmod>
     <priority>0.8</priority>
       <image:image>
         <image:loc>https://darksoul-codepen.github.io/How-to-center-an-image-using-display-flex/How-to-center-an-image-using-display-flex.png</image:loc>
@@ -341,17 +360,17 @@
   </url>
   <url>
     <loc>https://darksoul-codepen.github.io/How-to-create-and-style-buttons-like-bootstrap/Preview-How-to-create-and-style-buttons-like-bootstrap.html</loc>
-    <lastmod>2024-07-10</lastmod>
+    <lastmod>2024-07-20</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://darksoul-codepen.github.io/Header-Tag-Lab/Preview-Header-Tag-Lab.html</loc>
-    <lastmod>2024-07-10</lastmod>
+    <lastmod>2024-07-20</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://darksoul-codepen.github.io/Sticky-Search-Bar/Preview-Sticky-Search-Bar.html</loc>
-    <lastmod>2024-07-10</lastmod>
+    <lastmod>2024-07-20</lastmod>
     <priority>0.8</priority>
       <image:image>
         <image:loc>https://darksoul-codepen.github.io/search-icon.png</image:loc>
@@ -359,17 +378,17 @@
   </url>
   <url>
     <loc>https://darksoul-codepen.github.io/Circular-Navigation-Menu/Preview-Circular-Navigation-Menu.html</loc>
-    <lastmod>2024-07-10</lastmod>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://darksoul-codepen.github.io/Glassy-Date-Time-Weather-Widget/Preview-Glassy-Date-Time-Weather-Widget.html</loc>
-    <lastmod>2024-07-10</lastmod>
+    <lastmod>2024-07-20</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://darksoul-codepen.github.io/Neumorphic-Theme-Toggle-Switch/Preview-Neumorphic-Theme-Toggle-Switch.html</loc>
-    <lastmod>2024-07-10</lastmod>
+    <lastmod>2024-07-20</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://darksoul-codepen.github.io/Glassy-Date-Time-Weather-Widget/Preview-Glassy-Date-Time-Weather-Widget.html</loc>
+    <lastmod>2024-07-20</lastmod>
     <priority>0.8</priority>
   </url>
 </urlset>

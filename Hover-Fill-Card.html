@@ -1,0 +1,577 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+  
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name='robots' content='index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1' />
+	  <meta http-equiv="Permissions-Policy" content="interest-cohort=()">
+    <meta http-equiv="content-language" content="en">
+	  <meta name="referrer" content="strict-origin-when-cross-origin">
+	  <meta name="author" content="DarkSoul">
+ 
+    <!-- Favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+
+    <meta name="keywords" content="DarkSoul CodePen, Hover Fill Card, Hover Fill Card Codepen , cards with Hover Fill, Hover Cards, Fill cards, Card fill hover effect, Dark Soul Codepens, DarkSoul CodePen How To's Blogs, DarkSoul UI/UX Designs, DarkSoul Codedamn" />
+    <meta name="description" content="Explore the Hover Fill Card, featuring a sleek design with smooth transitions and vibrant color fills on hover. These elegant card effects create a visually appealing and interactive user experience.">
+
+  
+    <title>Hover Fill Card - DarkSoul CodePen</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+
+    <!-- Additional CSS Files -->
+    <link rel="stylesheet" href="assets/css/fontawesome.css">
+    <link rel="stylesheet" href="assets/css/darksoul-codepen.css">
+    <link rel="stylesheet" href="assets/css/owl.css">
+    <link rel="stylesheet" href="assets/css/animate.css">
+    <link rel="stylesheet"href="https://unpkg.com/swiper@7/swiper-bundle.min.css"/>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+<style>
+  textarea
+  {
+    
+    resize: none;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: large;
+    min-height: 400px;
+    background-color: rgba(19, 19, 19, 0.44);
+    border: none;
+    border-radius: 15px;
+    font-weight: 500;
+    
+    color: rgb(255, 255, 255);
+  }
+  p{
+    color: #ffffff;
+    margin: auto;
+  }
+  li
+  {
+    list-style-type: disc;
+    color: #ffffff;
+    
+  }
+  strong
+  {
+    color: #B1E3FA;
+  }
+  h1
+  {
+    font-weight: 900 !important;
+    margin-bottom: 40px;
+  }
+  h2,h4
+  {
+    font-weight: 900 !important;
+  }
+  
+        /* width */
+        ::-webkit-scrollbar 
+        {
+            width: 5px;
+        }
+
+        /* Track */
+        ::-webkit-scrollbar-track 
+        {
+            background-color: rgba(226, 247, 255, 0);
+        }
+
+        /* Handle */
+        ::-webkit-scrollbar-thumb 
+        {
+        background: #B1E3FA;
+        border-radius: 10px;
+        height: 10px;
+        width: 3px;
+        }
+        .most-popular p 
+        {
+          text-align: justify;
+        }
+</style>
+
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-0XRHJTRGGH"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-0XRHJTRGGH');
+</script>
+
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9669180356185936"
+     crossorigin="anonymous"></script>
+
+   <!-- Clarity tracking code for https://darksoul-codepen.github.io/ -->
+   <script>
+    (function(c,l,a,r,i,t,y){
+        c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+        t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i+"?ref=bwt";
+        y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+    })(window, document, "clarity", "script", "k6ctefq607");
+  </script>
+  </head>
+
+<body>
+
+  <!-- ***** Preloader Start ***** -->
+  <div id="js-preloader" class="js-preloader">
+    <div class="preloader-inner">
+      <span class="dot"></span>
+      <div class="dots">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </div>
+  </div>
+  <!-- ***** Preloader End ***** -->
+
+  <!-- ***** Header Area Start ***** -->
+  <header class="header-area header-sticky" style="background-color: rgba(0, 0, 0, 0);">
+    <div class="container" style="padding: 0px;">
+        <div class="row">
+            <div class="col-12">
+              <nav class="main-nav">
+                <!-- ***** Logo Start ***** -->
+                <a href="https://darksoul-codepen.github.io/" class="logo">
+                    <img src="assets/images/logo.png" alt="DarkSoul CodePen - Logo" width="100%">
+                </a>
+                <!-- ***** Logo End ***** -->
+                <!-- ***** Search End ***** -->
+                <div class="search-input">
+                  <form id="search" action="#">
+                    <input type="text" placeholder="Type Something" id='searchText' name="searchKeyword" onkeypress="handle" />
+                    <i class="fa fa-search"></i>
+                  </form>
+                </div>
+                <!-- ***** Search End ***** -->
+                <!-- ***** Menu Start ***** -->
+                <ul class="nav">
+                    <li><a href="https://darksoul-codepen.github.io/">Home</a></li>
+                    <li><a href="posts.html">Posts</a></li>
+                    <li><a href="codepen.html" class="active">CodePens</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="about.html">About Me <img src="assets/images/profile-header.png" alt="DarkSoul Profile"></a></li>
+                </ul>   
+                <a class='menu-trigger'>
+                    <span>Menu</span>
+                </a>
+                <!-- ***** Menu End ***** -->
+            </nav>
+            </div>
+        </div>
+    </div>
+  </header>
+  <!-- ***** Header Area End ***** -->
+
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12">
+        <div class="page-content">
+
+          <!-- ***** Banner Start ***** -->
+          <div class="main-banner">
+            <div class="row">
+              <div class="col-lg-7">
+                <div class="header-text">
+                  
+                  <h1 style="color: #38B6FF;">Hover <b style="color: #000000;">Fill Cards</b> CodePen</h1>
+                  <h6 style="color: black;">CodePen</h6>
+                  <div class="main-button">
+                    <a href="Hover-Fill-Card/Preview-Hover-Fill-Card.html">Preview</a>&nbsp;&nbsp;
+                    <a href="Zips/Hover-Fill-Card.zip" download>Download Source code</a>
+                  </div>
+                  
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- ***** Banner End ***** -->
+
+               <!-- ***** Most Popular Start ***** -->
+               <div class="most-popular">
+                <div class="row">
+                  <div class="col-lg-12">
+                    <div class="heading-section">
+                      <h4>Procedure</h4>
+        
+                      
+                      <div class="row">
+                        <p><b>Step 1 - Basic Setup:</b> We start by declaring the document type (DOCTYPE html) and setting the language to English (html lang="en"). The head section includes the character set, viewport settings, and the title of the page ("Preview - Hover Fill Card").</p>
+
+                        <p><b>Step 2 - Importing Fonts:</b> The code imports three Google Fonts: 'Belanosima', 'Rubik Vinyl', and 'Grand Hotel'. These fonts are used in different parts of the page to give a unique look.</p>
+                        
+                        <p><b>Step 3 - Body Styling:</b> The body is styled to take up the full width and height of the screen. The display is set to flex, which helps in centering the content. The default font for the body is 'Belanosima'.</p>
+                        
+                        <p><b>Step 4 - Link Styling:</b> Links (a) are styled to have no text decoration, and the content within them is centered using margin: auto.</p>
+                        
+                        <p><b>Step 5 - Card Styling:</b> Each card has a unique class (darksoul-card1, darksoul-card2, darksoul-card3) but shares some common properties: 
+                        <ul>
+                          <li style="margin-left: 25px; margin-bottom: 10px; margin-top: 10px;"><b>Size & Shape:</b> All cards are 200px by 200px, have rounded corners (border-radius: 15px), and a white background.</li>
+                          <li style="margin-left: 25px; margin-bottom: 10px; margin-top: 10px;"><b>Box Shadow:</b> Each card has a soft shadow to give it a slightly lifted appearance.</li>
+                          <li style="margin-left: 25px; margin-bottom: 10px; margin-top: 10px;"><b>Alignment:</b> Inside each card, content is aligned using align-items and justify-content with different settings for each card.</li>
+                        </ul>
+                        </p>
+                        
+                        <p><b>Step 6 - Circle Elements:</b> Each card contains a "circle" element, which is a div with a unique class (circle1, circle2, circle3).
+                        <ul>
+                          <li style="margin-left: 25px; margin-bottom: 10px; margin-top: 10px;"><b>Position & Size:</b> Initially, these circles are positioned and sized differently. For example, circle1 has a specific gradient background, while circle2 and circle3 have solid colors.</li>
+                          <li style="margin-left: 25px; margin-bottom: 10px; margin-top: 10px;"><b>Hover Effects:</b> When you hover over the cards, these circles expand to fill the card and change shape, creating a cool animation effect. The text color also changes to white.</li>
+                        </ul>
+                        </p>
+                        
+                        <p><b>Step 7 - Content Inside Cards:</b> Each card contains an image and a text element (h2, p, h4) that describe what the card represents (Instagram, CodePen, Dribbble). The z-index is used to ensure the text and images appear above the expanding circles.</p>
+                        
+                        <p><b>Step 8 - Media Query:</b> There's a media query for screens smaller than 600px, which adjusts the layout so that the cards stack vertically instead of horizontally.</p>
+                        
+                        <p style="margin-top: 10px;">By following these steps, you can create a visually captivating and interactive card layout that not only highlights your creative skills but also enhances user engagement. Keep experimenting with different styles and animations to make your web designs even more unique and appealing. Remember, the key to great design lies in the details and your willingness to explore new ideas. Happy coding!</p>
+
+                        
+                    </div>
+                    
+                       
+
+                       
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- ***** Most Popular End ***** -->
+
+          <!-- ***** Most Popular Start ***** -->
+          <div class="most-popular">
+            <div class="row">
+              <div class="col-lg-12">
+                <div class="heading-section">
+                  <h4>Html</h4>
+                </div>
+                <div class="row">
+                
+                   
+<textarea disabled id="html">
+    
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+         /* Internal styles goes here.. */
+    </head>
+    <body>
+        <a href="https://www.instagram.com/dark.soul.io/" target="_blank">
+            <div class="darksoul-card1">
+                <div class="circle1"></div>
+                <img src="https://darksoul-codepen.github.io/assets/images/instagram-white-icon.webp" alt="DarkSoul - Instagram" width="25" height="25" style="z-index: 100;" />
+                <h2 class="content">Instagram</h2>
+            </div>
+        </a>
+        <a href="https://codepen.io/DarkSoul-" target="_blank">
+            <div class="darksoul-card2">
+                <div class="circle2"></div>
+                <img src="https://darksoul-codepen.github.io/assets/images/codepen_logo.png" alt="DarkSoul - CodePen" width="25" height="25" style="z-index: 100;" />
+                <p class="content">CODEPEN</p>
+            </div> 
+        </a> 
+        <a href="https://dribbble.com/dark-soul" target="_blank">
+            <div class="darksoul-card3">
+                <div class="circle3"></div>
+                <img src="https://darksoul-codepen.github.io/assets/images/dribbble_logo.png" alt="DarkSoul - Dribbble" width="25" height="25" style="z-index: 100;" />
+                <h4 class="content" style="font-weight: 600;">Dribbble</h4>
+            </div>
+        </a>
+        <p class="disclaimer">Designed & Created by <a href="https://darksoul-codepen.github.io/" target="_blank">DarkSoul</a></p>
+    </body>
+    </html>
+</textarea>
+                   
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- ***** Most Popular End ***** -->
+
+            <!-- ***** Most Popular Start ***** -->
+            <div class="most-popular">
+                <div class="row">
+                  <div class="col-lg-12">
+                    <div class="heading-section">
+                      <h4>Css</h4>
+                    </div>
+                    <div class="row">
+                                           
+<textarea disabled id="css">
+    @import url('https://fonts.googleapis.com/css2?family=Belanosima&family=Rubik+Vinyl&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Grand+Hotel&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap');
+
+    body
+    {
+        width: 100%;
+        height: 100vh;
+        margin: 0;
+        display: flex;
+        font-family: 'Belanosima', sans-serif;
+       
+    }
+    a
+    {
+        margin: auto;
+        text-decoration: none;
+    }
+    .darksoul-card1
+    {
+        display: flex;
+        margin: auto;
+        width: 200px;
+        height: 200px;
+        background-color: rgb(255, 255, 255);
+        box-shadow: 5px 5px 60px rgb(235, 235, 235), -5px -5px 60px rgb(237, 237, 237);
+        border-radius: 15px;
+        transition: all 2s;
+        align-items: start;
+        justify-content: right;
+        font-family: "Grand Hotel", cursive;
+    }
+    .darksoul-card2
+    {
+        display: flex;
+        margin: auto;
+        width: 200px;
+        height: 200px;
+        background-color: rgb(255, 255, 255);
+        box-shadow: 5px 5px 60px rgb(235, 235, 235), -5px -5px 60px rgb(237, 237, 237);
+        border-radius: 15px;
+        transition: all 2s;
+        align-items: start;
+        justify-content: center;
+        font-family: 'Belanosima', sans-serif;
+    }
+    .darksoul-card3
+    {
+        display: flex;
+        margin: auto;
+        width: 200px;
+        height: 200px;
+        background-color: rgb(255, 255, 255);
+        box-shadow: 5px 5px 60px rgb(235, 235, 235), -5px -5px 60px rgb(237, 237, 237);
+        border-radius: 15px;
+        transition: all 2s;
+        align-items: end;
+        justify-content: left;
+        font-family: "Kaushan Script", cursive;
+    }
+    .circle1
+    {
+        position: absolute;
+        margin: auto;
+        margin-right: 0px;
+        width: 50px;
+        height: 50px;
+        background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285aeb 90%);
+        border-radius: 0px 15px 0px 50px;
+        transition: all 0.5s;
+        
+    }
+    .darksoul-card1:hover .circle1
+    {
+
+        background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285aeb 90%);
+        width: 200px;
+        height: 200px;
+        border-radius: 15px;
+        transition: all 0.5s;
+    }
+    .darksoul-card1:hover .content
+    {
+        color: white;
+    }
+    .circle2
+    {
+        position: absolute;
+        margin: auto;
+        margin-top: 35px;
+        width: 50px;
+        height: 50px;
+        background-color: rgb(42, 42, 42);
+        border-radius: 50%;
+        transition: all 0.5s;
+        
+    }
+    .darksoul-card2:hover .circle2
+    {
+        margin-top: 0px;
+        background-color: rgb(42, 42, 42);
+        width: 200px;
+        height: 200px;
+        border-radius: 15px;
+        transition: all 0.5s;
+    }
+    .darksoul-card2:hover .content
+    {
+        color: white;
+    }
+    .circle3
+    {
+        position: absolute;
+        margin: auto;
+        margin-top: 35px;
+        width: 50px;
+        height: 50px;
+        background-color: rgb(255, 201, 201);
+        border-radius: 0px 50px 0px 15px;
+        transition: all 0.5s;
+        
+    }
+    .darksoul-card3:hover .circle3
+    {
+        margin-top: 0px;
+        background-color: rgb(255, 201, 201);
+        width: 200px;
+        height: 200px;
+        border-radius: 15px;
+        transition: all 0.5s;
+    }
+    .content
+    {
+        margin: auto;
+        z-index: 100;
+        color: black;
+        font-weight: 500;
+    }
+    @media only screen and (max-width: 600px) 
+    {
+        body
+        {
+            flex-direction: column;
+        }
+    }
+    .darksoul-card1 img
+    {
+        position: absolute;
+        margin: auto;
+        padding-top: 8px;
+        padding-right: 8px;
+    }
+    .darksoul-card2 img
+    {
+        position: absolute;
+        margin: auto;
+        margin-top: 35px;
+        padding-top: 12px;
+    }
+    .darksoul-card3 img
+    {
+        position: absolute;
+        margin: auto;
+        padding-left: 8px;
+        padding-bottom: 8px;
+    }
+    .disclaimer
+    {
+        position: absolute;
+        bottom: 0px; 
+        left: 0; 
+        margin-left: auto; 
+        right: 0; 
+        margin-right: auto; 
+        width: fit-content;
+        color: rgb(0, 0, 0);
+        text-align: center;
+    }
+    .disclaimer a
+    {
+        text-decoration: none;
+        color: #202020;
+        font-family: "Kaushan Script", cursive;
+        font-weight: 900;
+    }
+    .disclaimer a:hover
+    {
+        text-decoration: overline;
+    }
+  </textarea>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- ***** Most Popular End ***** -->
+
+                <!-- ***** Most Popular Start ***** -->
+          <div class="most-popular">
+            <div class="row">
+              <div class="col-lg-12">
+                <div class="heading-section">
+                  <h4>Js</h4>
+                </div>
+                <div class="row">
+                                       
+<textarea disabled id="js">
+       
+    JavaScript is not necessary.
+       
+</textarea>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- ***** Most Popular End ***** -->
+
+          <!-- ***** Gaming Library Start ***** -->
+          <div class="gaming-library">
+            <div class="col-lg-12 align-self-center justify-content-center text-center heading-section">
+              <div class="heading-section text-lg-start">
+                <h4>Output Screenshot</h4>
+              </div>
+              <img src="Hover-Fill-Card/Output Screenshot - Hover Fill Card.png" alt="Output Screenshot - Hover Fill Card CodePen" style="max-width: 60%; border-radius: 10px;"/>
+              <p>&nbsp;</p>
+            <div class="col-lg-12">
+              <div class="main-button">
+                <a href="Hover-Fill-Card/Preview-Hover-Fill-Card.html">View Live Output</a>
+              </div>
+            </div>
+          </div>
+          <!-- ***** Gaming Library End ***** -->
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <footer>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12">
+          <p>Copyright © 2024 <a href="https://darksoul-codepen.github.io/">DarkSoul CodePen</a> | <a href="https://darksoul-codepen.github.io/Disclaimer.html">Disclaimer</a> | <a href="https://darksoul-codepen.github.io/Privacy-policy.html">Privacy Policy</a> | <a href="https://darksoul-codepen.github.io/FAQ.html">FAQ</a> | <a href="https://darksoul-codepen.github.io/sitemap.xml">Sitemap</a></p>
+          <p><img src="assets/images/codepen_logo.png" alt="Codepen Logo" style="max-width: 20px;"/><a href="https://codepen.io/DarkSoul-" target="_blank" > CodePen</a> | <img src="assets/images/dribbble_logo.png" alt="Dribbble Logo" style="max-width: 20px;"/><a href="https://dribbble.com/dark-soul" target="_blank" > Dribbble</a> | <img src="assets/images/instagram-white-icon.webp" alt="Instagram Logo" style="max-width: 20px;"/><a href="https://www.instagram.com/dark.soul.io/" target="_blank"> Instagram</a></p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+
+
+  <!-- Scripts -->
+  <!-- Bootstrap core JavaScript -->
+  <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+
+  <script src="assets/js/isotope.min.js"></script>
+  <script src="assets/js/owl-carousel.js"></script>
+  <script src="assets/js/tabs.js"></script>
+  <script src="assets/js/popup.js"></script>
+  <script src="assets/js/custom.js"></script>
+
+
+  </body>
+
+</html>

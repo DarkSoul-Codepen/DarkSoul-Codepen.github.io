@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name='robots' content='index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1' />
+	<meta http-equiv="Permissions-Policy" content="interest-cohort=()">
+    <meta http-equiv="content-language" content="en">
+	<meta name="referrer" content="strict-origin-when-cross-origin">
+	<meta name="author" content="DarkSoul">
+ 
+    <!-- Favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+
+    <meta name="keywords" content="DarkSoul CodePen, Preview Hover Fill Button, Live Output Hover Fill Button Codepen ,Hover Fill Button , Hover Buttons, Hover Fill Button live output, Dark Soul Codepens, DarkSoul CodePen How To's Blogs, DarkSoul UI/UX Designs, DarkSoul Codedamn" />
+    <meta name="description" content="Check out the preview page for the Hover Fill Button on DarkSoul CodePen, where you can see sleek, color-filling buttons in action. Experience the design firsthand and easily download the source code for your own projects!">
+
+    <title>Hover Fill Button</title>
+
+    
+    <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-0XRHJTRGGH"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-0XRHJTRGGH');
+</script>
+
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9669180356185936"
+     crossorigin="anonymous"></script>
+
+   <!-- Clarity tracking code for https://darksoul-codepen.github.io/ -->
+<script>
+  (function(c,l,a,r,i,t,y){
+      c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+      t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i+"?ref=bwt";
+      y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+  })(window, document, "clarity", "script", "k6ctefq607");
+</script>
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Belanosima&family=Rubik+Vinyl&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Grand+Hotel&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap');
+        body
+        {
+            margin: 0;
+            display: flex;
+            width: 100%;
+            height: 100vh;
+            font-family: 'Belanosima', sans-serif;
+        }
+        .darksoul-hover-fill-button1
+        {
+            margin: auto;
+            display: flex;
+            width: 200px;
+            height: 50px;
+            border-radius: 5px;
+            outline: none;
+            border: 1px solid rgb(160, 216, 255);
+            background-color: white;
+            font-family: 'Belanosima', sans-serif;
+            cursor: pointer;
+            align-items: center;
+            justify-content: left;
+        }         
+        .color-fill-1
+        {
+            position: absolute;
+            margin-left: -7px;
+            width: 2px;
+            height: 50px;
+            background-color: rgb(160, 216, 255);
+            visibility: hidden;
+        } 
+        .darksoul-hover-fill-button1:hover .color-fill-1
+        {
+            visibility: visible;
+            width: 200px;
+            height: 50px;
+            border-radius: 5px;
+            transition: all cubic-bezier(0.445, 0.05, 0.55, 0.95) 0.5s;
+        }   
+        .darksoul-hover-fill-button1:hover
+        {
+            box-shadow: 1px 1px 20px rgb(160, 216, 255);
+            transition: all 1s;
+        } 
+        .darksoul-hover-fill-button1 p
+        {
+            margin: auto;
+            z-index: 10;
+        }    
+        
+        .darksoul-hover-fill-button2
+        {
+            margin: auto;
+            display: flex;
+            width: 200px;
+            height: 50px;
+            border-radius: 25px;
+            outline: none;
+            border: 1px solid rgb(160, 168, 255);
+            background-color: white;
+            font-family: 'Belanosima', sans-serif;
+            cursor: pointer;
+            align-items: center;
+            justify-content: left;
+         
+        }         
+        .color-fill-2
+        {
+            position: absolute;
+            margin-left: -7px;
+            width: 20px;
+            height: 50px;
+            border-radius: 25px 0px 0px 25px;
+            background-color: rgb(160, 168, 255);;
+            visibility: hidden;
+        } 
+        .darksoul-hover-fill-button2:hover .color-fill-2
+        {
+            visibility: visible;
+            width: 200px;
+            height: 50px;
+            border-radius: 25px;
+            transition: all 0.5s;
+            background-color:  rgb(160, 168, 255);;
+        }   
+        .darksoul-hover-fill-button2:hover
+        {
+            box-shadow: 1px 1px 20px rgb(160, 168, 255);
+            transition: all 1s;
+        } 
+        .darksoul-hover-fill-button2 p
+        {
+            margin: auto;
+            z-index: 10;
+        }   
+
+        .darksoul-hover-fill-button3
+        {
+            margin: auto;
+            display: flex;
+            width: 200px;
+            height: 50px;
+            border-radius: 5px;
+            outline: none;
+            border: 1px solid rgb(255, 204, 86);
+            background-color: white;
+            font-family: 'Belanosima', sans-serif;
+            cursor: pointer;
+            align-items: center;
+            justify-content: left;
+         
+        }         
+        .color-fill-3
+        {
+            position: absolute;
+            margin-left: -7px;
+            width: 200px;
+            height: 1px;
+            background-color: rgb(255, 204, 86);
+            visibility: hidden;
+        } 
+        .darksoul-hover-fill-button3:hover .color-fill-3
+        {
+            visibility: visible;
+            width: 200px;
+            height: 50px;
+            border-radius: 5px;
+            transition: all 0.5s;
+            background-color: rgb(255, 204, 86);
+        }   
+        .darksoul-hover-fill-button3:hover
+        {
+            box-shadow: 1px 1px 20px rgb(255, 204, 86);
+            transition: all 1s;
+        } 
+        .darksoul-hover-fill-button3 p
+        {
+            margin: auto;
+            z-index: 10;
+        } 
+        @media only screen and (max-width: 600px) 
+        {
+            body
+            {
+                flex-direction: column;
+            }
+        }
+        .disclaimer
+        {
+            position: absolute;
+            bottom: 0px; 
+            left: 0; 
+            margin-left: auto; 
+            right: 0; 
+            margin-right: auto; 
+            width: fit-content;
+            color: rgb(0, 0, 0);
+            text-align: center;
+        }
+        .disclaimer a
+        {
+            text-decoration: none;
+            color: #202020;
+            font-family: "Kaushan Script", cursive;
+            font-weight: 900;
+        }
+        .disclaimer a:hover
+        {
+            text-decoration: overline;
+        }
+    </style>
+</head>
+<body>
+    <button class="darksoul-hover-fill-button1" type="button"><div class="color-fill-1"></div><p>Button</p></button>
+    <button class="darksoul-hover-fill-button2" type="button"><div class="color-fill-2"></div><p>Button</p></button>
+    <button class="darksoul-hover-fill-button3" type="button"><div class="color-fill-3"></div><p>Button</p></button>
+    <p class="disclaimer">Designed & Created by <a href="https://darksoul-codepen.github.io/" target="_blank">DarkSoul</a></p>
+
+</body>
+</html>

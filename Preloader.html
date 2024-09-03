@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+  
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name='robots' content='index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1' />
+	  <meta http-equiv="Permissions-Policy" content="interest-cohort=()">
+    <meta http-equiv="content-language" content="en">
+	  <meta name="referrer" content="strict-origin-when-cross-origin">
+	  <meta name="author" content="DarkSoul">
+ 
+    <!-- Favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+
+    <meta name="keywords" content="DarkSoul CodePen, Preloader, Preloader Codepen , Preloader UI Design, Loading UI, Preloading component, loading screen, Dark Soul Codepens, DarkSoul CodePen How To's Blogs, DarkSoul UI/UX Designs, DarkSoul Codedamn" />
+    <meta name="description" content="Explore a sleek and engaging Preloader design on DarkSoul CodePen. This minimalist and modern preloader adds a touch of style to your website while keeping users entertained during loading times.">
+
+  
+    <title>Preloader - DarkSoul CodePen</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+
+    <!-- Additional CSS Files -->
+    <link rel="stylesheet" href="assets/css/fontawesome.css">
+    <link rel="stylesheet" href="assets/css/darksoul-codepen.css">
+    <link rel="stylesheet" href="assets/css/owl.css">
+    <link rel="stylesheet" href="assets/css/animate.css">
+    <link rel="stylesheet"href="https://unpkg.com/swiper@7/swiper-bundle.min.css"/>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+<style>
+  textarea
+  {
+    
+    resize: none;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: large;
+    min-height: 400px;
+    background-color: rgba(19, 19, 19, 0.44);
+    border: none;
+    border-radius: 15px;
+    font-weight: 500;
+    
+    color: rgb(255, 255, 255);
+  }
+  p{
+    color: #ffffff;
+    margin: auto;
+  }
+  li
+  {
+    list-style-type: disc;
+    color: #ffffff;
+    
+  }
+  strong
+  {
+    color: #B1E3FA;
+  }
+  h1
+  {
+    font-weight: 900 !important;
+    margin-bottom: 40px;
+  }
+  h2,h4
+  {
+    font-weight: 900 !important;
+  }
+  
+        /* width */
+        ::-webkit-scrollbar 
+        {
+            width: 5px;
+        }
+
+        /* Track */
+        ::-webkit-scrollbar-track 
+        {
+            background-color: rgba(226, 247, 255, 0);
+        }
+
+        /* Handle */
+        ::-webkit-scrollbar-thumb 
+        {
+        background: #B1E3FA;
+        border-radius: 10px;
+        height: 10px;
+        width: 3px;
+        }
+        .most-popular p 
+        {
+          text-align: justify;
+        }
+</style>
+
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-0XRHJTRGGH"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-0XRHJTRGGH');
+</script>
+
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9669180356185936"
+     crossorigin="anonymous"></script>
+
+   <!-- Clarity tracking code for https://darksoul-codepen.github.io/ -->
+   <script>
+    (function(c,l,a,r,i,t,y){
+        c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+        t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i+"?ref=bwt";
+        y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+    })(window, document, "clarity", "script", "k6ctefq607");
+  </script>
+  </head>
+
+<body>
+
+  <!-- ***** Preloader Start ***** -->
+  <div id="js-preloader" class="js-preloader">
+    <div class="preloader-inner">
+      <span class="dot"></span>
+      <div class="dots">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </div>
+  </div>
+  <!-- ***** Preloader End ***** -->
+
+  <!-- ***** Header Area Start ***** -->
+  <header class="header-area header-sticky" style="background-color: rgba(0, 0, 0, 0);">
+    <div class="container" style="padding: 0px;">
+        <div class="row">
+            <div class="col-12">
+              <nav class="main-nav">
+                <!-- ***** Logo Start ***** -->
+                <a href="https://darksoul-codepen.github.io/" class="logo">
+                    <img src="assets/images/logo.png" alt="DarkSoul CodePen - Logo" width="100%">
+                </a>
+                <!-- ***** Logo End ***** -->
+                <!-- ***** Search End ***** -->
+                <div class="search-input">
+                  <form id="search" action="#">
+                    <input type="text" placeholder="Type Something" id='searchText' name="searchKeyword" onkeypress="handle" />
+                    <i class="fa fa-search"></i>
+                  </form>
+                </div>
+                <!-- ***** Search End ***** -->
+                <!-- ***** Menu Start ***** -->
+                <ul class="nav">
+                    <li><a href="https://darksoul-codepen.github.io/">Home</a></li>
+                    <li><a href="posts.html">Posts</a></li>
+                    <li><a href="codepen.html" class="active">CodePens</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="about.html">About Me <img src="assets/images/profile-header.png" alt="DarkSoul Profile"></a></li>
+                </ul>   
+                <a class='menu-trigger'>
+                    <span>Menu</span>
+                </a>
+                <!-- ***** Menu End ***** -->
+            </nav>
+            </div>
+        </div>
+    </div>
+  </header>
+  <!-- ***** Header Area End ***** -->
+
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12">
+        <div class="page-content">
+
+          <!-- ***** Banner Start ***** -->
+          <div class="main-banner">
+            <div class="row">
+              <div class="col-lg-7">
+                <div class="header-text">
+                  
+                  <h1 style="color: #38B6FF;"><b style="color: #000000;">Preloader</b> CodePen</h1>
+                  <h6 style="color: black;">CodePen</h6>
+                  <div class="main-button">
+                    <a href="Preloader/Preview-Preloader.html">Preview</a>&nbsp;&nbsp;
+                    <a href="Zips/Preloader.zip" download>Download Source code</a>
+                  </div>
+                  
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- ***** Banner End ***** -->
+
+               <!-- ***** Most Popular Start ***** -->
+               <div class="most-popular">
+                <div class="row">
+                  <div class="col-lg-12">
+                    <div class="heading-section">
+                      <h4>Procedure</h4>
+                      <div class="row">
+                        <p><b>Step 1 - Setting Up the HTML Structure:</b> Start with the basic structure of an HTML document. Set the <b>language</b> to English and the <b>character encoding</b> to UTF-8. This ensures your page is compatible across different browsers and devices. Add a <b>title</b> to name your page.</p>
+                    
+                        <p><b>Step 2 - Importing Google Fonts:</b> Use the <b>@import</b> rule in your CSS to bring in stylish fonts from Google Fonts. In this example, we’ve chosen 'Belanosima' and 'Rubik Vinyl' to give our text a modern and unique look.</p>
+                        
+                        <p><b>Step 3 - Styling the Body:</b> Set the body to cover the entire viewport (using <b>height: 100vh</b>) and center the content with <b>flexbox</b>. Choose a dark background color for contrast, and set the text color to white to make it pop.</p>
+                        
+                        <p><b>Step 4 - Creating the Layout Container:</b> Create a container that centers your preloader and text within a specified width (e.g., 250px). This will ensure that your content is neatly aligned in the middle of the page.</p>
+                        
+                        <p><b>Step 5 - Building the Preloader Grid:</b> Design a 2x2 grid for the preloader using <b>grid layout</b>. Set each square’s size (e.g., 50px by 50px) and add an animation to create a rotating effect. The grid will serve as the core of your preloader.</p>
+                        
+                        <p><b>Step 6 - Defining Each Square:</b> Style each grid square individually. In this example, each square is 15px by 15px, with a background color of white. These squares will rotate together to create the preloader effect.</p>
+                        
+                        <p><b>Step 7 - Adding the Rotation Animation:</b> Use <b>@keyframes</b> to define a rotation and scaling effect for the preloader. The squares start rotating from 0 degrees to 360 degrees with a slight scaling effect, creating a dynamic loading animation.</p>
+                        
+                        <p><b>Step 8 - Adding a Text Label:</b> Include a simple text label (e.g., "Deploying") next to the preloader grid. Style this text to align nicely with the grid, enhancing the overall visual appeal.</p>
+                        
+                        <p><b>Step 9 - Putting It All Together:</b> Combine all the elements in the <b>body</b> of your HTML document. This will create a sleek, rotating grid of squares with a text label, perfect for a modern preloader on your website.</p>
+                        
+                        <p style="margin-top: 10px;">By following these steps, you can create a visually appealing and functional preloader for your website. It’s a great way to keep users engaged while your content loads. Keep experimenting and refining your design to make it stand out. Happy designing!</p>
+                    </div>
+                    
+
+                       
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- ***** Most Popular End ***** -->
+
+          <!-- ***** Most Popular Start ***** -->
+          <div class="most-popular">
+            <div class="row">
+              <div class="col-lg-12">
+                <div class="heading-section">
+                  <h4>Html</h4>
+                </div>
+                <div class="row">
+                
+                   
+<textarea disabled id="html">
+    
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+         /* Internal styles goes here.. */
+    </head>
+    <body>
+        <div class="darksoul-layout">
+          <div class="darksoul-grid">
+              <div class="item1"></div>
+              <div class="item2"></div>
+              <div class="item3"></div>
+              <div class="item4"></div>
+          </div>
+          <h3 class="darksoul-loader-h">Deploying</h3>
+        </div>
+    </body>
+    </html>
+</textarea>
+                   
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- ***** Most Popular End ***** -->
+
+            <!-- ***** Most Popular Start ***** -->
+            <div class="most-popular">
+                <div class="row">
+                  <div class="col-lg-12">
+                    <div class="heading-section">
+                      <h4>Css</h4>
+                    </div>
+                    <div class="row">
+                                           
+<textarea disabled id="css">
+
+    @import url('https://fonts.googleapis.com/css2?family=Belanosima&family=Rubik+Vinyl&display=swap');
+    
+    body
+    {
+        margin: 0;
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        font-family: 'Belanosima', sans-serif;
+        
+        background-color: rgb(21, 21, 21);
+        color: rgb(255, 255, 255);;
+    }
+    .darksoul-layout
+    {
+        margin: auto;
+        display: flex;
+        width: 250px;
+    }
+    .darksoul-grid
+    {
+        margin: auto;
+        margin-right: 1px;
+        width: 50px;
+        height: 50px;
+        display: grid;
+        gap: 0px;
+        grid-template-columns: auto auto;
+        animation: rotate 2s linear 0s infinite;
+    }
+    .item1
+    {
+        margin: auto;
+        width: 15px;
+        height: 15px;
+        border-radius: 0%;
+        background-color: rgb(255, 255, 255);
+    }
+    .item2
+    {
+        margin: auto;
+        width: 15px;
+        height: 15px;
+        border-radius: 0%;
+        background-color: rgb(255, 255, 255);
+    }
+    .item3
+    {
+        margin: auto;
+        width: 15px;
+        height: 15px;
+        border-radius: 0%;
+        background-color: rgb(255, 255, 255);
+    }
+    .item4
+    {
+        margin: auto;
+        width: 15px;
+        height: 15px;
+        border-radius: 0%;
+        background-color: rgb(255, 255, 255);
+    }
+    @keyframes rotate 
+    {
+        0%{rotate: 0deg; transform: scale(0.6);}
+        50%{ rotate: 100deg; transform: scale(0.4);}    
+        100%{rotate: 360deg; transform: scale(0.6);}
+    }
+    .darksoul-loader-h
+    {
+        margin: auto;
+        margin-left: 5px;
+    }
+
+  </textarea>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- ***** Most Popular End ***** -->
+
+                <!-- ***** Most Popular Start ***** -->
+          <div class="most-popular">
+            <div class="row">
+              <div class="col-lg-12">
+                <div class="heading-section">
+                  <h4>Js</h4>
+                </div>
+                <div class="row">
+                                       
+<textarea disabled id="js">
+       
+    JavaScript is not necessary.
+       
+</textarea>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- ***** Most Popular End ***** -->
+
+          <!-- ***** Gaming Library Start ***** -->
+          <div class="gaming-library">
+            <div class="col-lg-12 align-self-center justify-content-center text-center heading-section">
+              <div class="heading-section text-lg-start">
+                <h4>Output Screenshot</h4>
+              </div>
+              <img src="Preloader/Output Screenshot - Preloader.gif" alt="Output Screenshot - Preloader CodePen" style="max-width: 60%; border-radius: 10px;"/>
+              <p>&nbsp;</p>
+            <div class="col-lg-12">
+              <div class="main-button">
+                <a href="Preloader/Preview-Preloader.html">View Live Output</a>
+              </div>
+            </div>
+          </div>
+          <!-- ***** Gaming Library End ***** -->
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <footer>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12">
+          <p>Copyright © 2024 <a href="https://darksoul-codepen.github.io/">DarkSoul CodePen</a> | <a href="https://darksoul-codepen.github.io/Disclaimer.html">Disclaimer</a> | <a href="https://darksoul-codepen.github.io/Privacy-policy.html">Privacy Policy</a> | <a href="https://darksoul-codepen.github.io/FAQ.html">FAQ</a> | <a href="https://darksoul-codepen.github.io/sitemap.xml">Sitemap</a></p>
+          <p><img src="assets/images/codepen_logo.png" alt="Codepen Logo" style="max-width: 20px;"/><a href="https://codepen.io/DarkSoul-" target="_blank" > CodePen</a> | <img src="assets/images/dribbble_logo.png" alt="Dribbble Logo" style="max-width: 20px;"/><a href="https://dribbble.com/dark-soul" target="_blank" > Dribbble</a> | <img src="assets/images/instagram-white-icon.webp" alt="Instagram Logo" style="max-width: 20px;"/><a href="https://www.instagram.com/dark.soul.io/" target="_blank"> Instagram</a></p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+
+
+  <!-- Scripts -->
+  <!-- Bootstrap core JavaScript -->
+  <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+
+  <script src="assets/js/isotope.min.js"></script>
+  <script src="assets/js/owl-carousel.js"></script>
+  <script src="assets/js/tabs.js"></script>
+  <script src="assets/js/popup.js"></script>
+  <script src="assets/js/custom.js"></script>
+
+
+  </body>
+
+</html>

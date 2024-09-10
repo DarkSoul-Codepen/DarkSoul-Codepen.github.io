@@ -216,7 +216,6 @@
         <video:description> In this video, I'm showing you how to center an image using CSS Display Flex.</video:description>
         <video:content_loc>https://www.youtube.com/watch?v=YWX-caIcPHM</video:content_loc>
         <video:player_loc>https://www.youtube.com/embed/YWX-caIcPHM</video:player_loc>
-        <video:duration>PT4M12S</video:duration>
       </video:video>
   </url>
   <url>
@@ -272,7 +271,6 @@
         <video:description> In this video, I'm going to show you how to create an animated alert box using a combination of HTML, CSS, and JavaScript.</video:description>
         <video:content_loc>https://www.youtube.com/watch?v=i9DImA6hHNQ</video:content_loc>
         <video:player_loc>https://www.youtube.com/embed/i9DImA6hHNQ</video:player_loc>
-        <video:duration>PT4M12S</video:duration>
       </video:video>
   </url>
   <url>

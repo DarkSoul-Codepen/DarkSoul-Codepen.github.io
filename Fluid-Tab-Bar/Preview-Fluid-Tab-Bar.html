@@ -1,0 +1,505 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name='robots' content='index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1' />
+	<meta http-equiv="Permissions-Policy" content="interest-cohort=()">
+    <meta http-equiv="content-language" content="en">
+	<meta name="referrer" content="strict-origin-when-cross-origin">
+	<meta name="author" content="DarkSoul">
+ 
+    <!-- Favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+
+    <meta name="keywords" content="DarkSoul CodePen, Preview Fluid Tab Bar, Live Output Fluid Tab Bar Codepen ,Fluid Tab Bar , Fluid Tab Bar live preview, Fluid Navigation Bar live output, Dark Soul Codepens, DarkSoul CodePen How To's Blogs, DarkSoul UI/UX Designs, DarkSoul Codedamn" />
+    <meta name="description" content="Explore and live preview a fluid tab bar design on DarkSoul CodePen. Experience smooth transitions and intuitive UI in action.">
+
+    <title>Preview - Fluid Tab Bar</title>
+    
+        <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-0XRHJTRGGH"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-0XRHJTRGGH');
+</script>
+
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9669180356185936"
+     crossorigin="anonymous"></script>
+
+   <!-- Clarity tracking code for https://darksoul-codepen.github.io/ -->
+<script>
+  (function(c,l,a,r,i,t,y){
+      c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+      t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i+"?ref=bwt";
+      y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+  })(window, document, "clarity", "script", "k6ctefq607");
+</script>
+
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Belanosima&family=Rubik+Vinyl&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Grand+Hotel&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap');
+
+        body
+        {
+            margin: 0;
+            width: 100%;
+            height: 100vh;
+            display: flex;
+        }
+        .darksoul-fluid-tab-bar
+        {
+            margin: auto;
+            width: 270px;
+            height: 50px;
+            background-color: rgb(32, 32, 32);
+            border-radius: 10px;
+            zoom: 1;
+        }
+        .darksoul-fluid-tab-bar .menus
+        {
+            margin: auto;
+            width: 90%;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        .darksoul-fluid-tab-bar .menus .menu-item
+        {
+            margin: auto;
+            margin-top: 0px;
+            margin-left: 5px;
+            width: 20%;
+            height: 90%;
+            display: flex;
+            border-radius: 0% 0% 55% 55%;
+            background-color: white;
+            
+        }
+        .darksoul-fluid-tab-bar .menus .menu-item .l-square
+        {
+            margin-left: -9px;
+            width: 10px;
+            height: 10px;
+            background-color: white;
+            display: flex;
+        }
+        .darksoul-fluid-tab-bar .menus .menu-item .l-square .l-circle
+        {
+            margin: auto;
+            margin-bottom: 0px;
+            margin-left: 0px;
+            width: 9px;
+            height: 10px;
+            background-color: rgb(32, 32, 32);
+            border-radius: 0% 100% 100% 0% / 100% 100% 0% 0% ;
+        }
+        .darksoul-fluid-tab-bar .menus .menu-item .r-square
+        {
+            margin: auto;
+            margin-right: -9px;
+            margin-top: 0px;
+            width: 10px;
+            height: 10px;
+            background-color: white;
+            display: flex;
+        }
+        .darksoul-fluid-tab-bar .menus .menu-item .r-square .r-circle
+        {
+            margin: auto;
+            margin-bottom: 0px;
+            margin-right: 0px;
+            width: 9px;
+            height: 10px;
+            background-color: rgb(32, 32, 32);
+            border-radius: 100% 0% 0% 100% / 100% 0% 100% 0% ;
+        }
+        .darksoul-fluid-tab-bar .menus .menu-item img
+        {
+            margin: auto;
+            padding: 3px;
+            border-radius: 50%;
+        }
+        .darksoul-fluid-tab-bar .menus .img
+        {
+            position: absolute;
+            width: 245px;
+            height: 50px;
+            margin: auto;
+            margin-left: -4px;
+            z-index: 100;
+            display: flex;
+         
+          
+            
+        }
+        .darksoul-fluid-tab-bar .menus .img img
+        {
+            margin: auto;
+            cursor: pointer;
+            background-color: rgb(32, 32, 32);
+            border-radius: 50%;
+            padding: 3px;
+        }
+        .darksoul-fluid-tab-bar .menus .img img:hover
+        {
+            background-color: rgb(145, 119, 241);
+            
+        }
+
+        @keyframes move-f-2
+        {
+            0%
+            {
+                transform: translateX(0px);
+            }
+            100%
+            {
+                transform: translateX(61px);
+            }    
+        }
+        @keyframes move-f-3
+        {
+            0%
+            {
+                transform: translateX(0px);
+            }
+            100%
+            {
+                transform: translateX(121px);
+            }    
+        }
+        @keyframes move-f-4
+        {
+            0%
+            {
+                transform: translateX(0px);
+            }
+            100%
+            {
+                transform: translateX(181px);
+            }    
+        }
+
+
+
+
+        @keyframes move-s-1
+        {
+            0%
+            {
+                transform: translateX(61px);
+            }
+            100%
+            {
+                transform: translateX(0px);
+            }    
+        }
+        @keyframes move-s-3
+        {
+            0%
+            {
+                transform: translateX(61px);
+            }
+            100%
+            {
+                transform: translateX(121px);
+            }    
+        }
+        @keyframes move-s-4
+        {
+            0%
+            {
+                transform: translateX(61px);
+            }
+            100%
+            {
+                transform: translateX(181px);
+            }    
+        }
+
+
+
+
+        @keyframes move-t-1
+        {
+            0%
+            {
+                transform: translateX(121px);
+            }
+            100%
+            {
+                transform: translateX(0px);
+            }    
+        }
+        @keyframes move-t-2
+        {
+            0%
+            {
+                transform: translateX(121px);
+            }
+            100%
+            {
+                transform: translateX(61px);
+            }    
+        }
+        @keyframes move-t-4
+        {
+            0%
+            {
+                transform: translateX(121px);
+            }
+            100%
+            {
+                transform: translateX(181px);
+            }    
+        }
+
+
+
+
+        @keyframes move-fo-1
+        {
+            0%
+            {
+                transform: translateX(181px);
+            }
+            100%
+            {
+                transform: translateX(0px);
+            }    
+        }
+        @keyframes move-fo-2
+        {
+            0%
+            {
+                transform: translateX(181px);
+            }
+            100%
+            {
+                transform: translateX(61px);
+            }    
+        }
+        @keyframes move-fo-3
+        {
+            0%
+            {
+                transform: translateX(181px);
+            }
+            100%
+            {
+                transform: translateX(121px);
+            }    
+        }
+       
+        .disclaimer
+        {
+            position: absolute;
+            bottom: 0px; 
+            left: 0; 
+            margin-left: auto; 
+            right: 0; 
+            margin-right: auto; 
+            width: fit-content;
+            color: rgb(0, 0, 0);
+            text-align: center;
+            font-family: 'Belanosima', sans-serif;
+        }
+        .disclaimer a
+        {
+            text-decoration: none;
+            color: #202020;
+            font-family: "Kaushan Script", cursive;
+            font-weight: 900;
+        }
+        .disclaimer a:hover
+        {
+            text-decoration: overline;
+        }
+       
+
+    </style>
+</head>
+<body>
+    <div class="darksoul-fluid-tab-bar">
+
+        <div class="menus">
+
+            <div class="menu-item" id="menu">
+
+                <div class="l-square">
+                    <div class="l-circle"></div>
+                </div>
+                
+                <div class="r-square">
+                    <div class="r-circle"></div>
+                </div>
+
+            </div>
+
+            <div class="img">
+
+                <img id="home" onclick="move(1)" width="22" height="22" src="https://img.icons8.com/external-glyph-silhouettes-icons-papa-vector/100/ffffff/external-Home-interface-glyph-silhouettes-icons-papa-vector.png" alt="external-Home-interface-glyph-silhouettes-icons-papa-vector"/>
+            
+                <img id="like" onclick="move(2)" width="18" height="18" src="https://img.icons8.com/ios-glyphs/100/ffffff/like--v1.png" alt="like--v1"/>
+            
+                <img id="cart" onclick="move(3)" width="18" height="18" src="https://img.icons8.com/glyph-neue/100/ffffff/shopping-cart.png" alt="shopping-cart"/>
+            
+                <img id="profile" onclick="move(4)" width="18" height="18" src="https://img.icons8.com/fluency-systems-filled/100/ffffff/user.png" alt="user"/>
+            
+            </div>
+
+        </div>
+
+    </div>
+    <p class="disclaimer">Designed & Created by <a href="https://darksoul-codepen.github.io/" target="_blank">DarkSoul</a></p>
+    <script async>
+
+        var home = document.getElementById("home");
+        var like = document.getElementById("like");
+        var cart = document.getElementById("cart");
+        var profile = document.getElementById("profile");
+
+        var menu = document.getElementById("menu");
+
+        var curpos = 1;
+
+        home.style.backgroundColor = "rgb(145, 119, 241)";
+
+        function move(goto) 
+        {
+            if (goto==1) 
+            {
+                if(curpos == 2)
+                {
+                    menu.style.animation = "move-s-1 0.7s cubic-bezier(0.075, 0.82, 0.165, 1) 1 forwards";
+                    curpos = 1;
+                    home.style.backgroundColor = "rgb(145, 119, 241)";
+                    like.style.backgroundColor = "rgb(32, 32, 32)";
+                    cart.style.backgroundColor = "rgb(32, 32, 32)";
+                    profile.style.backgroundColor = "rgb(32, 32, 32)";
+                } 
+                else if(curpos == 3)
+                {
+                    menu.style.animation = "move-t-1 0.7s cubic-bezier(0.075, 0.82, 0.165, 1) 1 forwards";
+                    curpos = 1;
+                    home.style.backgroundColor = "rgb(145, 119, 241)";
+                    like.style.backgroundColor = "rgb(32, 32, 32)";
+                    cart.style.backgroundColor = "rgb(32, 32, 32)";
+                    profile.style.backgroundColor = "rgb(32, 32, 32)";
+                }  
+                else if(curpos == 4)
+                {
+                    menu.style.animation = "move-fo-1 0.7s cubic-bezier(0.075, 0.82, 0.165, 1) 1 forwards";
+                    curpos = 1;
+                    home.style.backgroundColor = "rgb(145, 119, 241)";
+                    like.style.backgroundColor = "rgb(32, 32, 32)";
+                    cart.style.backgroundColor = "rgb(32, 32, 32)";
+                    profile.style.backgroundColor = "rgb(32, 32, 32)";
+                }
+            }
+            else if(goto==2)
+            {
+                if(curpos == 1)
+                {
+                    menu.style.animation = "move-f-2 0.7s cubic-bezier(0.075, 0.82, 0.165, 1) 1 forwards";
+                    curpos = 2;
+                    home.style.backgroundColor = "rgb(32, 32, 32)";
+                    like.style.backgroundColor = "rgb(145, 119, 241)";
+                    cart.style.backgroundColor = "rgb(32, 32, 32)";
+                    profile.style.backgroundColor = "rgb(32, 32, 32)";
+                }
+                else if(curpos == 3)
+                {
+                    menu.style.animation = "move-t-2 0.7s cubic-bezier(0.075, 0.82, 0.165, 1) 1 forwards";
+                    curpos = 2;
+                    home.style.backgroundColor = "rgb(32, 32, 32)";
+                    like.style.backgroundColor = "rgb(145, 119, 241)";
+                    cart.style.backgroundColor = "rgb(32, 32, 32)";
+                    profile.style.backgroundColor = "rgb(32, 32, 32)";
+                }
+                else if(curpos == 4)
+                {
+                    menu.style.animation = "move-fo-2 0.7s cubic-bezier(0.075, 0.82, 0.165, 1) 1 forwards";
+                    curpos = 2;
+                    home.style.backgroundColor = "rgb(32, 32, 32)";
+                    like.style.backgroundColor = "rgb(145, 119, 241)";
+                    cart.style.backgroundColor = "rgb(32, 32, 32)";
+                    profile.style.backgroundColor = "rgb(32, 32, 32)";
+                }
+               
+            }
+            else if(goto==3)
+            {
+                if(curpos == 1)
+                {
+                    menu.style.animation = "move-f-3 0.7s cubic-bezier(0.075, 0.82, 0.165, 1) 1 forwards";
+                    curpos = 3;
+                    home.style.backgroundColor = "rgb(32, 32, 32)";
+                    like.style.backgroundColor = "rgb(32, 32, 32)";
+                    cart.style.backgroundColor = "rgb(145, 119, 241)";
+                    profile.style.backgroundColor = "rgb(32, 32, 32)";
+                }
+                else if(curpos == 2)
+                {
+                    menu.style.animation = "move-s-3 0.7s cubic-bezier(0.075, 0.82, 0.165, 1) 1 forwards";
+                    curpos = 3;
+                    home.style.backgroundColor = "rgb(32, 32, 32)";
+                    like.style.backgroundColor = "rgb(32, 32, 32)";
+                    cart.style.backgroundColor = "rgb(145, 119, 241)";
+                    profile.style.backgroundColor = "rgb(32, 32, 32)";
+                }
+                else if(curpos == 4)
+                {
+                    menu.style.animation = "move-fo-3 0.7s cubic-bezier(0.075, 0.82, 0.165, 1) 1 forwards";
+                    curpos = 3;
+                    home.style.backgroundColor = "rgb(32, 32, 32)";
+                    like.style.backgroundColor = "rgb(32, 32, 32)";
+                    cart.style.backgroundColor = "rgb(145, 119, 241)";
+                    profile.style.backgroundColor = "rgb(32, 32, 32)";
+                }
+                
+            }
+            else if(goto==4)
+            {
+                if(curpos == 1)
+                {
+                    menu.style.animation = "move-f-4 0.7s cubic-bezier(0.075, 0.82, 0.165, 1) 1 forwards";
+                    curpos = 4;
+                    home.style.backgroundColor = "rgb(32, 32, 32)";
+                    like.style.backgroundColor = "rgb(32, 32, 32)";
+                    cart.style.backgroundColor = "rgb(32, 32, 32)";
+                    profile.style.backgroundColor = "rgb(145, 119, 241)";
+                }
+                else if(curpos == 2)
+                {
+                    menu.style.animation = "move-s-4 0.7s cubic-bezier(0.075, 0.82, 0.165, 1) 1 forwards";
+                    curpos = 4;
+                    home.style.backgroundColor = "rgb(32, 32, 32)";
+                    like.style.backgroundColor = "rgb(32, 32, 32)";
+                    cart.style.backgroundColor = "rgb(32, 32, 32)";
+                    profile.style.backgroundColor = "rgb(145, 119, 241)";
+                }
+                else if(curpos == 3)
+                {
+                    menu.style.animation = "move-t-4 0.7s cubic-bezier(0.075, 0.82, 0.165, 1) 1 forwards";
+                    curpos = 4;
+                    home.style.backgroundColor = "rgb(32, 32, 32)";
+                    like.style.backgroundColor = "rgb(32, 32, 32)";
+                    cart.style.backgroundColor = "rgb(32, 32, 32)";
+                    profile.style.backgroundColor = "rgb(145, 119, 241)";
+                }
+            }
+        }
+    </script>
+</body>
+</html>

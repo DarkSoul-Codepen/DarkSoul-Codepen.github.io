@@ -1,0 +1,809 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+  
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name='robots' content='index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1' />
+	  <meta http-equiv="Permissions-Policy" content="interest-cohort=()">
+    <meta http-equiv="content-language" content="en">
+	  <meta name="referrer" content="strict-origin-when-cross-origin">
+	  <meta name="author" content="DarkSoul">
+ 
+    <!-- Favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <meta name="keywords" content="DarkSoul CodePen, Blurred Side Navigation Bar, Sidebar UI Design, Side Navigation Bar Tutorial, Modern Sidebar Components, DarkSoul UI/UX Blogs, Web Design Tutorials,  Dark Soul Codepens, UI/UX Design with DarkSoul, DarkSoul How To's, DarkSoul UI/UX Designs, DarkSoul Codedamn" />
+    <meta name="description" content="Explore the Blurred Side Navigation Bar on DarkSoul CodePen, where you can live preview the design and download the source code. Follow the step-by-step procedure to learn how to create a modern, transparent sidebar with a sleek blurred effect.">
+
+  
+    <title>Blurred Side Navigation Bar - DarkSoul CodePen</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+
+    <!-- Additional CSS Files -->
+    <link rel="stylesheet" href="assets/css/fontawesome.css">
+    <link rel="stylesheet" href="assets/css/darksoul-codepen.css">
+    <link rel="stylesheet" href="assets/css/owl.css">
+    <link rel="stylesheet" href="assets/css/animate.css">
+    <link rel="stylesheet"href="https://unpkg.com/swiper@7/swiper-bundle.min.css"/>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+<style>
+  textarea
+  {
+    
+    resize: none;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: large;
+    min-height: 400px;
+    background-color: rgba(19, 19, 19, 0.44);
+    border: none;
+    border-radius: 15px;
+    font-weight: 500;
+    
+    color: rgb(255, 255, 255);
+  }
+  p{
+    color: #ffffff;
+    margin: auto;
+  }
+  li
+  {
+    list-style-type: disc;
+    color: #ffffff;
+    
+  }
+  strong
+  {
+    color: #B1E3FA;
+  }
+  h1
+  {
+    font-weight: 900 !important;
+    margin-bottom: 40px;
+  }
+  h2,h4
+  {
+    font-weight: 900 !important;
+  }
+  
+        /* width */
+        ::-webkit-scrollbar 
+        {
+            width: 5px;
+        }
+
+        /* Track */
+        ::-webkit-scrollbar-track 
+        {
+            background-color: rgba(226, 247, 255, 0);
+        }
+
+        /* Handle */
+        ::-webkit-scrollbar-thumb 
+        {
+        background: #B1E3FA;
+        border-radius: 10px;
+        height: 10px;
+        width: 3px;
+        }
+        .most-popular p 
+        {
+          text-align: justify;
+        }
+</style>
+
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-0XRHJTRGGH"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-0XRHJTRGGH');
+</script>
+
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9669180356185936"
+     crossorigin="anonymous"></script>
+
+   <!-- Clarity tracking code for https://darksoul-codepen.github.io/ -->
+   <script>
+    (function(c,l,a,r,i,t,y){
+        c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+        t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i+"?ref=bwt";
+        y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+    })(window, document, "clarity", "script", "k6ctefq607");
+  </script>
+  </head>
+
+<body>
+
+  <!-- ***** Preloader Start ***** -->
+  <div id="js-preloader" class="js-preloader">
+    <div class="preloader-inner">
+      <span class="dot"></span>
+      <div class="dots">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </div>
+  </div>
+  <!-- ***** Preloader End ***** -->
+
+  <!-- ***** Header Area Start ***** -->
+  <header class="header-area header-sticky" style="background-color: rgba(0, 0, 0, 0);">
+    <div class="container" style="padding: 0px;">
+        <div class="row">
+            <div class="col-12">
+              <nav class="main-nav">
+                <!-- ***** Logo Start ***** -->
+                <a href="https://darksoul-codepen.github.io/" class="logo">
+                    <img src="assets/images/logo.png" alt="DarkSoul CodePen - Logo" width="100%">
+                </a>
+                <!-- ***** Logo End ***** -->
+                <!-- ***** Search End ***** -->
+                <div class="darksoul-search-bar" id="searchbar">
+                  <i class="fa fa-search"></i>
+                  <input id="searchbarinput" class="darksoul-search-bar-input" type="text" name="search" id="searchval" placeholder="Type something" />
+                
+          
+                  <div class="darksoul-dropdown" id="dropdown">
+                      <ul id="resultlist">
+                          <a href="https://darksoul-codepen.github.io/How-to-center-an-image-using-display-flex.html"><li><p>How to Center an Image Using Display Flex</p></li></a>
+                          <a href="https://darksoul-codepen.github.io/How-to-create-and-style-buttons-like-bootstrap.html"><li><p>How to Create and Style Buttons like Bootstrap</p></li></a>
+                          <a href="https://darksoul-codepen.github.io/How-to-Create-an-Animated-Alert-box.html"><li><p>How to Create an Animated Alert Box</p></li></a>
+                          <a href="https://darksoul-codepen.github.io/How-to-Find-the-Size-of-a-GitHub-Repository.html"><li><p>How to Find the Size of a GitHub Repo</p></li></a>
+                          <a href="https://darksoul-codepen.github.io/How-to-merge-Video-and-Text-in-PPT.html"><li><p>How to Merge Video and Text in PPT</p></li></a>
+                          <a href="https://darksoul-codepen.github.io/How-to-merge-Picture-and-Text-in-PPT.html"><li><p>How to Merge Picture and Text in PPT</p></li></a>
+                          <a href="https://darksoul-codepen.github.io/CSS-Shapes-Lab.html"><li><p>CSS Shapes Lab Codedamn</p></li></a>
+                          <a href="https://darksoul-codepen.github.io/Header-Tag-Lab.html"><li><p>Header Tag Lab Codedamn</p></li></a>
+                          <a href="https://darksoul-codepen.github.io/Radio-Buttons-Lab.html"><li><p>Radio Buttons Lab Codedamn</p></li></a>
+                          <a href="https://darksoul-codepen.github.io/Fibonacci-Generator-Lab.html"><li><p>Fibonacci Generator Lab Codedamn</p></li></a>
+                          <a href="https://darksoul-codepen.github.io/Color-Change-Lab.html"><li><p>Color Change Lab Codedamn</p></li></a>
+                          <a href="https://darksoul-codepen.github.io/Glassy-Date-Time-Weather-Widget.html"><li><p>Glassy Date,Time & Weather Widget CodePen</p></li></a>
+                          <a href="https://darksoul-codepen.github.io/Glassy-Music-Player.html"><li><p>Glassy Music Player CodePen</p></li></a>
+                          <a href="https://darksoul-codepen.github.io/Circular-Navigation-Menu.html"><li><p>Circular Navigation Menu CodePen</p></li></a>
+                          <a href="https://darksoul-codepen.github.io/Neumorphic-Theme-Toggle-Switch.html"><li><p>Neumorphism Toggle Switch CodePen</p></li></a>
+                          <a href="https://darksoul-codepen.github.io/Glowing-Border-Button.html"><li><p>Glowing Border Button CodePen</p></li></a>
+                          <a href="https://darksoul-codepen.github.io/Sticky-Search-Bar.html"><li><p>Sticky Search Bar CodePen</p></li></a>
+                          <a href="https://darksoul-codepen.github.io/Glowing-Gradient-Border-cards.html"><li><p>Glowing Gradient Border Cards CodePen</p></li></a>
+                          <a href="https://darksoul-codepen.github.io/Hover-Fill-Card.html"><li><p>Hover Fill Card CodePen</p></li></a>
+                          <a href="https://darksoul-codepen.github.io/Hover-Fill-Button.html"><li><p>Hover Fill Button CodePen</p></li></a>
+                          <a href="https://darksoul-codepen.github.io/Preloader.html"><li><p>Preloader CodePen</p></li></a>
+                      </ul>
+                  </div>
+              </div>
+                <!-- ***** Search End ***** -->
+                <!-- ***** Menu Start ***** -->
+                <ul class="nav">
+                    <li><a href="https://darksoul-codepen.github.io/">Home</a></li>
+                    <li><a href="posts.html">Posts</a></li>
+                    <li><a href="codepen.html" class="active">CodePens</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="about.html">About Me <img src="assets/images/profile-header.png" alt="DarkSoul Profile"></a></li>
+                </ul>   
+                <a class='menu-trigger'>
+                    <span>Menu</span>
+                </a>
+                <!-- ***** Menu End ***** -->
+            </nav>
+            </div>
+        </div>
+    </div>
+  </header>
+  <!-- ***** Header Area End ***** -->
+
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12">
+        <div class="page-content">
+
+          <!-- ***** Banner Start ***** -->
+          <div class="main-banner">
+            <div class="row">
+              <div class="col-lg-7">
+                <div class="header-text">
+                  
+                  <h1 style="color: #38B6FF; font-size: xx-large;"><b style="color: #000000;">Blurred Side Navigation Bar</b> CodePen</h1>
+                  <h6 style="color: black;">CodePen</h6>
+                  <div class="main-button">
+                    <a href="Blurred-Side-Navigation-bar/Preview-Blurred-Side-Navigation-bar.html">Preview</a>&nbsp;&nbsp;
+                    <a href="Zips/Blurred-Side-Navigation-bar.zip" download>Download Source code</a>
+                  </div>
+                  
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- ***** Banner End ***** -->
+
+               <!-- ***** Most Popular Start ***** -->
+               <div class="most-popular">
+                <div class="row">
+                  <div class="col-lg-12">
+                    <div class="heading-section">
+                      <h4>Procedure</h4>
+                      <div class="row">
+                        <p><b>Step 1: HTML Structure</b></p>
+                        <p>Start by setting up the basic HTML structure. A <b>&lt;div&gt;</b> with the class <strong>darksoul-blurred-sidebar</strong> will be the main container for the navigation bar. Inside this container, create an unordered list <b>&lt;ul&gt;</b> with multiple <b>&lt;li&gt;</b> elements, each representing a different navigation item (like Home, Services, About, Contact, etc.). Each <b>&lt;li&gt;</b> should contain an icon and a label for better navigation visibility.</p>
+                    
+                        <p><b>Step 2: Importing Google Fonts</b></p>
+                        <p>In the <b>&lt;style&gt;</b> tag, import fonts from Google Fonts. Use <b>Montserrat</b> for a clean and professional look and <b>Poppins</b> for a more modern feel. These fonts will make the navigation labels appear more visually appealing.</p>
+                    
+                        <p><b>Step 3: Styling the Body</b></p>
+                        <p>Apply basic styles to the body, such as setting <b>100vh</b> to ensure the sidebar takes up the entire viewport height. Use flexbox to center the content if needed, and set a dark background color for the rest of the page to make the sidebar stand out.</p>
+                    
+                        <p><b>Step 4: Blurred Sidebar Styling</b></p>
+                        <p>The <strong>.darksoul-blurred-sidebar</strong> class will define the sidebar's look. Set the width to around <b>250px</b> and the height to <b>100vh</b>. Use <b>backdrop-filter: blur(10px)</b> to create the blurred effect. Set the background color to a semi-transparent dark shade (<b>rgba(0, 0, 0, 0.5)</b>) for a frosted glass appearance. Add some padding to create space inside the sidebar.</p>
+                    
+                        <p><b>Step 5: Navigation Items Styling</b></p>
+                        <p>Style each <b>&lt;li&gt;</b> element to make it visually appealing. Use <b>padding</b> and <b>margin</b> to space out the items. Add a <b>hover effect</b> that changes the background color slightly when a user hovers over a navigation item. Set the <b>font-size</b> for the labels to make them readable and ensure the icons are aligned properly with the text.</p>
+                    
+                        <p><b>Step 6: Icon Styling</b></p>
+                        <p>Icons can be sourced from <b>Font Awesome</b> or <b>Icons8</b>. Set the icon color to white or a light shade to make them stand out against the dark blurred background. Use <b>font-size</b> adjustments to match the size of the labels.</p>
+                    
+                        <p><b>Step 7: Active State Styling</b></p>
+                        <p>Add styles for the active state of a navigation item. This can include a bolder font weight, a different background color, or a small border to indicate the current page. This provides visual feedback to users, letting them know which section they are in.</p>
+                    
+                        <p><b>Step 8: Mobile Responsiveness</b></p>
+                        <p>For smaller screens, adjust the sidebar's width or switch to an off-canvas approach where the sidebar is hidden and can be toggled with a menu button. Ensure the text size remains readable, and icons are appropriately sized.</p>
+                    
+                        <p><b>Step 9: JavaScript for Toggling</b></p>
+                        <p>Use JavaScript to toggle the sidebar's visibility on smaller screens. Create a <b>toggleSidebar()</b> function that adds or removes a class that controls the sidebar's open/close state. Attach this function to a button or icon for users to open the sidebar when needed.</p>
+                    
+                        <p style="margin-top: 10px;">Following these steps will help you create a visually appealing and functional blurred side navigation bar. Customize it further with different colors, fonts, and effects to make it unique to your project!</p>
+                    </div>
+                       
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- ***** Most Popular End ***** -->
+
+          <!-- ***** Most Popular Start ***** -->
+          <div class="most-popular">
+            <div class="row">
+              <div class="col-lg-12">
+                <div class="heading-section">
+                  <h4>Html</h4>
+                </div>
+                <div class="row">
+                
+                   
+<textarea disabled id="html">
+    
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+         /* Internal styles goes here.. */
+    </head>
+    <body>
+      <div id="sidenav" class="darksoul-sidenav">
+        <div class="header">
+            <div class="profile">
+                <div class="profile-pic">
+                    <img src="https://darksoul-git.github.io/Blurred%20Side%20Navigation%20bar/darksoul.jpg" alt="Profile Pic">
+                </div>
+                <div id="pname" class="profile-name">
+                    <span>Good Vibes✨</span>
+                    <p class="name">DarkSoul</p>
+                </div>
+            </div>
+            <div class="btn">
+                <div id="toggler" class="circle" onclick="toggle()">
+                    <img id="togglericon" width="10" height="10" src="https://img.icons8.com/metro/26/back.png" alt="back"/>
+                </div>
+            </div>
+        </div>
+        <div class="menus">
+            <p>Menus</p>
+            <div class="menu-container">
+
+                <div class="menu">
+
+                    <div class="menu-img">
+                        <img width="12" height="12" src="https://img.icons8.com/material/24/dashboard-layout.png" alt="dashboard-layout"/>
+                    </div>
+
+                    <div class="menu-name">
+                        <p>Dashboard</p>
+                    </div>
+                        
+                </div>
+                <div class="menu">
+
+                    <div class="menu-img">
+                        <img width="12" height="12" src="https://img.icons8.com/fluency-systems-filled/48/task.png" alt="task"/>
+                    </div>
+                    
+                    <div class="menu-name">
+                        <p>My Task</p>
+                    </div>
+                        
+                </div>
+                <div class="menu">
+
+                    <div class="menu-img">
+                        <img width="12" height="12" src="https://img.icons8.com/puffy-filled/32/calendar.png" alt="calendar"/>
+                    </div>
+                    
+                    <div class="menu-name">
+                        <p>Calendar</p>
+                    </div>
+                        
+                </div>
+                <div class="menu">
+
+                    <div class="menu-img">
+                        <img width="12" height="12" src="https://img.icons8.com/puffy-filled/32/new-post.png" alt="new-post"/>
+                    </div>
+                    
+                    <div class="menu-name">
+                        <p>Mail</p>
+                    </div>
+                        
+                </div>
+                <div class="menu">
+
+                    <div class="menu-img">
+                        <img width="12" height="12" src="https://img.icons8.com/ios-filled/50/replay.png" alt="replay"/>
+                    </div>
+                    
+                    <div class="menu-name">
+                        <p>Activity</p>
+                    </div>
+                        
+                </div>
+            
+            </div>
+            <p>Service</p>
+            <div class="menu-container service">
+
+                <div class="menu">
+
+                    <div class="menu-img">
+                        <img width="12" height="12" src="https://img.icons8.com/pastel-glyph/64/laptop-metrics--v2.png" alt="laptop-metrics--v2"/>
+                    </div>
+                    
+                    <div class="menu-name">
+                        <p>SEO</p>
+                    </div>
+                        
+                </div>
+                <div class="menu">
+
+                    <div class="menu-img">
+                        <img width="12" height="12" src="https://img.icons8.com/pastel-glyph/64/web--v1.png" alt="web--v1"/>
+                    </div>
+                    
+                    <div class="menu-name">
+                        <p>Web Design</p>
+                    </div>
+                        
+                </div>
+                <div class="menu">
+
+                    <div class="menu-img">
+                        <img width="12" height="12" src="https://img.icons8.com/windows/32/huawei-logo.png" alt="huawei-logo"/>
+                    </div>
+                    
+                    <div class="menu-name">
+                        <p>Logo Design</p>
+                    </div>
+                        
+                </div>
+            
+            </div>
+            
+           
+        </div>
+        <div class="footer">
+            <div id="createtask" class="create-task">
+                <img id="taskicon" width="25" height="25" src="https://img.icons8.com/ios-filled/50/add--v1.png" alt="add--v1"/>
+                <p id="task">Create new task</p>
+                <span id="link">Or use <b>Invite</b> Link</span>
+            </div>
+        </div>
+      </div>
+    <p class="disclaimer">Designed by <a href="https://darksoul-codepen.github.io/" target="_blank">DarkSoul</a> | Icons by <a href="https://icons8.com/" target="_blank">Icons8</a></p>
+    </body>
+    </html>
+</textarea>
+                   
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- ***** Most Popular End ***** -->
+
+            <!-- ***** Most Popular Start ***** -->
+            <div class="most-popular">
+                <div class="row">
+                  <div class="col-lg-12">
+                    <div class="heading-section">
+                      <h4>Css</h4>
+                    </div>
+                    <div class="row">
+                                           
+<textarea disabled id="css">
+
+  @import url('https://fonts.googleapis.com/css2?family=Belanosima&family=Rubik+Vinyl&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=Grand+Hotel&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+  body
+  {
+      margin: 0;
+      display: flex;
+      width: 100%;
+      height: 100vh;
+      display: flex;
+      background-image: url(https://darksoul-git.github.io/Blurred%20Side%20Navigation%20bar/windows-11-gradient-background-bloom-light-backgrounds-5k.png);
+      background-position: center;
+      background-size: cover;
+      font-family: "Poppins", sans-serif;
+      background-repeat: no-repeat;
+      flex-direction: column;
+  }
+  .darksoul-sidenav
+  {
+      margin: auto;
+      width: 200px;
+      height: 600px;
+      background-color: rgba(255, 255, 255, 0.228);
+      border-radius: 20px;
+      border: 1px solid rgb(255, 255, 255);
+      backdrop-filter: blur(20px);
+      display: flex;
+      flex-direction: column;
+      transition: all 0.9s;
+      zoom: 1.1;
+  } 
+  .darksoul-sidenav .header
+  {
+      margin: auto;
+      width: 100%;
+      height: 20%;
+      border-radius: 20px;
+      display: flex;
+      
+  }
+  .darksoul-sidenav .header .profile
+  {
+      margin: auto;
+      margin-left: 10px;
+      margin-right: -8px;
+      width: 70%;
+      height: 60%;
+      display: flex;
+  }
+  .darksoul-sidenav .header .profile .profile-pic
+  {
+      margin: auto;
+      width: 30px;
+      height: 30px;
+      border-radius: 50%;
+      background-color: white;
+      display: flex;
+  }
+  .darksoul-sidenav .header .profile .profile-pic img
+  {
+      width: 30px;
+      height: 30px;
+      margin: auto;
+      border-radius: 50%;
+  }
+  .darksoul-sidenav .header .profile .profile-name
+  {
+      margin: auto;
+      margin-left: 0px;
+      width: 60%;
+      height: 50%;
+      display: flex;
+      flex-direction: column;
+      
+  }
+  .darksoul-sidenav .header .profile .profile-name span
+  {
+      margin: auto;
+      margin-left: 0px;
+      margin-bottom: 0px;
+      font-size: 7px;
+  } 
+  .darksoul-sidenav .header .profile .profile-name p 
+  {
+      margin: auto;
+      margin-left: 0px;
+      margin-top: 0px;
+      font-size: small;
+      font-weight: 600;
+  }
+  .darksoul-sidenav .header .btn
+  {
+      margin: auto;
+      width: 30%;
+      height: 60%;
+      display: flex;
+  }
+  .darksoul-sidenav .header .btn .circle
+  {
+      margin: auto;
+      margin-right: -15px;
+      width: 30px;
+      height: 30px;
+      border-radius: 50%;
+      background: linear-gradient(90deg, white 50%, rgba(255, 255, 255, 0) 50%);
+      display: flex;
+      cursor: pointer;
+  }
+  .darksoul-sidenav .header .btn .circle img
+  {
+      margin: auto;
+      margin-left: 5px;
+  }
+  .darksoul-sidenav .menus
+  {
+      margin: auto;
+      width: 100%;
+      height: 60%;
+      background-color: rgba(255, 255, 255, 0);
+      border-radius: 20px;
+      display: flex;
+      flex-direction: column;
+  }
+  .darksoul-sidenav .menus p
+  {
+      width: 50%;
+      height: 20px;
+      margin-left: 15px;
+      font-size: xx-small;
+  }
+  .darksoul-sidenav .menus .menu-container
+  {
+      width: 100%;
+      height: 50%;
+      display: flex;
+      flex-direction: column;
+      margin: auto;
+      margin-top: 0px;
+  }
+  .darksoul-sidenav .menus .menu-container .menu
+  {
+      width: 90%;
+      height: 50px;
+      margin: auto;
+      display: flex;
+      border-radius: 5px;
+      cursor: pointer;
+  }
+  .darksoul-sidenav .menus .menu:hover
+  {
+      background-color: white;
+      box-shadow: 1px 1px 20px white;
+  }
+  .darksoul-sidenav .menus .menu-container .menu .menu-img
+  {
+      margin: auto;
+      display: flex;
+      width: 20%;
+      height: 100%;
+  }
+  .darksoul-sidenav .menus .menu-container .menu .menu-name
+  {
+      margin: auto;
+      display: flex;
+      width: 80%;
+      height: 50%;
+  }
+  .darksoul-sidenav .menus .menu .menu-img img
+  {
+      margin: auto;
+  }
+  .darksoul-sidenav .menus .menu .menu-name p 
+  {
+      height: fit-content;
+      font-size: x-small;
+      margin: auto;
+      margin-left: 0px;
+  }
+  .service
+  {
+      height: 30% !important;
+  }
+  .darksoul-sidenav .footer
+  {
+      margin: auto;
+      width: 100%;
+      height: 20%;
+      background-color: rgba(255, 255, 255, 0);
+      border-radius: 20px;
+      display: flex;
+  }
+  .darksoul-sidenav .footer .create-task
+  {
+      width: 90%;
+      height: 80%;
+      margin: auto;
+      display: flex;
+      flex-direction: column;
+      background-color: white;
+      border-radius: 15px;
+  }
+  .darksoul-sidenav .footer .create-task img
+  {
+      margin: auto;
+      margin-bottom: 0px;
+      cursor: pointer;
+  }
+  .darksoul-sidenav .footer .create-task img:hover
+  {
+      filter: drop-shadow(1px 1px 15px #313131);
+  }
+  .darksoul-sidenav .footer .create-task p
+  {
+      font-size: x-small;
+      margin: auto;
+      margin-bottom: 0px;
+  }
+  .darksoul-sidenav .footer .create-task span
+  {
+      font-size: 7px;
+      margin: auto;
+      margin-top: 0px;
+  }
+
+  .disclaimer
+  {
+      margin: auto;
+      width: fit-content;
+      color: rgb(0, 0, 0);
+      text-align: center;
+      font-family: 'Belanosima', sans-serif;
+  }
+  .disclaimer a
+  {
+      text-decoration: none;
+      color: #202020;
+      font-family: "Kaushan Script", cursive;
+      font-weight: 900;
+  }
+  .disclaimer a:hover
+  {
+      text-decoration: overline;
+  }
+  </textarea>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- ***** Most Popular End ***** -->
+
+                <!-- ***** Most Popular Start ***** -->
+          <div class="most-popular">
+            <div class="row">
+              <div class="col-lg-12">
+                <div class="heading-section">
+                  <h4>Js</h4>
+                </div>
+                <div class="row">
+                                       
+<textarea disabled id="js">
+       
+  var toggler = document.getElementById("toggler");
+  var togglericon = document.getElementById("togglericon")
+  var sidenav = document.getElementById("sidenav");
+  var pname = document.getElementById("pname");
+  var menuname = document.getElementsByClassName("menu-name");
+  var createtask = document.getElementById("createtask");
+  var taskicon = document.getElementById("taskicon");
+  var task = document.getElementById("task");
+  var link = document.getElementById("link");
+  var flag = 0;
+  function toggle()
+  {
+      if (flag == 0) 
+      {
+          sidenav.style.width = "60px";
+          pname.style.display = "none";
+          toggler.style.background = "linear-gradient(90deg,  rgba(206, 191, 191, 0) 50%, white 50%)";
+          togglericon.src = "https://img.icons8.com/metro/26/forward.png";
+          togglericon.style.margin = "auto";
+          togglericon.style.marginRight = "5px";
+          createtask.style.backgroundColor = "transparent";
+          task.style.display = "none";
+          link.style.display = "none";
+          taskicon.style.margin = "auto";
+          for (let index = 0; index < menuname.length; index++) {
+              const element = menuname[index];
+              element.style.display = 'none';
+              
+          }
+          flag = 1;
+      } 
+      else 
+      {
+          sidenav.style.width = "200px";
+          toggler.style.background = "linear-gradient(90deg, white 50%, rgba(206, 191, 191, 0) 50%)";
+          togglericon.src = "https://img.icons8.com/metro/26/back.png";
+          togglericon.style.margin = "auto";
+          togglericon.style.marginLeft = "5px";
+          pname.style.display = "flex";
+          taskicon.style.margin = "auto";
+          taskicon.style.marginBottom = "0px";
+          createtask.style.backgroundColor = "white";
+          task.style.display = "block";
+          link.style.display = "block"; 
+          for (let index = 0; index < menuname.length; index++) {
+              const element = menuname[index];
+              element.style.display = 'flex';
+              
+          }
+          flag = 0;
+      }
+      
+  }
+       
+</textarea>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- ***** Most Popular End ***** -->
+
+          <!-- ***** Gaming Library Start ***** -->
+          <div class="gaming-library">
+            <div class="col-lg-12 align-self-center justify-content-center text-center heading-section">
+              <div class="heading-section text-lg-start">
+                <h4>Output Screenshot</h4>
+              </div>
+              <img src="Blurred-Side-Navigation-bar/Output-Screenshot-Preview-Blurred-Side-Navigation-bar.webp" alt="Output Screenshot - Preview-Blurred-Side-Navigation-bar" style="max-width: 60%; border-radius: 10px;"/>
+              <p>&nbsp;</p>
+            <div class="col-lg-12">
+              <div class="main-button">
+                <a href="Blurred-Side-Navigation-bar/Preview-Blurred-Side-Navigation-bar.html">View Live Output</a>
+              </div>
+            </div>
+          </div>
+          <!-- ***** Gaming Library End ***** -->
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <footer>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12">
+          <p>Copyright © 2024 <a href="https://darksoul-codepen.github.io/">DarkSoul CodePen</a> | <a href="https://darksoul-codepen.github.io/Disclaimer.html">Disclaimer</a> | <a href="https://darksoul-codepen.github.io/Privacy-policy.html">Privacy Policy</a> | <a href="https://darksoul-codepen.github.io/FAQ.html">FAQ</a> | <a href="https://darksoul-codepen.github.io/sitemap.xml">Sitemap</a></p>
+          <p><img src="assets/images/codepen_logo.png" alt="Codepen Logo" style="max-width: 20px;"/><a href="https://codepen.io/DarkSoul-" target="_blank" > CodePen</a> | <img src="assets/images/dribbble_logo.png" alt="Dribbble Logo" style="max-width: 20px;"/><a href="https://dribbble.com/dark-soul" target="_blank" > Dribbble</a> | <img src="assets/images/instagram-white-icon.webp" alt="Instagram Logo" style="max-width: 20px;"/><a href="https://www.instagram.com/dark.soul.io/" target="_blank"> Instagram</a> | <img src="assets/images/YouTube-Logo.png" alt="YouTube Logo" style="max-width: 20px;"/><a href="https://www.youtube.com/channel/UCooCOD2j8Q4Y9ysYZIFzI_w" target="_blank"> YouTube</a></p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+
+
+  <!-- Scripts -->
+  <!-- Bootstrap core JavaScript -->
+  <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+
+  <script src="assets/js/isotope.min.js"></script>
+  <script src="assets/js/owl-carousel.js"></script>
+  <script src="assets/js/tabs.js"></script>
+  <script src="assets/js/popup.js"></script>
+  <script src="assets/js/custom.js"></script>
+
+
+    <script src="assets/js/search.js"></script>
+  </body>
+
+</html>

@@ -1,0 +1,457 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+  
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name='robots' content='index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1' />
+	  <meta http-equiv="Permissions-Policy" content="interest-cohort=()">
+    <meta http-equiv="content-language" content="en">
+	  <meta name="referrer" content="strict-origin-when-cross-origin">
+	  <meta name="author" content="DarkSoul">
+ 
+    <!-- Favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <meta name="keywords" content="DarkSoul CodePen, Fluid Liquid Circle Animation, Liquid Circle Animation, CSS Animation, Fluid Animation, Circle Animation, Web Animation, UI/UX Design, Smooth Animations, DarkSoul UI/UX Blogs, Web Design Tutorials,  Dark Soul Codepens, UI/UX Design with DarkSoul, DarkSoul UI/UX Designs" />
+    <meta name="description" content="Explore Fluid Liquid Circle Animation on DarkSoul CodePen. Discover a smooth, mesmerizing liquid circle animation designed for web projects. Live preview and download the source code to enhance your UI/UX with dynamic visuals.">
+
+  
+    <title>Fluid Liquid Circle Animation - DarkSoul CodePen</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+
+    <!-- Additional CSS Files -->
+    <link rel="stylesheet" href="assets/css/fontawesome.css">
+    <link rel="stylesheet" href="assets/css/darksoul-codepen.css">
+    <link rel="stylesheet" href="assets/css/owl.css">
+    <link rel="stylesheet" href="assets/css/animate.css">
+    <link rel="stylesheet"href="https://unpkg.com/swiper@7/swiper-bundle.min.css"/>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+<style>
+  textarea
+  {
+    
+    resize: none;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: large;
+    min-height: 400px;
+    background-color: rgba(19, 19, 19, 0.44);
+    border: none;
+    border-radius: 15px;
+    font-weight: 500;
+    
+    color: rgb(255, 255, 255);
+  }
+  p{
+    color: #ffffff;
+    margin: auto;
+  }
+  li
+  {
+    list-style-type: disc;
+    color: #ffffff;
+    
+  }
+  strong
+  {
+    color: #B1E3FA;
+  }
+  h1
+  {
+    font-weight: 900 !important;
+    margin-bottom: 40px;
+  }
+  h2,h4
+  {
+    font-weight: 900 !important;
+  }
+  
+        /* width */
+        ::-webkit-scrollbar 
+        {
+            width: 5px;
+        }
+
+        /* Track */
+        ::-webkit-scrollbar-track 
+        {
+            background-color: rgba(226, 247, 255, 0);
+        }
+
+        /* Handle */
+        ::-webkit-scrollbar-thumb 
+        {
+        background: #B1E3FA;
+        border-radius: 10px;
+        height: 10px;
+        width: 3px;
+        }
+        .most-popular p 
+        {
+          text-align: justify;
+        }
+</style>
+
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-0XRHJTRGGH"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-0XRHJTRGGH');
+</script>
+
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9669180356185936"
+     crossorigin="anonymous"></script>
+
+   <!-- Clarity tracking code for https://darksoul-codepen.github.io/ -->
+   <script>
+    (function(c,l,a,r,i,t,y){
+        c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+        t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i+"?ref=bwt";
+        y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+    })(window, document, "clarity", "script", "k6ctefq607");
+  </script>
+  </head>
+
+<body>
+
+  <!-- ***** Preloader Start ***** -->
+  <div id="js-preloader" class="js-preloader">
+    <div class="preloader-inner">
+      <span class="dot"></span>
+      <div class="dots">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </div>
+  </div>
+  <!-- ***** Preloader End ***** -->
+
+  <!-- ***** Header Area Start ***** -->
+  <header class="header-area header-sticky" style="background-color: rgba(0, 0, 0, 0);">
+    <div class="container" style="padding: 0px;">
+        <div class="row">
+            <div class="col-12">
+              <nav class="main-nav">
+                <!-- ***** Logo Start ***** -->
+                <a href="https://darksoul-codepen.github.io/" class="logo">
+                    <img src="assets/images/logo.png" alt="DarkSoul CodePen - Logo" width="100%">
+                </a>
+                <!-- ***** Logo End ***** -->
+                <!-- ***** Search End ***** -->
+                <div class="darksoul-search-bar" id="searchbar">
+                  <i class="fa fa-search"></i>
+                  <input id="searchbarinput" class="darksoul-search-bar-input" type="text" name="search" id="searchval" placeholder="Type something" />
+                
+          
+                  <div class="darksoul-dropdown" id="dropdown">
+                      <ul id="resultlist">
+                          <a href="https://darksoul-codepen.github.io/How-to-center-an-image-using-display-flex.html"><li><p>How to Center an Image Using Display Flex</p></li></a>
+                          <a href="https://darksoul-codepen.github.io/How-to-create-and-style-buttons-like-bootstrap.html"><li><p>How to Create and Style Buttons like Bootstrap</p></li></a>
+                          <a href="https://darksoul-codepen.github.io/How-to-Create-an-Animated-Alert-box.html"><li><p>How to Create an Animated Alert Box</p></li></a>
+                          <a href="https://darksoul-codepen.github.io/How-to-Find-the-Size-of-a-GitHub-Repository.html"><li><p>How to Find the Size of a GitHub Repo</p></li></a>
+                          <a href="https://darksoul-codepen.github.io/How-to-merge-Video-and-Text-in-PPT.html"><li><p>How to Merge Video and Text in PPT</p></li></a>
+                          <a href="https://darksoul-codepen.github.io/How-to-merge-Picture-and-Text-in-PPT.html"><li><p>How to Merge Picture and Text in PPT</p></li></a>
+                          <a href="https://darksoul-codepen.github.io/CSS-Shapes-Lab.html"><li><p>CSS Shapes Lab Codedamn</p></li></a>
+                          <a href="https://darksoul-codepen.github.io/Header-Tag-Lab.html"><li><p>Header Tag Lab Codedamn</p></li></a>
+                          <a href="https://darksoul-codepen.github.io/Radio-Buttons-Lab.html"><li><p>Radio Buttons Lab Codedamn</p></li></a>
+                          <a href="https://darksoul-codepen.github.io/Fibonacci-Generator-Lab.html"><li><p>Fibonacci Generator Lab Codedamn</p></li></a>
+                          <a href="https://darksoul-codepen.github.io/Color-Change-Lab.html"><li><p>Color Change Lab Codedamn</p></li></a>
+                          <a href="https://darksoul-codepen.github.io/Glassy-Date-Time-Weather-Widget.html"><li><p>Glassy Date,Time & Weather Widget CodePen</p></li></a>
+                          <a href="https://darksoul-codepen.github.io/Glassy-Music-Player.html"><li><p>Glassy Music Player CodePen</p></li></a>
+                          <a href="https://darksoul-codepen.github.io/Circular-Navigation-Menu.html"><li><p>Circular Navigation Menu CodePen</p></li></a>
+                          <a href="https://darksoul-codepen.github.io/Neumorphic-Theme-Toggle-Switch.html"><li><p>Neumorphism Toggle Switch CodePen</p></li></a>
+                          <a href="https://darksoul-codepen.github.io/Glowing-Border-Button.html"><li><p>Glowing Border Button CodePen</p></li></a>
+                          <a href="https://darksoul-codepen.github.io/Sticky-Search-Bar.html"><li><p>Sticky Search Bar CodePen</p></li></a>
+                          <a href="https://darksoul-codepen.github.io/Glowing-Gradient-Border-cards.html"><li><p>Glowing Gradient Border Cards CodePen</p></li></a>
+                          <a href="https://darksoul-codepen.github.io/Hover-Fill-Card.html"><li><p>Hover Fill Card CodePen</p></li></a>
+                          <a href="https://darksoul-codepen.github.io/Hover-Fill-Button.html"><li><p>Hover Fill Button CodePen</p></li></a>
+                          <a href="https://darksoul-codepen.github.io/Preloader.html"><li><p>Preloader CodePen</p></li></a>
+                      </ul>
+                  </div>
+              </div>
+                <!-- ***** Search End ***** -->
+                <!-- ***** Menu Start ***** -->
+                <ul class="nav">
+                    <li><a href="https://darksoul-codepen.github.io/">Home</a></li>
+                    <li><a href="posts.html">Posts</a></li>
+                    <li><a href="codepen.html" class="active">CodePens</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="about.html">About Me <img src="assets/images/profile-header.png" alt="DarkSoul Profile"></a></li>
+                </ul>   
+                <a class='menu-trigger'>
+                    <span>Menu</span>
+                </a>
+                <!-- ***** Menu End ***** -->
+            </nav>
+            </div>
+        </div>
+    </div>
+  </header>
+  <!-- ***** Header Area End ***** -->
+
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12">
+        <div class="page-content">
+
+          <!-- ***** Banner Start ***** -->
+          <div class="main-banner">
+            <div class="row">
+              <div class="col-lg-7">
+                <div class="header-text">
+                  
+                  <h1 style="color: #38B6FF; font-size: xx-large;"><b style="color: #000000;">Fluid Liquid Circle Animation</b> CodePen</h1>
+                  <h6 style="color: black;">CodePen</h6>
+                  <div class="main-button">
+                    <a href="Fluid-Liquid-Circle-Animation/Preview-Fluid-Liquid-Circle-Animation.html">Preview</a>&nbsp;&nbsp;
+                    <a href="Zips/Fluid-Liquid-Circle-Animation.zip" download>Download Source code</a>
+                  </div>
+                  
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- ***** Banner End ***** -->
+
+               <!-- ***** Most Popular Start ***** -->
+               <div class="most-popular">
+                <div class="row">
+                  <div class="col-lg-12">
+                    <div class="heading-section">
+                      <h4>Procedure</h4>
+                      <div class="row">
+                        <p><b>Step 1: Setting Up the HTML Structure</b></p>
+                        <p>Start by setting up the basic HTML structure. This includes the <b>&lt;head&gt;</b> section, where you'll add the page title, styles, and fonts, and the <b>&lt;body&gt;</b> section, where the main content, including the animated circle, will be displayed.</p>
+                    
+                        <p><b>Step 2: Importing Google Fonts</b></p>
+                        <p>In the <b>&lt;style&gt;</b> tag, import fonts from Google Fonts to add personality to the page. Use fonts like <b>Poppins</b>, <b>Kaushan Script</b>, and <b>Belanosima</b> for different parts of the page to give it a stylish and modern look.</p>
+                    
+                        <p><b>Step 3: Styling the Background</b></p>
+                        <p>Apply a soft gradient as the background of the page to create a gentle, flowing effect. Center the content on the page both vertically and horizontally to focus the user’s attention on the animated circle in the middle of the screen.</p>
+                    
+                        <p><b>Step 4: Creating the Fluid Circle</b></p>
+                        <p>Create the fluid circle by adding a <b>&lt;div&gt;</b> element with a specific class to control its shape and appearance. This circle will be large, centered, and styled with a slightly irregular shape to give it a liquid-like look.</p>
+                    
+                        <p><b>Step 5: Adding Keyframes for Animation</b></p>
+                        <p>Define the animation with keyframes to give the circle a morphing effect. The keyframes adjust the shape of the circle at different intervals, creating a smooth, flowing motion that repeats continuously for a dynamic, organic look.</p>
+                    
+                        <p><b>Step 6: Adding a Disclaimer Text</b></p>
+                        <p>At the bottom of the animation, add a small disclaimer text with a link for credit. Style this text to match the overall theme of the page, with a hover effect on the link for an interactive touch.</p>
+                    
+                        <p><b>Step 7: Testing and Adjusting</b></p>
+                        <p>Once everything is set up, preview the page to make sure the animation flows smoothly. Adjust the animation speed, colors, or text styles as needed to achieve the desired effect. This will complete your fluid liquid circle animation with a seamless, dynamic visual impact.</p>
+                    
+                        <p style="margin-top: 10px;">Following these steps will help you create a visually engaging and fluid animation. Feel free to experiment with different shapes, colors, and timings to make it uniquely yours!</p>
+                    </div>
+                    
+                       
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- ***** Most Popular End ***** -->
+
+          <!-- ***** Most Popular Start ***** -->
+          <div class="most-popular">
+            <div class="row">
+              <div class="col-lg-12">
+                <div class="heading-section">
+                  <h4>Html</h4>
+                </div>
+                <div class="row">
+                
+                   
+<textarea disabled id="html">
+    
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+         /* Internal styles goes here.. */
+    </head>
+    <body>
+        <div class="darksoul-fluid-liquid--circle">
+        </div>
+        <p class="disclaimer">Designed & Created by <a href="https://darksoul-codepen.github.io/" target="_blank">DarkSoul</a></p>
+    </body>
+    </html>
+</textarea>
+                   
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- ***** Most Popular End ***** -->
+
+            <!-- ***** Most Popular Start ***** -->
+            <div class="most-popular">
+                <div class="row">
+                  <div class="col-lg-12">
+                    <div class="heading-section">
+                      <h4>Css</h4>
+                    </div>
+                    <div class="row">
+                                           
+<textarea disabled id="css">
+
+    @import url('https://fonts.googleapis.com/css2?family=Gasoek+One&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Belanosima&family=Rubik+Vinyl&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Grand+Hotel&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap');
+    body
+    {
+        margin: 0;
+        display: flex;
+        width: 100%;
+        height: 100vh;
+        flex-direction: column;
+        font-family: "Poppins", sans-serif;
+        align-items: center;
+        justify-content: center;
+        background-image: linear-gradient(120deg, #cfe1ff 0%, #daf3ff 100%);
+    }
+    .darksoul-fluid-liquid--circle
+    {
+        position: absolute;
+        margin: auto;
+        width: 350px;
+        height: 350px;
+        background-image: linear-gradient(120deg, #a1c4fd 0%, #c2e9fb 100%);
+        border-radius: 39% 61% 55% 45% / 44% 37% 63% 56% ;
+        animation: fluid-anim 5s infinite linear;
+        z-index: 1;
+    }
+     
+    @keyframes fluid-anim
+    {
+        0%
+        {
+            border-radius: 39% 61% 55% 45% / 44% 37% 63% 56% ;
+        }
+        25%
+        {
+            border-radius: 45% 55% 48% 52% / 60% 36% 64% 40% ;
+        }
+        50%
+        {
+            border-radius: 56% 44% 28% 72% / 46% 63% 37% 54% ;
+        }
+        75%
+        {
+            border-radius: 62% 38% 37% 63% / 39% 32% 68% 61% ;
+        }
+        100%
+        {
+            border-radius: 39% 61% 55% 45% / 44% 37% 63% 56% ;
+        }
+    }
+    
+    .disclaimer
+    {
+        margin: auto; 
+        margin-bottom: 50px;
+        width: fit-content;
+        color: rgb(0, 0, 0);
+        text-align: center;
+        font-family: 'Belanosima', sans-serif;
+    }
+    .disclaimer a
+    {
+        text-decoration: none;
+        color: #202020;
+        font-family: "Kaushan Script", cursive;
+        font-weight: 900;
+    }
+    .disclaimer a:hover
+    {
+        text-decoration: overline;
+    }
+
+  </textarea>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- ***** Most Popular End ***** -->
+
+                <!-- ***** Most Popular Start ***** -->
+          <div class="most-popular">
+            <div class="row">
+              <div class="col-lg-12">
+                <div class="heading-section">
+                  <h4>Js</h4>
+                </div>
+                <div class="row">
+                                       
+<textarea disabled id="js">
+      
+    JavaScript is not necessary.
+       
+</textarea>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- ***** Most Popular End ***** -->
+
+          <!-- ***** Gaming Library Start ***** -->
+          <div class="gaming-library">
+            <div class="col-lg-12 align-self-center justify-content-center text-center heading-section">
+              <div class="heading-section text-lg-start">
+                <h4>Output Screenshot</h4>
+              </div>
+              <img src="Fluid-Liquid-Circle-Animation/Output Screenshot- Fluid Liquid Circle Animation.gif" alt="Output Screenshot - Fluid Liquid Circle Animation" style="max-width: 60%; border-radius: 10px;"/>
+              <p>&nbsp;</p>
+            <div class="col-lg-12">
+              <div class="main-button">
+                <a href="Fluid-Liquid-Circle-Animation/Preview-Fluid-Liquid-Circle-Animation.html">View Live Output</a>
+              </div>
+            </div>
+          </div>
+          <!-- ***** Gaming Library End ***** -->
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <footer>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12">
+          <p>Copyright © 2024 <a href="https://darksoul-codepen.github.io/">DarkSoul CodePen</a> | <a href="https://darksoul-codepen.github.io/Disclaimer.html">Disclaimer</a> | <a href="https://darksoul-codepen.github.io/Privacy-policy.html">Privacy Policy</a> | <a href="https://darksoul-codepen.github.io/FAQ.html">FAQ</a> | <a href="https://darksoul-codepen.github.io/sitemap.xml">Sitemap</a></p>
+          <p><img src="assets/images/codepen_logo.png" alt="Codepen Logo" style="max-width: 20px;"/><a href="https://codepen.io/DarkSoul-" target="_blank" > CodePen</a> | <img src="assets/images/dribbble_logo.png" alt="Dribbble Logo" style="max-width: 20px;"/><a href="https://dribbble.com/dark-soul" target="_blank" > Dribbble</a> | <img src="assets/images/instagram-white-icon.webp" alt="Instagram Logo" style="max-width: 20px;"/><a href="https://www.instagram.com/dark.soul.io/" target="_blank"> Instagram</a> | <img src="assets/images/YouTube-Logo.png" alt="YouTube Logo" style="max-width: 20px;"/><a href="https://www.youtube.com/channel/UCooCOD2j8Q4Y9ysYZIFzI_w" target="_blank"> YouTube</a></p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+
+
+  <!-- Scripts -->
+  <!-- Bootstrap core JavaScript -->
+  <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+
+  <script src="assets/js/isotope.min.js"></script>
+  <script src="assets/js/owl-carousel.js"></script>
+  <script src="assets/js/tabs.js"></script>
+  <script src="assets/js/popup.js"></script>
+  <script src="assets/js/custom.js"></script>
+
+
+    <script src="assets/js/search.js"></script>
+  </body>
+
+</html>

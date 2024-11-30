@@ -1,0 +1,645 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name='robots' content='index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1' />
+	<meta http-equiv="Permissions-Policy" content="interest-cohort=()">
+    <meta http-equiv="content-language" content="en">
+	<meta name="referrer" content="strict-origin-when-cross-origin">
+	<meta name="author" content="DarkSoul">
+ 
+    <!-- Favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+
+    <meta name="keywords" content="DarkSoul CodePen, Preview Glassy Loading Page, Live Output Glassy Loading Animation CodePen, Glassy Preloader, Stylish Preloader Live Preview, Glassy UI Loading Design, DarkSoul CodePens, DarkSoul UI/UX Designs, DarkSoul Creative Animations, DarkSoul Codedamn" />
+    <meta name="description" content="Preview the captivating Glassy Loading Page on DarkSoul CodePen. Experience live output of stunning loading animations with a sleek glassy aesthetic, crafted to enhance your UI/UX projects by DarkSoul." />
+
+  
+    <title>Preview - Glassy Loading Page</title>
+    <style>
+           @import url('https://fonts.googleapis.com/css2?family=Belanosima&family=Rubik+Vinyl&display=swap');
+           @import url('https://fonts.googleapis.com/css2?family=Lilita+One&display=swap');
+           @import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Gasoek+One&display=swap');
+
+        body
+        {
+            margin: 0;
+            width: 100%;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            background-image: url(https://darksoul-git.github.io/Glassy%20Loading%20Page/half-life-gordon-cool-game-desktop-wallpaper-preview.webp);
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            
+
+        }
+        .darksoul-container
+        {
+            margin: auto;
+            width: 600px;
+            height: 422px;
+            display: flex;
+            flex-direction: column;
+            zoom: 0.8;
+        }
+        .square
+        {
+            margin: auto;
+            margin-left: 50px;
+            width: 100px;
+            height: 100px;
+            display: flex;
+            border-radius: 7px;
+            
+            animation: roll1 1s 0s linear,
+                       roll2 1s 1s linear,
+                       roll3 1s 2s linear ,
+                       roll4 1s 3s linear ,
+                       roll5 1s 4s linear ,
+                       rollback5 1s 5s linear ,
+                       rollback4 1s 6s linear ,
+                       rollback3 1s 7s linear ,
+                       rollback2 1s 8s linear ,
+                       rollback1 1s 9s linear ,
+                       rollback0 1s 10s linear ,
+                       roll0 1s 11s linear,
+                       roll1 1s 12s linear,
+                       roll2 1s 13s linear ,
+                       roll3 1s 14s linear ,
+                       roll4 1s 15s linear ,
+                       roll5 1s 16s linear ,
+                       rollback5 1s 17s linear ,
+                       rollback4 1s 18s linear ,
+                       rollback3 1s 19s linear ,
+                       rollback2 1s 20s linear ,
+                       rollback1 1s 21s linear ,
+                       rollback0 1s 22s linear ,
+                       roll0 1s 23s linear,
+                       roll1 1s 24s linear,
+                       roll2 1s 25s linear ,
+                       roll3 1s 26s linear ,
+                       roll4 1s 27s linear ,
+                       roll5 1s 28s linear ,
+                       rollback5 1s 29s linear ,
+                       rollback4 1s 30s linear ,
+                       rollback3 1s 31s linear ,
+                       rollback2 1s 32s linear ,
+                       rollback1 1s 33s linear forwards;  
+              
+            box-shadow: 10px -10px 100px rgba(255, 186, 58, 0.781),
+                        0px 0px 100px 10px rgba(255, 186, 58, 0.781);
+            background-color: rgba(255, 186, 58, 0.781);
+            backdrop-filter: blur(10px);
+        }
+        .line
+        {
+            margin: auto;
+            width: 510px;
+            height: 320px;
+            box-shadow: 10px -10px 100px rgba(0, 0, 0, 0.345),
+                        1px 1px 100px rgba(0, 0, 0, 0.591);
+            background-color: rgba(0, 0, 0, 0.479);
+            backdrop-filter: blur(25px);
+            border-radius: 15px;
+            display: flex;
+        }
+        .line h1
+        {
+            margin: auto;
+            letter-spacing: 2px;
+            color: rgba(255, 255, 255, 0.763);
+            font-family: "Gasoek One", sans-serif;
+            text-shadow: 0px 10px 1px rgba(255, 186, 58, 0.879);
+            
+            transform: scale(1.2);
+        }
+        .line h1 b
+        {
+            font-size: 60px;
+        }
+        .line h1 strong
+        {
+            font-size: 50px;
+        }
+        .line h1 span
+        {
+            font-size: 20px;
+        }
+       
+        @keyframes roll0 
+        {
+            0%
+            {
+                transform: translateY(-13px) translateX(-44.44px) rotate(-40deg);
+            }
+            25%
+            {
+                transform: translateY(-10px) translateX(-33.33px) rotate(-30deg);
+            }
+            50%
+            {
+                transform: translateY(-8px) translateX(-22.22px) rotate(-20deg);
+            }
+            75%
+            {
+                transform: translateY(-5px) translateX(-11.11px) rotate(-10deg);
+            }
+            100%
+            {
+                transform: translateY(-0px) translateX(0px) rotate(0deg);
+            }    
+        }
+        @keyframes roll1
+        {
+            0%
+            {
+                transform: translateY(0px) translateX(0px) rotate(0deg);
+            }
+            11.11%
+            {
+                transform: translateY(-5px) translateX(11.11px) rotate(10deg);
+            }
+            22.22%
+            {
+                transform: translateY(-10px) translateX(22.22px) rotate(20deg);
+            }
+            33.33%
+            {
+                transform: translateY(-15px) translateX(33.33px) rotate(30deg);
+            }
+            44.44%
+            {
+                transform: translateY(-17px) translateX(44.44px) rotate(40deg);
+            }
+            55.55%
+            {
+                transform: translateY(-17px) translateX(55.55px) rotate(50deg);
+            }
+            66.66%
+            {
+                transform: translateY(-15px) translateX(66.66px) rotate(60deg);
+            }
+            77.77%
+            {
+                transform: translateY(-10px) translateX(77.77px) rotate(70deg);
+            }
+            88.88%
+            {
+                transform: translateY(-5px) translateX(88.88px) rotate(80deg);
+            }
+            100%
+            {
+                transform: translateY(0px) translateX(100px) rotate(90deg);
+            }
+        }
+        @keyframes roll2
+        {
+            0%
+            {
+                transform: translateY(0px) translateX(100px) rotate(90deg);
+            }
+            11.11%
+            {
+                transform: translateY(-5px) translateX(111.11px) rotate(100deg);
+            }
+            22.22%
+            {
+                transform: translateY(-10px) translateX(122.22px) rotate(110deg);
+            }
+            33.33%
+            {
+                transform: translateY(-15px) translateX(133.33px) rotate(120deg);
+            }
+            44.44%
+            {
+                transform: translateY(-17px) translateX(144.44px) rotate(130deg);
+            }
+            55.55%
+            {
+                transform: translateY(-17px) translateX(155.55px) rotate(140deg);
+            }
+            66.66%
+            {
+                transform: translateY(-15px) translateX(166.66px) rotate(150deg);
+            }
+            77.77%
+            {
+                transform: translateY(-10px) translateX(177.77px) rotate(160deg);
+            }
+            88.88%
+            {
+                transform: translateY(-5px) translateX(188.88px) rotate(170deg);
+            }
+            100%
+            {
+                transform: translateY(0px) translateX(200px) rotate(180deg);
+            }
+        }
+        @keyframes roll3
+        {
+            0%
+            {
+                transform: translateY(0px) translateX(200px) rotate(180deg);
+            }
+            11.11%
+            {
+                transform: translateY(-5px) translateX(211.11px) rotate(190deg);
+            }
+            22.22%
+            {
+                transform: translateY(-10px) translateX(222.22px) rotate(200deg);
+            }
+            33.33%
+            {
+                transform: translateY(-15px) translateX(233.33px) rotate(210deg);
+            }
+            44.44%
+            {
+                transform: translateY(-17px) translateX(244.44px) rotate(220deg);
+            }
+            55.55%
+            {
+                transform: translateY(-17px) translateX(255.55px) rotate(230deg);
+            }
+            66.66%
+            {
+                transform: translateY(-15px) translateX(266.66px) rotate(240deg);
+            }
+            77.77%
+            {
+                transform: translateY(-10px) translateX(277.77px) rotate(250deg);
+            }
+            88.88%
+            {
+                transform: translateY(-5px) translateX(288.88px) rotate(260deg);
+            }
+            100%
+            {
+                transform: translateY(0px) translateX(300px) rotate(270deg);
+            }
+        }
+        @keyframes roll4
+        {
+            0%
+            {
+                transform: translateY(0px) translateX(300px) rotate(270deg);
+            }
+            11.11%
+            {
+                transform: translateY(-5px) translateX(311.11px) rotate(280deg);
+            }
+            22.22%
+            {
+                transform: translateY(-10px) translateX(322.22px) rotate(290deg);
+            }
+            33.33%
+            {
+                transform: translateY(-15px) translateX(333.33px) rotate(300deg);
+            }
+            44.44%
+            {
+                transform: translateY(-17px) translateX(344.44px) rotate(310deg);
+            }
+            55.55%
+            {
+                transform: translateY(-17px) translateX(355.55px) rotate(320deg);
+            }
+            66.66%
+            {
+                transform: translateY(-15px) translateX(366.66px) rotate(330deg);
+            }
+            77.77%
+            {
+                transform: translateY(-10px) translateX(377.77px) rotate(340deg);
+            }
+            88.88%
+            {
+                transform: translateY(-5px) translateX(388.88px) rotate(350deg);
+            }
+            100%
+            {
+                transform: translateY(0px) translateX(400px) rotate(360deg);
+            }
+        }
+        @keyframes roll5
+        {
+            0%
+            {
+                transform: translateY(0px) translateX(400px) rotate(360deg);
+            }
+            20%
+            {
+                transform: translateY(-5px) translateX(411.11px) rotate(370deg);
+            }
+            40%
+            {
+                transform: translateY(-8px) translateX(422.22px) rotate(380deg);
+            }
+            60%
+            {
+                transform: translateY(-10px) translateX(433.33px) rotate(390deg);
+            }
+            100%
+            {
+                transform: translateY(-13px) translateX(444.44px) rotate(400deg);
+            }
+        }
+
+        @keyframes rollback5
+        {
+            0%
+            {
+                transform: translateY(-13px) translateX(444.44px) rotate(400deg);
+            }
+            20%
+            {
+                transform: translateY(-10px) translateX(433.33px) rotate(390deg);
+            }
+            40%
+            {
+                transform: translateY(-8px) translateX(422.22px) rotate(380deg);
+            }
+            60%
+            {
+                transform: translateY(-5px) translateX(411.11px) rotate(370deg);
+            }
+            100%
+            {
+                transform: translateY(0px) translateX(400px) rotate(360deg);
+            }
+        }
+        @keyframes rollback4
+        {
+            0%
+            {
+                transform: translateY(0px) translateX(400px) rotate(360deg);
+            }
+            11.11%
+            {
+                transform: translateY(-5px) translateX(388.88px) rotate(350deg);
+            }
+            22.22%
+            {
+                transform: translateY(-10px) translateX(377.77px) rotate(340deg);
+            }
+            33.33%
+            {
+                transform: translateY(-15px) translateX(366.66px) rotate(330deg);
+            }
+            44.44%
+            {
+                transform: translateY(-17px) translateX(355.55px) rotate(320deg);
+            }
+            55.55%
+            {
+                transform: translateY(-17px) translateX(344.44px) rotate(310deg);
+            }
+            66.66%
+            {
+                transform: translateY(-15px) translateX(333.33px) rotate(300deg);
+            }
+            77.77%
+            {
+                transform: translateY(-10px) translateX(322.22px) rotate(290deg);
+            }
+            88.88%
+            {
+                transform: translateY(-5px) translateX(311.11px) rotate(280deg);
+            }
+            100%
+            {
+                transform: translateY(0px) translateX(300px) rotate(270deg);
+            }
+        }
+        @keyframes rollback3
+        {
+            0%
+            {
+                transform: translateY(0px) translateX(300px) rotate(270deg);
+            }
+            11.11%
+            {
+                transform: translateY(-5px) translateX(288.88px) rotate(260deg);
+            }
+            22.22%
+            {
+                transform: translateY(-10px) translateX(277.77px) rotate(250deg);
+            }
+            33.33%
+            {
+                transform: translateY(-15px) translateX(266.66px) rotate(240deg);
+            }
+            44.44%
+            {
+                transform: translateY(-17px) translateX(255.55px) rotate(230deg);
+            }
+            55.55%
+            {
+                transform: translateY(-17px) translateX(244.44px) rotate(220deg);
+            }
+            66.66%
+            {
+                transform: translateY(-15px) translateX(233.33px) rotate(210deg);
+            }
+            77.77%
+            {
+                transform: translateY(-10px) translateX(222.22px) rotate(200deg);
+            }
+            88.88%
+            {
+                transform: translateY(-5px) translateX(211.11px) rotate(190deg);
+            }
+            100%
+            {
+                transform: translateY(0px) translateX(200px) rotate(180deg);
+            }
+        }
+        @keyframes rollback2
+        {
+            0%
+            {
+                transform: translateY(0px) translateX(200px) rotate(180deg);
+            }
+            11.11%
+            {
+                transform: translateY(-5px) translateX(188.88px) rotate(170deg);
+            }
+            22.22%
+            {
+                transform: translateY(-10px) translateX(177.77px) rotate(160deg);
+            }
+            33.33%
+            {
+                transform: translateY(-15px) translateX(166.66px) rotate(150deg);
+            }
+            44.44%
+            {
+                transform: translateY(-17px) translateX(155.55px) rotate(140deg);
+            }
+            55.55%
+            {
+                transform: translateY(-17px) translateX(144.44px) rotate(130deg);
+            }
+            66.66%
+            {
+                transform: translateY(-15px) translateX(133.33px) rotate(120deg);
+            }
+            77.77%
+            {
+                transform: translateY(-10px) translateX(122.22px) rotate(110deg);
+            }
+            88.88%
+            {
+                transform: translateY(-5px) translateX(111.11px) rotate(100deg);
+            }
+            100%
+            {
+                transform: translateY(0px) translateX(100px) rotate(90deg);
+            }
+        }
+        @keyframes rollback1
+        {
+            0%
+            {
+                transform: translateY(0px) translateX(100px) rotate(90deg);
+            }
+            11.11%
+            {
+                transform: translateY(-5px) translateX(88.88px) rotate(80deg);
+            }
+            22.22%
+            {
+                transform: translateY(-10px) translateX(77.77px) rotate(70deg);
+            }
+            33.33%
+            {
+                transform: translateY(-15px) translateX(66.66px) rotate(60deg);
+            }
+            44.44%
+            {
+                transform: translateY(-17px) translateX(55.55px) rotate(50deg);
+            }
+            55.55%
+            {
+                transform: translateY(-17px) translateX(44.44px) rotate(40deg);
+            }
+            66.66%
+            {
+                transform: translateY(-15px) translateX(33.33px) rotate(30deg);
+            }
+            77.77%
+            {
+                transform: translateY(-10px) translateX(22.22px) rotate(20deg);
+            }
+            88.88%
+            {
+                transform: translateY(-5px) translateX(11.11px) rotate(10deg);
+            }
+            100%
+            {
+                transform: translateY(0px) translateX(0px) rotate(0deg);
+            }
+        }
+        @keyframes rollback0 
+        {
+            0%
+            {
+                transform: translateY(0px) translateX(0px) rotate(0deg);
+            }
+            25%
+            {
+                transform: translateY(-5px) translateX(-11.11px) rotate(-10deg);
+            }
+            50%
+            {
+                transform: translateY(-8px) translateX(-22.22px) rotate(-20deg);
+            }
+            75%
+            {
+                transform: translateY(-10px) translateX(-33.33px) rotate(-30deg);
+            }
+            100%
+            {
+                transform: translateY(-13px) translateX(-44.44px) rotate(-40deg);
+            }    
+        }
+
+        @media only screen and (max-width: 700px) 
+        {
+            .darksoul-container
+            {
+                zoom: 0.6;
+            }
+        }
+        .disclaimer
+        {
+            font-family: 'Belanosima', sans-serif;
+            position: absolute;
+            bottom: 0px; 
+            left: 0; 
+            margin-left: auto; 
+            right: 0; 
+            margin-right: auto; 
+            width: fit-content;
+            color: rgb(255, 255, 255);
+            text-align: center;
+        }
+        .disclaimer a
+        {
+            text-decoration: none;
+            color: #ffffff;
+            font-family: "Kaushan Script", cursive;
+            font-weight: 900;
+        }
+        .disclaimer a:hover
+        {
+            text-decoration: overline;
+        }
+    </style>
+
+    
+    <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-0XRHJTRGGH"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-0XRHJTRGGH');
+</script>
+
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9669180356185936"
+     crossorigin="anonymous"></script>
+
+   <!-- Clarity tracking code for https://darksoul-codepen.github.io/ -->
+<script>
+  (function(c,l,a,r,i,t,y){
+      c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+      t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i+"?ref=bwt";
+      y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+  })(window, document, "clarity", "script", "k6ctefq607");
+</script>
+
+</head>
+<body>
+    <div class="darksoul-container">
+        <div class="square">
+        </div>
+        <div class="line">
+            <h1>
+                <span>L</span>O<strong>A</strong><b>D</b><strong>I</strong>N<span>G</span>
+            </h1>
+        </div>
+    </div>
+    <p class="disclaimer">Designed & Created by <a href="https://darksoul-codepen.github.io/" target="_blank">DarkSoul</a></p>
+
+</body>
+</html>

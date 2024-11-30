@@ -2,7 +2,7 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1" xmlns:video="http://www.google.com/schemas/sitemap-video/1.1">
   <url>
     <loc>https://darksoul-codepen.github.io/</loc>
-    <lastmod>2024-11-19</lastmod>
+    <lastmod>2024-11-30</lastmod>
     <priority>1.0</priority>
       <image:image>
         <image:loc>https://darksoul-codepen.github.io/assets/images/service-01.png</image:loc>
@@ -341,7 +341,7 @@
   </url>
   <url>
     <loc>https://darksoul-codepen.github.io/codepen.html</loc>
-    <lastmod>2024-11-19</lastmod>
+    <lastmod>2024-11-30</lastmod>
     <priority>0.9</priority>
       <image:image>
         <image:loc>https://darksoul-codepen.github.io/assets/images/Glassy%20Date,Time%20Weather%20Widget.png</image:loc>
@@ -383,10 +383,24 @@
         <image:loc>https://darksoul-codepen.github.io/assets/images/Blurred%20Side%20Navigation%20bar.webp</image:loc>
       </image:image>
       <image:image>
-      <image:loc>https://darksoul-codepen.github.io/assets/images/Fluid%20Liquid%20Circle%20Animation.gif</image:loc>
+        <image:loc>https://darksoul-codepen.github.io/assets/images/Fluid%20Liquid%20Circle%20Animation.gif</image:loc>
       </image:image>
       <image:image>
-      <image:loc>https://darksoul-codepen.github.io/assets/images/Modern%20Button%20Border%20Hover%20Effect.png</image:loc>
+        <image:loc>https://darksoul-codepen.github.io/assets/images/Modern%20Button%20Border%20Hover%20Effect.png</image:loc>
+      </image:image>
+      <image:image>
+        <image:loc>https://darksoul-codepen.github.io/assets/images/Glassy%20Loading%20Page%20-%20Post%20Cover%20Image.webp</image:loc>
+      </image:image>
+      <image:image>
+        <image:loc>https://darksoul-codepen.github.io/assets/images/Glassy%20Loading%20Page.webp</image:loc>
+      </image:image>
+  </url>
+  <url>
+    <loc>https://darksoul-codepen.github.io/Glassy-Loading-Page.html</loc>
+    <lastmod>2024-11-30</lastmod>
+    <priority>0.9</priority>
+      <image:image>
+        <image:loc>https://darksoul-codepen.github.io/Glassy-Loading-Page/Output%20Screenshot%20-%20Glassy%20Loading%20Page.webp</image:loc>
       </image:image>
   </url>
   <url>
@@ -584,6 +598,11 @@
   <url>
   <loc>https://darksoul-codepen.github.io/Modern-Button-Border-Hover-Effect/Preview-Modern-Button-Border-Hover-Effect.html</loc>
   <lastmod>2024-11-19</lastmod>
+  <priority>0.8</priority>
+  </url>
+  <url>
+  <loc>https://darksoul-codepen.github.io/Glassy-Loading-Page/Preview-Glassy-Loading-Page.html</loc>
+  <lastmod>2024-11-30</lastmod>
   <priority>0.8</priority>
   </url>
 </urlset>

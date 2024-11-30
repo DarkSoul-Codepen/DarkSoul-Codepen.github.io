@@ -3,8 +3,8 @@ var searchbar = document.getElementById("searchbar");
 var searchbarinput = document.getElementById("searchbarinput");
 var dropdown = document.getElementById("dropdown");
 
-var resultlist = document.getElementById("resultlist");
 var lis = resultlist.getElementsByTagName("li");
+console.log(resultlist);
 
 function darksoulsearch() 
 {
